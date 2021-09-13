@@ -1,0 +1,49 @@
+<head>
+  {{ hugo.Generator }}
+
+
+  <base href="{{ .Site.BaseURL }}" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ partial "head/description.html" . }}" />
+  <meta name="url" content="{{ .Permalink }}" />
+  <meta
+    name="author"
+    content="{{ delimit (partial "head/author.html" .) ", " ", and " }}"
+  />
+
+  <title>{{ partial "head/title.html" . }}</title>
+
+  {{ partial "head/open-graph.html" . }}
+
+
+  <link
+    rel="sitemap"
+    type="application/xml"
+    title="Sitemap"
+    href="{{ .Site.BaseURL }}sitemap.xml"
+  />
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Nanum+Myeongjo:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Satisfy&display=swap"
+    rel="stylesheet"
+  />
+
+  {{ $style := resources.Get "css/main.css" }}
+  {{ $style = $style | resources.PostCSS (dict "inlineImports" true) }}
+  {{ if hugo.IsProduction }}
+    {{ $style = $style | minify | fingerprint | resources.PostProcess }}
+  {{ end }}
+  <link
+    rel="stylesheet"
+    href="{{ $style.RelPermalink }}"
+    integrity="{{ $style.Data.Integrity }}"
+  />
+</head>

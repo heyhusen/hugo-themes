@@ -1,0 +1,11 @@
+{{ $jsonChromaStyles := getJSON "https://api.github.com/repos/alecthomas/chroma/contents/styles" (dict "Accept" "application/vnd.github.v3+json") }}
+{{ $chromaStyles := slice }}
+{{ $chromaStyle := "" }}
+{{ range $index, $styleName := $jsonChromaStyles }}
+  {{ $chromaStyle = strings.TrimSuffix ".go" (index $styleName "name") }}
+  {{ if eq $chromaStyle "hr_dark" }}
+    {{ $chromaStyle = "hrdark" }}
+  {{ end }}
+  {{ $chromaStyles = $chromaStyles | append (dict "label" ($chromaStyle | humanize | title) "value" $chromaStyle) }}
+{{ end }}
+{{ return $chromaStyles }}

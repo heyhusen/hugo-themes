@@ -1,0 +1,73 @@
+{{ define "main" }}
+  <article class="flex-1 space-y-4 sm:space-y-6 md:space-y-8">
+    {{ $blogPosts := where .Site.RegularPages.ByDate.Reverse "Type" "post" }}
+    {{ $paginator := .Paginate (after 1 $blogPosts) }}
+    {{ if eq $paginator.PageNumber 1 }}
+      {{- partial "theme/content.html" . -}}
+    {{ end }}
+    {{ if eq $paginator.PageNumber 1 }}
+      {{ range first 1 $blogPosts }}
+        <article
+          class="group sm:hover:shadow-none sm:hover:transform-none sm:hover:translate-y-0 relative shadow hover:shadow-md overflow-hidden hover:transform hover:-translate-y-1 duration-200 sm:flex sm:flex-col sm:justify-between sm:bg-gray-500 sm:shadow-none"
+        >
+          <figure class="aspect-w-16 aspect-h-10 sm:aspect-h-9">
+            {{- partial "internal/thumbnail.html" (dict "context" . "class" "h-full w-full object-cover sm:group-hover:transform sm:group-hover:scale-125 sm:group-hover:rotate-3 sm:duration-150 sm:mix-blend-multiply") -}}
+          </figure>
+          <section
+            class="flex flex-col gap-2 justify-end p-4 sm:absolute sm:inset-0 sm:p-6 md:p-7"
+          >
+            <header class="sm:text-white">
+              <a
+                href="{{ .RelPermalink }}"
+                class="title-link sm:title-link_dark text-xl sm:font-serif sm:text-3xl sm:font-bold md:text-4xl"
+              >
+                <h1>{{ .Title }}</h1>
+              </a>
+            </header>
+            <div
+              class="flex gap-2 items-center text-gray-700 text-sm sm:text-gray-200"
+            >
+              <div class="flex -space-x-3">
+                {{ range (.GetTerms "authors") }}
+                  <div class="w-8 md:h-9">
+                    <figure class="aspect-w-1 aspect-h-1">
+                      {{ partial "author/avatar.html" (dict "context" . "limit" 128 "class" "h-full w-full object-cover border-2 border-white rounded-full") }}
+                    </figure>
+                  </div>
+                {{ end }}
+              </div>
+              <div class="flex flex-col">
+                <span>
+                  {{ range $index, $author := .Params.authors }}
+                    {{ if gt $index 0 }},{{ end }}
+                    <a
+                      href="{{ "/authors/" | relURL }}{{ . | urlize }}"
+                      class="hover:underline"
+                    >
+                      {{- . -}}
+                    </a>
+                  {{ end }}
+                </span>
+                <time
+                  class="absolute right-3 top-3 px-2 py-1 text-gray-200 text-xs bg-black bg-opacity-60 sm:static sm:inset-auto sm:p-0 sm:bg-transparent"
+                >
+                  {{ .Date | time.Format ":date_long" }}
+                </time>
+              </div>
+            </div>
+            <div class="sm:line-clamp-2 sm:text-gray-200">
+              {{ .Summary }}
+            </div>
+          </section>
+        </article>
+      {{ end }}
+    {{ end }}
+    <section class="grid gap-4 grid-cols-1 sm:gap-6 sm:grid-cols-2 md:gap-8">
+      {{ range $paginator.Pages }}
+        {{- partial "theme/post-card.html" . -}}
+      {{ end }}
+    </section>
+    {{ partial "theme/pagination.html" . }}
+  </article>
+  {{ partial "sidebar.html" . }}
+{{ end }}

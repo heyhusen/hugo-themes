@@ -1,0 +1,68 @@
+{{- with .Paginator }}
+  <nav
+    aria-label="Pagination"
+    class="flex justify-center py-4 space-x-1 sm:space-x-2 xl:text-lg"
+  >
+    {{- $currentPageNumber := .PageNumber }}
+
+    {{- with .Prev }}
+      {{ if gt $currentPageNumber 2 }}
+        <a
+          href="{{ .URL }}"
+          aria-label="Previous"
+          role="button"
+          class="inline-flex items-center px-3 py-2 hover:bg-gray-200 rounded duration-150 sm:px-4"
+        >
+          <span aria-hidden="true">
+            {{ partial "svgs/chevron-left-solid.svg" (dict "class" "h-5 w-5") }}
+          </span>
+        </a>
+      {{ end }}
+    {{- end }}
+
+    {{- $slots := 5 }}
+    {{- $start := math.Max 1 (sub .PageNumber (math.Floor (div $slots 2))) }}
+    {{- $end := math.Min .TotalPages (sub (add $start $slots) 1) }}
+    {{- if lt (add (sub $end $start) 1) $slots }}
+      {{- $start = math.Max 1 (add (sub $end $slots) 1) }}
+    {{- end }}
+
+    {{- range $k := seq $start $end }}
+      {{- if eq $.Paginator.PageNumber $k }}
+        <span
+          aria-current="page"
+          aria-label="Page {{ $k }}"
+          role="button"
+          class="inline-flex items-center px-3 py-2 text-white bg-red-600 rounded sm:px-4"
+          disabled
+        >
+          {{ $k }}
+        </span>
+      {{- else }}
+        <a
+          href="{{ (index $.Paginator.Pagers (sub $k 1)).URL }}"
+          aria-label="Page {{ $k }}"
+          role="button"
+          class="inline-flex items-center px-3 py-2 hover:bg-gray-200 rounded duration-150 sm:px-4"
+        >
+          {{ $k }}
+        </a>
+      {{- end }}
+    {{- end }}
+
+    {{- with .Next }}
+      {{ if lt $currentPageNumber (sub .TotalPages 1) }}
+        <a
+          href="{{ .URL }}"
+          aria-label="Next"
+          role="button"
+          class="inline-flex items-center px-3 py-2 hover:bg-gray-200 rounded duration-150 sm:px-4"
+        >
+          <span aria-hidden="true">
+            {{ partial "svgs/chevron-right-solid.svg" (dict "class" "h-5 w-5") }}
+          </span>
+        </a>
+      {{ end }}
+    {{- end }}
+  </nav>
+{{- end }}

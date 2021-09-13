@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Manager - {{ .Site.Title }}</title>
+  {{ $identityJs := resources.Get "js/netlify-identity.js" }}
+  {{ $identityJs = $identityJs | js.Build }}
+  {{ if hugo.IsProduction }}
+    {{ $identityJs = $identityJs | minify | fingerprint }}
+  {{ end }}
+  <script
+    src="{{ $identityJs.RelPermalink }}"
+    integrity="{{ $identityJs.Data.Integrity }}"
+    defer
+  ></script>
+</head>
+<body>
+    {{ $cmsJs := resources.Get "js/netlify-cms.js" }}
+    {{ $cmsJsOptions := dict "hugoEnvironment" hugo.Environment }}
+    {{ $cmsJsOptions = merge $cmsJsOptions (dict "chromaStyles" (partial "internal/chroma-styles.html" .)) }}
+    {{ $cmsJsOptions = merge $cmsJsOptions (dict "cmsPath" (getenv "HUGO_CMS_PATH")) }}
+    {{ with .Site.Author.name }}
+      {{ $cmsJsOptions = merge $cmsJsOptions (dict "mainAuthor" .) }}
+    {{ end }}
+    {{ $cmsJs = $cmsJs | js.Build (dict "params" $cmsJsOptions) }}
+    {{ if hugo.IsProduction }}
+      {{ $cmsJs = $cmsJs | minify | fingerprint }}
+    {{ end }}
+    <script
+      src="{{ $cmsJs.RelPermalink }}"
+      integrity="{{ $cmsJs.Data.Integrity }}"
+      defer
+    ></script>
+</body>
+</html>

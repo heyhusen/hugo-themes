@@ -1,0 +1,12 @@
+name = "Nyerat"
+license = "MIT"
+licenselink = "https://github.com/datakrama/hugo-themes/blob/main/LICENSE"
+description = "Fast, simple & clean blog theme for Hugo."
+homepage = "https://github.com/datakrama/hugo-themes/tree/main/nyerat"
+tags = [blog, responsive]
+features = [simple, clean, fast, tailwindcss]
+min_version = "0.87.0"
+
+[author]
+  name = "Ahmad Husen"
+  homepage = "https://husen.id"

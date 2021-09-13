@@ -1,0 +1,31 @@
+timeout: 100000
+enableRobotsTXT: true
+languageCode: en-US
+params:
+  description: Fast, simple & clean blog theme for Hugo.
+  image: cover.png
+  logo:
+    header: logo-optimized.png
+    footer: logo-optimized-dark.png
+  staticFormsAccessKey: 287e82ca-7803-4e3d-b5eb-d1a004d99c27
+markup:
+  highlight:
+    style: nord
+permalinks:
+  post: /:year/:month/:day/:slug/
+rssLimit: 100
+theme: nyerat
+minify:
+  tdewolff:
+    html:
+      keepQuotes: true
+      keepWhitespace: false
+summaryLength: 25
+taxonomies:
+  category: category
+  tag: tags
+  author: authors
+title: Nyerat
+baseURL: /
+sectionPagesMenu: main
+paginate: 8
