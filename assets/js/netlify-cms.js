@@ -5,7 +5,7 @@ import * as params from '@params';
 CMS.init({
   config: {
     backend: {
-      branch: 'feature/nyerat/netlify-cms',
+      branch: 'main',
       name: 'git-gateway',
     },
     collections: [
@@ -399,6 +399,46 @@ CMS.init({
                         label: 'Footer',
                         name: 'footer',
                         widget: 'image',
+                        allow_multiple: false,
+                        choose_url: false,
+                        required: false,
+                      },
+                    ],
+                  },
+                  {
+                    label: 'Favicon',
+                    name: 'favicon',
+                    widget: 'object',
+                    hint: 'All favicon will be used as is by Hugo, so make sure you use the appropriate icon. You can use the help of online tools like **realfavicongenerator.net**.',
+                    fields: [
+                      {
+                        label: 'ico',
+                        name: 'ico',
+                        widget: 'file',
+                        media_folder: `${params.cmsPath}/static`,
+                        public_folder: '',
+                        hint: 'This is the minimal icon for the favicon. The recommended icon dimensions are 32x32 pixels.',
+                        allow_multiple: false,
+                        choose_url: false,
+                        required: false,
+                      },
+                      {
+                        label: 'png',
+                        name: 'png',
+                        widget: 'image',
+                        media_folder: `${params.cmsPath}/static`,
+                        public_folder: '',
+                        hint: 'The recommended icon dimensions are 32x32 pixels.',
+                        allow_multiple: false,
+                        choose_url: false,
+                        required: false,
+                      },
+                      {
+                        label: 'svg',
+                        name: 'svg',
+                        widget: 'image',
+                        media_folder: `${params.cmsPath}/static`,
+                        public_folder: '',
                         allow_multiple: false,
                         choose_url: false,
                         required: false,

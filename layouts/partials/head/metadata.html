@@ -17,6 +17,14 @@
 
   {{ partial "head/open-graph.html" . }}
 
+  {{ with .Site.Params.favicon.png }}
+    <link rel="icon" href="/{{ . }}" type="image/png" />
+  {{ end }}
+
+  {{ with .Site.Params.favicon.svg }}
+    <link rel="icon" href="/{{ . }}" type="image/svg+xml" />
+  {{ end }}
+
 
   <link
     rel="sitemap"

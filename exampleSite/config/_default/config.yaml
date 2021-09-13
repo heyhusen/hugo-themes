@@ -3,6 +3,10 @@ enableRobotsTXT: true
 languageCode: en-US
 params:
   description: Fast, simple & clean blog theme for Hugo.
+  favicon:
+    ico: favicon.ico
+    png: favicon-32x32.png
+    svg: favicon.svg
   image: cover.png
   logo:
     header: logo-optimized.png

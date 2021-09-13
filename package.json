@@ -26,10 +26,10 @@
     "node": ">=14.x.x"
   },
   "scripts": {
-    "dev": "HUGO_CMS_PATH=exampleSite run-p dev:*",
+    "dev": "HUGO_CMS_PATH=/exampleSite run-p dev:*",
     "dev:hugo": "hugo server -s exampleSite --themesDir=../.. --disableFastRender",
     "dev:cms": "netlify-cms-proxy-server",
-    "build": "HUGO_CMS_PATH=themes/nyerat/exampleSite hugo -s exampleSite --themesDir=../.. --gc --minify",
+    "build": "HUGO_CMS_PATH=/themes/nyerat/exampleSite hugo -s exampleSite --themesDir=../.. --gc --minify",
     "format": "run-s format:*",
     "format:eslint": "eslint --ext .js ./ --fix",
     "format:prettier": "prettier --write ."
