@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2021-09-14
+
+### Fixed
+
+- External/remote image on content
+
 ## [0.1.0] - 2021-09-14
 
 ### Added
@@ -19,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initialize project
 
-[Unreleased]: https://github.com/datakrama/hugo-themes/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/datakrama/hugo-themes/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/datakrama/hugo-themes/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/datakrama/hugo-themes/compare/v0.0.1...v0.1.0
 [0.0.1]: https://github.com/datakrama/hugo-themes/releases/tag/v0.0.1
