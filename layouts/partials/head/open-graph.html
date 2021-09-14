@@ -14,10 +14,14 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 
 {{- with .Params.image -}}
-  <meta
-    property="og:image"
-    content="{{ (partial "head/ogp-image.html" (dict "src" .)) | absURL }}"
-  />
+  {{ if hasPrefix . "http" }}
+    <meta property="og:image" content="{{ . }}" />
+  {{ else }}
+    <meta
+      property="og:image"
+      content="{{ (partial "head/ogp-image.html" (dict "src" .)) | absURL }}"
+    />
+  {{ end }}
 {{- else -}}
   {{- $images := .Resources.ByType "image" -}}
   {{- $featured := $images.GetMatch "*feature*" -}}
@@ -32,7 +36,10 @@
   {{- else -}}
     {{- $thumbnail := index (findRE "<picture.*?>(.|\n)*?</picture>" .Content 1) 0 -}}
     {{ $thumbnail = index (findRE "src=\"([^\"]*)\"" $thumbnail 1) 0 }}
-    {{ $thumbnail = strings.TrimPrefix "src=\"/img/" $thumbnail }}
+    {{ $thumbnail = strings.TrimPrefix "src=\"" $thumbnail }}
+    {{ if ne (hasPrefix $thumbnail "http") true }}
+      {{ $thumbnail = strings.TrimPrefix "/img/" $thumbnail }}
+    {{ end }}
     {{ $thumbnail = strings.TrimSuffix "\"" $thumbnail }}
     {{ with $thumbnail }}
       <meta
@@ -40,10 +47,14 @@
         content="{{ (partial "head/ogp-image.html" (dict "src" .)) | absURL }}"
       />
     {{ else }}
-      <meta
-        property="og:image"
-        content="{{ (partial "head/ogp-image.html" (dict "src" .Site.Params.image)) | absURL }}"
-      />
+      {{ if hasPrefix .Site.Params.image "http" }}
+        <meta property="og:image" content="{{ .Site.Params.image }}" />
+      {{ else }}
+        <meta
+          property="og:image"
+          content="{{ (partial "head/ogp-image.html" (dict "src" .Site.Params.image)) | absURL }}"
+        />
+      {{ end }}
     {{ end }}
   {{- end -}}
 {{- end -}}
