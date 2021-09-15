@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.2] - 2021-09-15
+
+### Fixed
+
+- Empty main author image on sidebar
+
 ## [0.2.1] - 2021-09-15
 
 ### Fixed
@@ -37,7 +43,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initialize project
 
-[Unreleased]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.2.1...HEAD
+[Unreleased]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.2.2...HEAD
+[0.2.2]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.2.1...nyerat@v0.2.2
 [0.2.1]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.2.0...nyerat@v0.2.1
 [0.2.0]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.1.1...nyerat@v0.2.0
 [0.1.1]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.1.0...nyerat@v0.1.1
