@@ -10,11 +10,7 @@
       {{ with .Site.Params.image }}
         {{ partial "internal/image.html" (dict "src" . "alt" $.Title "class" $.class) }}
       {{ else }}
-        <img
-          src="https://via.placeholder.com/1200x630.jpg"
-          alt="{{ $.Title }}"
-          class="{{ $.class }}"
-        />
+        {{ partial "internal/image.html" (dict "src" "cover.png" "alt" $.Title "class" $.class) }}
       {{ end }}
     {{ end }}
   {{ end }}

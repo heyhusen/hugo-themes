@@ -47,12 +47,19 @@
         content="{{ (partial "head/ogp-image.html" (dict "src" .)) | absURL }}"
       />
     {{ else }}
-      {{ if hasPrefix .Site.Params.image "http" }}
-        <meta property="og:image" content="{{ .Site.Params.image }}" />
+      {{ with .Site.Params.image }}
+        {{ if hasPrefix . "http" }}
+          <meta property="og:image" content="{{ . }}" />
+        {{ else }}
+          <meta
+            property="og:image"
+            content="{{ (partial "head/ogp-image.html" (dict "src" .)) | absURL }}"
+          />
+        {{ end }}
       {{ else }}
         <meta
           property="og:image"
-          content="{{ (partial "head/ogp-image.html" (dict "src" .Site.Params.image)) | absURL }}"
+          content="{{ (partial "head/ogp-image.html" (dict "src" "cover.png")) | absURL }}"
         />
       {{ end }}
     {{ end }}
