@@ -13,7 +13,7 @@ CMS.init({
         name: 'post',
         label: 'Posts',
         label_singular: 'Post',
-        folder: `${params.cmsPath}/content/post`,
+        folder: `${params.hugoCmsPath}/content/post`,
         extension: 'md',
         create: true,
         fields: [
@@ -66,7 +66,7 @@ CMS.init({
             value_field: 'title',
             hint: 'For an author to appear here, you must first create it in the author menu.',
             multiple: true,
-            default: [params.mainAuthor],
+            default: [params.hugoMainAuthor],
           },
           {
             label: 'Content',
@@ -91,7 +91,7 @@ CMS.init({
         name: 'category',
         label: 'Categories',
         label_singular: 'Category',
-        folder: `${params.cmsPath}/content/category`,
+        folder: `${params.hugoCmsPath}/content/category`,
         path: '{{slug}}/_index',
         description:
           'All published categories will be shown as options when you create a new article.',
@@ -140,7 +140,7 @@ CMS.init({
         name: 'tag',
         label: 'Tags',
         label_singular: 'Tag',
-        folder: `${params.cmsPath}/content/tags`,
+        folder: `${params.hugoCmsPath}/content/tags`,
         path: '{{slug}}/_index',
         description:
           'All published tags will be shown as options when you create a new article.',
@@ -189,7 +189,7 @@ CMS.init({
         name: 'author',
         label: 'Authors',
         label_singular: 'Author',
-        folder: `${params.cmsPath}/content/authors`,
+        folder: `${params.hugoCmsPath}/content/authors`,
         path: '{{slug}}/_index',
         description:
           'All published authors will be shown as options when you create a new article.',
@@ -277,7 +277,7 @@ CMS.init({
         name: 'page',
         label: 'Pages',
         label_singular: 'Page',
-        folder: `${params.cmsPath}/content`,
+        folder: `${params.hugoCmsPath}/content`,
         path: '{{slug}}/_index',
         filter: { field: 'isSectionPage', value: true },
         description: 'All pages below are a section.',
@@ -344,7 +344,7 @@ CMS.init({
           {
             label: 'General',
             name: 'general',
-            file: `${params.cmsPath}/config/_default/config.yaml`,
+            file: `${params.hugoCmsPath}/config/_default/config.yaml`,
             fields: [
               {
                 label: 'Site Title',
@@ -415,7 +415,7 @@ CMS.init({
                         label: 'ico',
                         name: 'ico',
                         widget: 'file',
-                        media_folder: `${params.cmsPath}/static`,
+                        media_folder: `${params.hugoCmsPath}/static`,
                         public_folder: '',
                         hint: 'This is the minimal icon for the favicon. The recommended icon dimensions are 32x32 pixels.',
                         allow_multiple: false,
@@ -426,7 +426,7 @@ CMS.init({
                         label: 'png',
                         name: 'png',
                         widget: 'image',
-                        media_folder: `${params.cmsPath}/static`,
+                        media_folder: `${params.hugoCmsPath}/static`,
                         public_folder: '',
                         hint: 'The recommended icon dimensions are 32x32 pixels.',
                         allow_multiple: false,
@@ -437,7 +437,7 @@ CMS.init({
                         label: 'svg',
                         name: 'svg',
                         widget: 'image',
-                        media_folder: `${params.cmsPath}/static`,
+                        media_folder: `${params.hugoCmsPath}/static`,
                         public_folder: '',
                         allow_multiple: false,
                         choose_url: false,
@@ -493,7 +493,7 @@ CMS.init({
                         label: 'Style',
                         name: 'style',
                         widget: 'select',
-                        options: params.chromaStyles,
+                        options: params.hugoChromaStyles,
                         hint: 'All style options are generated based on the **Chroma** repository.',
                       },
                     ],
@@ -512,7 +512,7 @@ CMS.init({
           {
             label: 'Menu Navigation',
             name: 'menu',
-            file: `${params.cmsPath}/config/_default/menu.yaml`,
+            file: `${params.hugoCmsPath}/config/_default/menu.yaml`,
             fields: [
               {
                 label: 'Menu',
@@ -566,7 +566,7 @@ CMS.init({
           {
             label: 'Main Author',
             name: 'author',
-            file: `${params.cmsPath}/config/_default/author.yaml`,
+            file: `${params.hugoCmsPath}/config/_default/author.yaml`,
             fields: [
               {
                 label: 'Name',
@@ -647,7 +647,7 @@ CMS.init({
     ],
     load_config_file: false,
     local_backend: params.hugoEnvironment === 'development',
-    media_folder: `${params.cmsPath}/assets/img`,
+    media_folder: `${params.hugoCmsPath}/assets/img`,
     public_folder: '/img',
   },
 });

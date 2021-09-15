@@ -44,10 +44,16 @@
     rel="stylesheet"
   />
 
-  {{ $style := resources.Get "css/main.css" }}
-  {{ $style = $style | resources.PostCSS (dict "inlineImports" true) }}
+  {{ $style := resources.Get "css/main.min.css" }}
+  {{ if ne (getenv "HUGO_THEME_ENVIRONMENT") "" }}
+    {{ $style = resources.Get "css/main.css" }}
+    {{ $style = $style | resources.PostCSS (dict "inlineImports" true) }}
+  {{ end }}
   {{ if hugo.IsProduction }}
-    {{ $style = $style | minify | fingerprint | resources.PostProcess }}
+    {{ $style = $style | minify }}
+    {{ if eq (getenv "HUGO_THEME_ENVIRONMENT") "" }}
+      {{ $style = $style | fingerprint }}
+    {{ end }}
   {{ end }}
   <link
     rel="stylesheet"
