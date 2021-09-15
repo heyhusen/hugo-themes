@@ -4,12 +4,36 @@
       <section class="flex flex-col gap-2 items-center">
         <div class="w-1/2">
           <figure class="aspect-w-1 aspect-h-1">
-            {{ partial "internal/image.html" (dict "src" .image "limit" 240 "alt" .Site.Author.name "class" "w-full h-full object-cover rounded-full") }}
+            {{ with .image }}
+              {{ partial "internal/image.html" (dict "src" . "limit" 240 "alt" $.Site.Author.name "class" "w-full h-full object-cover rounded-full") }}
+            {{ else }}
+              {{ with .email }}
+                <img
+                  src="https://www.gravatar.com/avatar/{{- md5 . -}}?s=240&d=mp"
+                  width="240"
+                  height="240"
+                  alt="{{ $.Site.Author.name }}"
+                  loading="lazy"
+                  class="w-full h-full object-cover rounded-full"
+                />
+              {{ else }}
+                <img
+                  src="https://ui-avatars.com/api/?background=random&size=240&name={{- .name -}}"
+                  width="240"
+                  height="240"
+                  alt="{{ .name }}"
+                  loading="lazy"
+                  class="w-full h-full object-cover rounded-full"
+                />
+              {{ end }}
+            {{ end }}
           </figure>
         </div>
-        <h3 class="font-serif text-2xl font-bold">
-          {{- .name -}}
-        </h3>
+        {{ with .name }}
+          <h3 class="font-serif text-2xl font-bold">
+            {{- . -}}
+          </h3>
+        {{ end }}
         {{ with .bio }}
           <div>{{- . -}}</div>
         {{ end }}
