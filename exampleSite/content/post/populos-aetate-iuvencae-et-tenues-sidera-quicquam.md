@@ -19,7 +19,7 @@ Vicem quamquam figuras tantummodo pro ut abstulit vertice herbae roganti labor,
 pro, sentit multa tam inde spe. Tibi solitoque modo protinus cognita venit
 movimus quo.
 
-![Populos Aetate Iuvencae Et Tenues Sidera Quicquam](denissa-devy-fU2Mus9qmN8-unsplash.jpg "Populos Aetate Iuvencae Et Tenues Sidera Quicquam")
+![Populos Aetate Iuvencae Et Tenues Sidera Quicquam](/img/denissa-devy-fU2Mus9qmN8-unsplash.jpg)
 
 ## Toto fretum mater munere
 

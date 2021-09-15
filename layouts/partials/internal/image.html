@@ -8,7 +8,7 @@
     />
   </picture>
 {{ else }}
-  {{- $original := resources.Get (print "img/" .src) -}}
+  {{- $original := resources.Get .src -}}
   {{ $converts := slice (dict "type" "image/webp" "format" "webp") (dict "type" "image/jpeg" "format" "jpg") }}
   {{ $sizes := slice 128 240 320 375 425 640 768 1024 1280 1536 }}
   {{ $originalExtension := index (split (path.Ext $original) ".") 1 }}

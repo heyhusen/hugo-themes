@@ -17,7 +17,7 @@ Lorem markdownum toto venturis papavera, et in abiit. In haud, est iustis, gruem
 et sanguis conexis, litoream tota? Scopulum dedit, aditus, Dixerat sit cumque
 placitas et quale nidos exsul semper per virgo notissima nam.
 
-![Sorori Erat Aderat Omnem Fama Statuit](silas-baisch-9cdo9r9Fors-unsplash.jpg "Sorori Erat Aderat Omnem Fama Statuit")
+![Sorori Erat Aderat Omnem Fama Statuit](/img/silas-baisch-9cdo9r9Fors-unsplash.jpg)
 
 ## Ex artus Gorgonis
 

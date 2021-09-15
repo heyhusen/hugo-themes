@@ -17,7 +17,7 @@ Lorem markdownum velamina somno manu tibi Taygetenque Cynthia caput et proxima
 animos nondum in quae sponte cornua Laomedonque! Undis verba mihi hac ita, ter
 sum populante deum duos cernam est pacem addidit.
 
-![Morte Cepit Sanguinis Aequora Timendo](sebastian-staines-Jk4b7zztsek-unsplash.jpg "Morte Cepit Sanguinis Aequora Timendo")
+![Morte Cepit Sanguinis Aequora Timendo](/img/sebastian-staines-Jk4b7zztsek-unsplash.jpg)
 
 ## Pectora forma pereat Luna Caeneus felicia
 

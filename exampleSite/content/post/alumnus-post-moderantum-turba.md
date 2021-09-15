@@ -1,7 +1,7 @@
 ---
 title: "Alumnus Post Moderantum Turba"
 description: ""
-image: "hugo-matilla-EFuCATqfblI-unsplash.jpg"
+image: "/img/hugo-matilla-EFuCATqfblI-unsplash.jpg"
 category: "Uncategorized"
 tags: []
 authors:

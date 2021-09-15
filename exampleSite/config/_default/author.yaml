@@ -1,6 +1,6 @@
 name: John Doe
 email: john@doe.com
-image: john-doe.jpeg
+image: /img/john-doe.jpeg
 bio: Web developer, speed freak.
 widget: true
 social:

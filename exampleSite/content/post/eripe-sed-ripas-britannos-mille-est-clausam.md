@@ -24,7 +24,7 @@ proles Etruscam anili ait cedere, levibus, nostri Talia timidi in magica
 Mulciber. Expalluit reddant partem cognataque antiquum, illa saltus: sum tangunt
 penna aequora patuit usus laudem, non mollia.
 
-![Eripe Sed Ripas Britannos Mille Est Clausam](jarrad-horne-c-UJQKs8fFU-unsplash.jpg "Eripe Sed Ripas Britannos Mille Est Clausam")
+![Eripe Sed Ripas Britannos Mille Est Clausam](/img/jarrad-horne-c-UJQKs8fFU-unsplash.jpg)
 
 ## Puppimque Tritonidos illas ne petit haec ferebat
 

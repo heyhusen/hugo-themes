@@ -18,7 +18,7 @@ Lorem markdownum quis nubifer nigrae, per lucis urit; haerent tua latere.
 Occuluit simul examinat proelia Molpeus recepto, hanc pignora lucos repetisse
 grande texit.
 
-![Nata Dicere Et Illis Voluere Si Linguae](harry-kessell-eE2trMn-6a0-unsplash.jpg "Nata Dicere Et Illis Voluere Si Linguae")
+![Nata Dicere Et Illis Voluere Si Linguae](/img/harry-kessell-eE2trMn-6a0-unsplash.jpg)
 
 ## Hortatibus componit ungues
 

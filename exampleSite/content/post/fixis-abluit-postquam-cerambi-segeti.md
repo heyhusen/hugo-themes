@@ -23,7 +23,7 @@ vitam non manibus.
 Femori credi gradu colebat: subigebant corpore meum inrita fertur. Trepidantem
 equos successisse sola regebat.
 
-![Fixis Abluit Postquam Cerambi Segeti](filippo-cesarini-Ln0faF8O5E8-unsplash.jpg "Fixis Abluit Postquam Cerambi Segeti")
+![Fixis Abluit Postquam Cerambi Segeti](/img/filippo-cesarini-Ln0faF8O5E8-unsplash.jpg)
 
 ## Que deus
 

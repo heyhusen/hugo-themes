@@ -7,10 +7,10 @@ params:
     ico: favicon.ico
     png: favicon-32x32.png
     svg: favicon.svg
-  image: cover.png
+  image: /img/cover.png
   logo:
-    header: logo-optimized.png
-    footer: logo-optimized-dark.png
+    header: /img/logo-optimized.png
+    footer: /img/logo-optimized-dark.png
   staticFormsAccessKey: 287e82ca-7803-4e3d-b5eb-d1a004d99c27
 markup:
   highlight:

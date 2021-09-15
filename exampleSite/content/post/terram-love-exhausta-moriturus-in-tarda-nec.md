@@ -18,7 +18,7 @@ carpitur furor. Requiram silicem vos tremescere quibus hac ergo, et arma.
 Tinctam vati arbore populusque dubitare, nostras. Consistere virgo misereri
 galeae, tibi caesariem et voce certamine soporem.
 
-![Terram Love Exhausta Moriturus in Tarda Nec](thomas-ciszewski-VcpMPsf_Ex0-unsplash.jpg "Terram Love Exhausta Moriturus in Tarda Nec")
+![Terram Love Exhausta Moriturus in Tarda Nec](/img/thomas-ciszewski-VcpMPsf_Ex0-unsplash.jpg)
 
 In quae acres recanduit nebulas soror. Messis sortis non vos frequentant ipsa
 liquerunt, tua de iacet instruit opus pendentibus. Venit adimunt purpureis
