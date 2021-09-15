@@ -36,7 +36,7 @@
     "prebuilt": "run-s prebuilt:*",
     "prebuilt:hugo": "HUGO_THEME_ENVIRONMENT=prebuilt hugo -s exampleSite --themesDir=../.. --gc",
     "prebuilt:js": "cp -f exampleSite/public/js/netlify-*.min.js assets/js",
-    "prebuilt:css": "cp -f exampleSite/public/css/main*.min.css assets/js"
+    "prebuilt:css": "cp -f exampleSite/public/css/main*.min.css assets/css"
   },
   "devDependencies": {
     "@netlify/plugin-lighthouse": "^2.1.2",
