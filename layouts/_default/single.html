@@ -1,34 +1,42 @@
 {{ define "main" }}
   <article class="flex-1 space-y-4 sm:space-y-6 md:space-y-10">
     <header
-      class="relative flex flex-col gap-6 justify-between p-4 bg-gradient-to-tr rounded-lg from-red-200 to-red-50 overflow-hidden sm:gap-32 md:p-6 xl:p-8"
+      class="grid bg-gradient-to-tr rounded-lg from-red-200 to-red-50 overflow-hidden"
     >
-      <time
-        class="z-10 self-end px-1 py-0.5 text-sm bg-red-200 rounded sm:px-2 sm:py-1 md:text-base"
-      >
-        {{ .Date | time.Format ":date_long" }}
-      </time>
       {{ with .Params.image }}
-        {{ partial "internal/image.html" (dict "src" . "class" "absolute inset-0 h-full w-full object-cover mix-blend-overlay") }}
+        <div
+          class="aspect-w-16 aspect-h-8 col-span-full row-span-full mix-blend-overlay"
+        >
+          {{ partial "internal/image.html" (dict "src" . "class" "h-full w-full object-cover") }}
+        </div>
       {{ end }}
-      <div class="z-10 space-y-2">
-        <ul class="flex flex-wrap gap-2 text-sm">
-          {{ range (.GetTerms "tags") }}
-            <li
-              class="text-gray-100 bg-gray-700 hover:bg-red-600 rounded transition-colors duration-200"
-            >
-              <a
-                href="{{ .Permalink }}"
-                class="block px-1 py-0.5 sm:px-2 sm:py-1"
+      <div
+        class="z-0 flex flex-col gap-4 col-span-full row-span-full justify-between p-4 md:p-6 xl:p-8"
+      >
+        <time
+          class="self-end px-1 py-0.5 text-sm bg-red-200 rounded sm:px-2 sm:py-1 md:text-base"
+        >
+          {{ .Date | time.Format ":date_long" }}
+        </time>
+        <div class="space-y-2 md:space-y-4">
+          <ul class="flex flex-wrap gap-2 text-sm">
+            {{ range (.GetTerms "tags") }}
+              <li
+                class="text-gray-100 bg-gray-700 hover:bg-red-600 rounded transition-colors duration-200"
               >
-                {{ .LinkTitle }}
-              </a>
-            </li>
-          {{ end }}
-        </ul>
-        <h1 class="text-black text-3xl font-bold md:text-4xl lg:text-5xl">
-          {{ .Title }}
-        </h1>
+                <a
+                  href="{{ .Permalink }}"
+                  class="block px-1 py-0.5 sm:px-2 sm:py-1"
+                >
+                  {{ .LinkTitle }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+          <h1 class="text-black text-3xl font-bold md:text-4xl lg:text-5xl">
+            {{ .Title }}
+          </h1>
+        </div>
       </div>
     </header>
     <div class="flex flex-wrap gap-8">

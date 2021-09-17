@@ -8,13 +8,15 @@
     {{ if eq $paginator.PageNumber 1 }}
       {{ range first 1 $blogPosts }}
         <article
-          class="group sm:hover:shadow-none sm:hover:transform-none sm:hover:translate-y-0 relative shadow hover:shadow-md overflow-hidden hover:transform hover:-translate-y-1 duration-200 sm:flex sm:flex-col sm:justify-between sm:bg-gray-500 sm:shadow-none"
+          class="group sm:hover:shadow-none sm:hover:transform-none sm:hover:translate-y-0 relative shadow hover:shadow-md overflow-hidden hover:transform hover:-translate-y-1 duration-200 sm:grid sm:bg-gray-500 sm:shadow-none"
         >
-          <figure class="aspect-w-16 aspect-h-10 sm:aspect-h-9">
-            {{- partial "internal/thumbnail.html" (dict "context" . "class" "h-full w-full object-cover sm:group-hover:transform sm:group-hover:scale-125 sm:group-hover:rotate-3 sm:duration-150 sm:mix-blend-multiply") -}}
+          <figure
+            class="aspect-w-16 aspect-h-10 sm:aspect-h-9 sm:col-span-full sm:row-span-full"
+          >
+            {{- partial "internal/thumbnail.html" (dict "context" . "class" "h-full w-full object-cover sm:group-hover:transform sm:group-hover:scale-125 sm:group-hover:rotate-3 sm:duration-150") -}}
           </figure>
           <section
-            class="flex flex-col gap-2 justify-end p-4 sm:absolute sm:inset-0 sm:p-6 md:p-7"
+            class="flex flex-col gap-2 p-4 sm:z-10 sm:col-span-full sm:row-span-full sm:justify-end sm:p-6 sm:bg-gradient-to-t sm:from-black md:p-7"
           >
             <header class="sm:text-white">
               <a

@@ -1,9 +1,10 @@
 ---
-title: "Alumnus Post Moderantum Turba"
+title: Alumnus Post Moderantum Turba
 description: ""
-image: "/img/hugo-matilla-EFuCATqfblI-unsplash.jpg"
-category: "Uncategorized"
-tags: []
+image: /img/hugo-matilla-EFuCATqfblI-unsplash.jpg
+category: Uncategorized
+tags:
+  - Hugo
 authors:
   - John Doe
 date: 2021-08-08T21:06:56+07:00
