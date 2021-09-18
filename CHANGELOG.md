@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0] - 2021-09-18
+
+### Added
+
+- Configurable Disqus config
+
+### Changed
+
+- Use less absolute positioning CSS
+
 ## [0.2.4] - 2021-09-15
 
 ### Fixed
@@ -55,7 +65,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initialize project
 
-[Unreleased]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.2.4...HEAD
+[Unreleased]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.3.0...HEAD
+[0.3.0]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.2.4...nyerat@v0.3.0
 [0.2.4]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.2.3...nyerat@v0.2.4
 [0.2.3]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.2.2...nyerat@v0.2.3
 [0.2.2]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.2.1...nyerat@v0.2.2
