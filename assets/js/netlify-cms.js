@@ -361,6 +361,7 @@ CMS.init({
                 label: 'Language Code',
                 name: 'languageCode',
                 widget: 'string',
+                hint: 'The language code must be both **the language and the territory**. For example: "en-US".',
                 default: 'en-US',
               },
               {
