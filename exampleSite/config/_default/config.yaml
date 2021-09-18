@@ -30,6 +30,7 @@ taxonomies:
   tag: tags
   author: authors
 title: Nyerat
-baseURL: /
+baseURL: "/"
 sectionPagesMenu: main
 paginate: 8
+disqusShortname: ""

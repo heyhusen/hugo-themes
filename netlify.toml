@@ -1,9 +1,10 @@
 [build]
   publish = "exampleSite/public/"
-  command = "npm run build"
+  command = "hugo -s exampleSite --themesDir=../.. --gc --minify"
 
 [build.environment]
   HUGO_VERSION = "0.87.0"
+  HUGO_THEME_ENVIRONMENT = "production"
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
@@ -18,5 +19,5 @@
   [plugins.inputs.thresholds]
     performance = 0.8
     accessibility = 0.9
-    best-practices = 0.9
+    best-practices = 0.8
     seo = 0.9

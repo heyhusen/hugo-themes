@@ -501,6 +501,13 @@ CMS.init({
                 ],
               },
               {
+                label: 'Disqus shortname',
+                name: 'disqusShortname',
+                widget: 'string',
+                hint: "Your Disqus's shortname, which is the unique identifier for your website as registered on Disqus.",
+                required: false,
+              },
+              {
                 label: 'Timeout',
                 name: 'timeout',
                 widget: 'number',
