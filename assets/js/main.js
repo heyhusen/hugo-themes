@@ -3,15 +3,9 @@ const header = document.querySelector('body > header');
 const observer = new IntersectionObserver(
   ([e]) => {
     e.target.classList.toggle('shadow-md', e.intersectionRatio < 1);
-    if (e.intersectionRatio < 1) {
-      e.target.classList.add('sm:py-2');
-    } else {
-      e.target.classList.remove('sm:py-2');
-    }
   },
   { threshold: [1] },
 );
-
 observer.observe(header);
 
 // Hamburger menu
