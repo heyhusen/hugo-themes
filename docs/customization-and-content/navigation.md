@@ -1,6 +1,7 @@
 ---
 title: "Main navigation"
 description: "Add and customize menu in main navigation"
+weight: 5
 date: 2021-08-25T14:06:00+07:00
 ---
 

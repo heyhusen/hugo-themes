@@ -26,52 +26,44 @@ for simplicity, this theme uses only a few of them.
 
 ### Description
 
-Each page should have a description. Nyerat gets a description based on several
-conditions.
-
-1. The description value of the front matter.
-2. Summary of page content.
-3. Site description
-
-If it's not possible to provide descriptions on all pages, at least provide them
-on pages that have no content. For example section and lists page.
+The description property behaves the same as
+[description in the content]({{< relref "/work/hugo-themes/nyerat/customization-and-content/adding-content.md#description" >}}).
 
 ### Type
 
-There are only two types used by this theme, namely article and section.
-When you want to create a single page, make sure it is a section. For example to
-create a "contact" page, you need to create a `content/contact/_index.md` file
-instead of `content/contact.md`.
+There are only two [Open Graph `type` property](https://ogp.me/#types) used by
+this theme, namely `website` and `article`.  
+This is more or less how this theme describes page types in Open Graph.
+
+| Hugo Page Type  | OG Property Type |
+| --------------- | ---------------- |
+| Regular         | `article`        |
+| All but regular | `website`        |
+
+Don't create the wrong type of page. Due to the `article` property, Open Graph
+expects several other properties to exist, such as author, publication time, and
+related content. This theme only assigns this property to regular pages.
 
 ### Image
 
-Images in open graphs are very important. Images will be displayed according to
-the conditions on the related page.  
-The following is the order of priority for the images to be displayed.
+The image property behaves the same as
+[thumbnail in the content]({{< relref "/work/hugo-themes/nyerat/customization-and-content/adding-content.md#thumbnail" >}}).
 
-1. `image` parameter values in front matter.
-2. The first image in the content.
-3. `image` parameter values in configuration.
-
-So that the images on each page are different, at least provide an image in the
-content.
-
-The minimum image dimensions for Open Graphics are 1200x630 pixels. It is
-because of this image that the thumbnails must also have at least the same
-dimensions.
+The main reason why a thumbnail must be at least 1200x630 pixels is due to the
+need for Open Graph.
 
 ### Locale
 
-Open Graph requires that local value use the language and territory format. This
+Open Graph requires that local value use the language_TERRITORY format. This
 value is taken from the
-[`languageCode`](/work/hugo-themes/nyerat/docs/configuration#language-code)
+[`languageCode`]({{< relref "/work/hugo-themes/nyerat/docs/configuration#language-code" >}})
 configuration. Therefore, the configuration for `languageCode` must have a
 similar format.
 
 ### Twitter
 
 If you fill in
-[`author.social.twitter`](/work/hugo-themes/nyerat/docs/customization-and-content/author#metadata)
+[`author.social.twitter`]({{< relref "/work/hugo-themes/nyerat/docs/customization-and-content/author#metadata" >}})
 configuration, then this value will be used for Twitter Card. Twitter will
 assume this username is the owner of your site.
 

@@ -1,50 +1,45 @@
 ---
-title: "Introduction"
-description: "Nyerat is fast, clean, & simple blog theme for Hugo. This theme is highly customizable."
+title: "Nyerat Documentation"
+description: "Nyerat is fast, clean, & simple blog theme for Hugo."
 date: 2021-08-23T11:19:00+07:00
 ---
 
-Nyerat is fast, clean, & simple blog theme for Hugo. This theme is highly
-customizable.
+Nyerat is fast, clean, & simple blog theme for Hugo. Although this theme is made
+as simple as possible, it can still be customized as needed.
 
-## Features
+Looking for a demo site? You can find it [here](https://nyerat.netlify.app).
 
-- Fast, clean, & simple
-- Good color contrast (WCAG AA)
-- SEO friendly
-- Social share image (Open Graph)
-- Fully responsive
-- All (rasted) image is optimized
-- Minimal vanilla JS
-- Minimal CSS with [Tailwind CSS](https://tailwindcss.com/ "Tailwind CSS")
-- Easy-setup contact form with <https://staticforms.xyz>
-- Single or multiple author
-- Taxonomies support
-- Structured data
+## Try Nyerat
 
-## Why the name?
+The easiest way to get started with Nyerat is to use our starter template. This
+method is suitable for those of you who just want to try this theme or want to
+create a new site based on this theme.  
+For more information, you can visit our
+[separate repository](https://github.com/datakrama/nyerat-hugo-theme-starter)
+for this starter template.
 
-"Nyerat" comes from the Sundanese language which means to write. Yes, it fits
-the main purpose of this theme, for blogs. I hope this theme can make your blog
-readers more comfortable when reading your cool posts.
+To start using Nyerat on your existing site in easy steps, visit our
+[Quick Start]({{< relref "/work/hugo-themes/nyerat/docs/quick-start.md" >}})
+guide.
 
-## Why create this?
+Alternatively, you can read our
+[Installation]({{< relref "/work/hugo-themes/nyerat/docs/installation.md" >}})
+guide for a complete guide on getting started with the Nyerat theme.
 
-At first, I wanted to create a personal blog, just to share my thoughts, like in
-the past. I want my blog to be fast and accessible. Of course the answer is a
-static website. And I know jamstack can make it happen.
+## Stay Informed
 
-Therefore, I chose Hugo, and created this theme. Then another question arises,
-why not share this theme too?
+You can find a detailed changelog for every release in the
+[CHANGELOG.md](https://github.com/datakrama/hugo-themes/blob/main/themes/nyerat/CHANGELOG.md)
+file in the our repository.
 
-## Notice
+## Something Missing?
 
-All tutorials in this documentation will use `pnpm` as node package manager. I
-highly recommend it for efficiency.  
-However, you can still use `npm`, `yarn`, or any other package manager you
-usually use.
+If something is missing in the documentation or if you found some part
+confusing, please
+[file an issue for the documentation](https://github.com/datakrama/hugo-themes/issues/new/choose)
+with your suggestions for improvement. We love hearing from you!
 
-All tutorials in this documentation also will use `yaml` as format for config
-file.  
-This is just a personal preference. You can still use other formats like `toml`
-or `json`.
+## Credit
+
+This getting started guide was originally based off of
+[Astro's](https://docs.astro.build) getting started guide.

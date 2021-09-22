@@ -1,8 +1,11 @@
 ---
 title: "Author"
 description: "Add and customize site and/or blog post authors"
+weight: 3
 date: 2021-08-26T19:26:44+07:00
 ---
+
+## Main Author
 
 Usually a blog has an author in each post. It doesn't matter if it's single or
 multiple author. Nyerat supports both.  
@@ -55,7 +58,7 @@ authors:
 ---
 ```
 
-## Sidebar widget
+## Sidebar Widget
 
 Nyerat can also show the main author in the sidebar widget.  
 Change the author settings to something like this.
@@ -66,7 +69,7 @@ author:
   widget: true
 ```
 
-## Multiple blog post author
+## Multiple Blog Post Author
 
 If there is more than one author in your post, you can easily add their name to
 the front matter in related post.
@@ -115,7 +118,7 @@ social:
 > The settings for the main author will always be taken from your `config.yaml`
 > file.
 
-### Photo profile
+### Photo Profile
 
 As you can see, there is an `image` field in the author settings. If this field
 is filled, this image will be your profile photo. Otherwise, your photo will

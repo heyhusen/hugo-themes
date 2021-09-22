@@ -1,6 +1,7 @@
 ---
 title: "Taxonomies"
 description: "How to structure content using user defined groups."
+weight: 2
 date: 2021-09-02T10:10:44+07:00
 ---
 
@@ -36,7 +37,7 @@ For a more detailed explanation of breadcrumbs, you can read the
 [documentation]({{< relref "work/hugo-themes/nyerat/docs/basics.md#breadcrumb" >}}).
 
 > Every article must have a category. By default, each new article will be
-> assigned an "uncategorized" category.
+> assigned an "Uncategorized" category.
 
 ## Tag
 
