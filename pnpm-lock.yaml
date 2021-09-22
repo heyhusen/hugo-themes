@@ -7,7 +7,7 @@ specifiers:
   '@tailwindcss/line-clamp': 0.2.1
   '@tailwindcss/typography': 0.4.1
   autoprefixer: 10.3.5
-  browserslist: 4.17.0
+  browserslist: 4.17.1
   cssnano: 5.0.8
   eslint: 7.32.0
   eslint-config-airbnb-base: 14.2.1
@@ -38,7 +38,7 @@ devDependencies:
   '@tailwindcss/line-clamp': 0.2.1_tailwindcss@2.2.15
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.15
   autoprefixer: 10.3.5_postcss@8.3.6
-  browserslist: 4.17.0
+  browserslist: 4.17.1
   cssnano: 5.0.8_postcss@8.3.6
   eslint: 7.32.0
   eslint-config-airbnb-base: 14.2.1_b7a4de75e7d0094cbe979e30a9a325ab
