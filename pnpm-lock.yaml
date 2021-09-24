@@ -26,7 +26,7 @@ specifiers:
   prettier-plugin-tailwind: 2.2.12
   react: 17.0.2
   react-dom: 17.0.2
-  sort-package-json: 1.51.0
+  sort-package-json: 1.52.0
   tailwindcss: 2.2.15
   tailwindcss-interaction-variants: 5.0.0
   tailwindcss-pseudo-elements: 2.0.0
@@ -57,7 +57,7 @@ devDependencies:
   prettier-plugin-tailwind: 2.2.12_af364f6abbef45b3cc3e0447f20847d5
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  sort-package-json: 1.51.0
+  sort-package-json: 1.52.0
   tailwindcss: 2.2.15_dd4850c39760d2665af3f9e21d00faf4
   tailwindcss-interaction-variants: 5.0.0
   tailwindcss-pseudo-elements: 2.0.0_tailwindcss@2.2.15
@@ -6980,8 +6980,8 @@ packages:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
     dev: true
 
-  /sort-package-json/1.51.0:
-    resolution: {integrity: sha512-+92YlWIDj2nlE4lbO2UPDwU3xEt9sKsk7mV7bOO6GjdEzBPC+i55U5lbyqotVQsUDM2qIwfD6b2sORdwb13iwg==}
+  /sort-package-json/1.52.0:
+    resolution: {integrity: sha512-TsKDXgH3kPsaSrjAszQgg+n2/FDYdPrBrXD4YxMxExpogsi8LCek0YzK/jZ70i5Gi53WcpV+mVzvb5CHB5LpZw==}
     hasBin: true
     dependencies:
       detect-indent: 6.1.0
