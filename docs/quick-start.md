@@ -1,68 +1,55 @@
 ---
-title: "Quick start"
-description: "The fastest way to be able to use Nyerat."
+title: "Quick Start"
+description: "The fastest way to be able to use Nyerat for your existing site."
+weight: 1
 date: 2021-08-22T22:00:00+07:00
 ---
 
-## Start project
+## Start your site
 
-1. Install with git submodule.
-
-   ```bash
-   git submodule add -b v1 https://github.com/datakrama/nyerat-hugo-theme.git themes/nyerat
-   ```
-
-2. Add `config.yaml` file and fill with content bellow.
-
-   ```yaml
-   # config.yaml
-   title: "My blog"
-   baseurl: "https://example.com/"
-   paginate: 8
-   params:
-     description: "Just another blog site."
-     logo:
-       header: false
-       footer: false
-   permalinks:
-     post: /:year/:month/:day/:slug/
-   rssLimit: 100
-   sectionPagesMenu: "main"
-   summaryLength: 25
-   taxonomies:
-     category: category
-     tag: tags
-     author: authors
-   theme: "nyerat"
-   timeout: 100000
-   ```
-
-3. Copy `package.json` file from `themes/nyerat` folder.
+1. Initialize a new module.
 
    ```bash
-   cp themes/nyerat/exampleSite/package.json ./
+   hugo mod init github.com/username/first-nyerat-site
    ```
 
-4. Install node dependencies with `pnpm`.
+   You can skip this step if you've done it before.
+
+2. Create a `config/_default` folder and fill it with the contents in the
+   [starter template](https://github.com/datakrama/nyerat-hugo-theme-starter/tree/main/config/_default).
+   Once you've done that, your folder structure should look like this.
 
    ```bash
-   pnpm install
+    config/
+    └── _default
+        ├── author.yaml
+        ├── config.yaml
+        └── menu.yaml
    ```
 
-5. Start development server.
+   If you have a previous configuration file or folder, you must match the new
+   configuration with the old one. After that, you can delete the old one.
+
+3. Install Nyerat theme with Hugo module.
 
    ```bash
-   pnpm dev
+    hugo mod get -u
+   ```
+
+4. Start development server.
+
+   ```bash
+   hugo server
    ```
 
    Hugo will now start serving your application on <http://localhost:1313>. You
    can start make changes now.
 
-## Build project
+## Build site
 
 Once you done with your changes, or just want to know the final build, you can
 run this command.
 
 ```bash
-pnpm build
+hugo
 ```
