@@ -10,7 +10,6 @@ authors:
 date: 2021-08-08T21:17:23+07:00
 draft: false
 ---
-
 ## Haec quae sic et dignus volanti pomi
 
 Lorem markdownum nunc scilicet nomina foedumque dumque, voti in fluvios. An
@@ -21,7 +20,7 @@ Meminit malignas torvo si prope trabibus invictumque ablati leones, fugiunt sit
 numen subdita finitque. Sic plausis fecit fruticumque infans arces pereat
 quibus, ut! Quae Parosque a partim caelo consequitur odit deus Iunonem videri?
 
-![Primo Fuit Non Genus Guttis](https://source.unsplash.com/8o4W9LZv6eo/1200x630)
+{{< image src="https://source.unsplash.com/8o4W9LZv6eo/1200x630" alt="Primo Fuit Non Genus Guttis" caption="Photo by [Dikaseva](https://unsplash.com/photos/8o4W9LZv6eo) on [Unsplash](https://unsplash.com)" >}}
 
 ## Praesens tum
 

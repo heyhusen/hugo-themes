@@ -1,8 +1,8 @@
 ---
-title: "Nata Dicere Et Illis Voluere Si Linguae"
+title: Nata Dicere Et Illis Voluere Si Linguae
 description: ""
 image: ""
-category: "Golang"
+category: Golang
 tags:
   - Fast
   - Compiled
@@ -11,14 +11,13 @@ authors:
 date: 2021-08-07T18:12:33+07:00
 draft: false
 ---
-
 ## Patris audierit
 
 Lorem markdownum quis nubifer nigrae, per lucis urit; haerent tua latere.
 Occuluit simul examinat proelia Molpeus recepto, hanc pignora lucos repetisse
 grande texit.
 
-![Nata Dicere Et Illis Voluere Si Linguae](/img/harry-kessell-eE2trMn-6a0-unsplash.jpg)
+{{< image src="/img/harry-kessell-eE2trMn-6a0-unsplash.jpg" alt="Nata Dicere Et Illis Voluere Si Linguae" caption="Photo by [Harry Kessell](https://unsplash.com/photos/eE2trMn-6a0) on [Unsplash](https://unsplash.com)" >}}
 
 ## Hortatibus componit ungues
 

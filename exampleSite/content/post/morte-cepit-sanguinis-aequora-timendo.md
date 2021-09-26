@@ -1,8 +1,8 @@
 ---
-title: "Morte Cepit Sanguinis Aequora Timendo"
+title: Morte Cepit Sanguinis Aequora Timendo
 description: ""
 image: ""
-category: "SSG"
+category: SSG
 tags:
   - Hugo
 authors:
@@ -10,14 +10,13 @@ authors:
 date: 2021-08-08T21:18:58+07:00
 draft: false
 ---
-
 ## Putares in admota utque crinibus
 
 Lorem markdownum velamina somno manu tibi Taygetenque Cynthia caput et proxima
 animos nondum in quae sponte cornua Laomedonque! Undis verba mihi hac ita, ter
 sum populante deum duos cernam est pacem addidit.
 
-![Morte Cepit Sanguinis Aequora Timendo](/img/sebastian-staines-Jk4b7zztsek-unsplash.jpg)
+{{< image src="/img/sebastian-staines-Jk4b7zztsek-unsplash.jpg" alt="Morte Cepit Sanguinis Aequora Timendo" caption="Photo by [Sebastian Staines](https://unsplash.com/photos/Jk4b7zztsek) on [Unsplash](https://unsplash.com)" >}}
 
 ## Pectora forma pereat Luna Caeneus felicia
 

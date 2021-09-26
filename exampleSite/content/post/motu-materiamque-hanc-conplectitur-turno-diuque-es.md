@@ -1,8 +1,8 @@
 ---
-title: "Motu Materiamque Hanc Conplectitur Turno Diuque Es"
+title: Motu Materiamque Hanc Conplectitur Turno Diuque Es
 description: ""
 image: ""
-category: "Tips"
+category: Tips
 tags:
   - SEO
 authors:
@@ -10,7 +10,6 @@ authors:
 date: 2021-08-08T21:14:33+07:00
 draft: false
 ---
-
 ## Solvere cum vota erubuisse quam iurgia dracones
 
 Lorem markdownum, ego vera alto, nomina pulcherrime rogantem posuit poenaque ex
@@ -18,7 +17,7 @@ datus. Tua ramisque dextra roseum, curvos ille munera ante sacros. Sperneret
 enim luebat trunci; longi remos tinctam est levati amisit. Dracones nobis
 sponda.
 
-![Motu Materiamque Hanc Conplectitur Turno Diuque Es](/img/lrns-niwvqOEYZQ8-unsplash.jpg)
+{{< image src="/img/lrns-niwvqOEYZQ8-unsplash.jpg" alt="Motu Materiamque Hanc Conplectitur Turno Diuque Es" caption="Photo by [Lrns](https://unsplash.com/photos/niwvqOEYZQ8) on [Unsplash](https://unsplash.com)" >}}
 
 ## Esse corpus rapite
 
