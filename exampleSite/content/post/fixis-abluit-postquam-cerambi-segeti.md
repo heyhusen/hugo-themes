@@ -1,8 +1,8 @@
 ---
-title: "Fixis Abluit Postquam Cerambi Segeti"
+title: Fixis Abluit Postquam Cerambi Segeti
 description: ""
 image: ""
-category: "Theme"
+category: Theme
 tags:
   - Responsive
   - Minimal
@@ -12,7 +12,6 @@ authors:
 date: 2021-08-08T21:03:19+07:00
 draft: false
 ---
-
 ## Nec solis
 
 Lorem markdownum certam simplex est amnis hanc? Ter adhuc patet. In nam est
@@ -23,7 +22,7 @@ vitam non manibus.
 Femori credi gradu colebat: subigebant corpore meum inrita fertur. Trepidantem
 equos successisse sola regebat.
 
-![Fixis Abluit Postquam Cerambi Segeti](/img/filippo-cesarini-Ln0faF8O5E8-unsplash.jpg)
+{{< image src="/img/alfiano-sutianto-ujffgumkeai-unsplash.jpg" alt="" caption="Photo by [Alfiano Sutianto](https://unsplash.com/photos/UjFFguMKeaI) on [Unsplash](https://unsplash.com)" >}}
 
 ## Que deus
 

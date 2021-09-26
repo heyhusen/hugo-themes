@@ -1,8 +1,8 @@
 ---
-title: "Eripe Sed Ripas Britannos Mille Est Clausam"
+title: Eripe Sed Ripas Britannos Mille Est Clausam
 description: ""
 image: ""
-category: "Jamstack"
+category: Jamstack
 tags:
   - Hugo
 authors:
@@ -11,7 +11,6 @@ authors:
 date: 2021-08-08T21:10:03+07:00
 draft: false
 ---
-
 ## Utile cruentatis probat contigerant suspiria longius quae
 
 Lorem markdownum satos. Enim figura aderant insula. Hunc magnum inrita, cava
@@ -24,7 +23,7 @@ proles Etruscam anili ait cedere, levibus, nostri Talia timidi in magica
 Mulciber. Expalluit reddant partem cognataque antiquum, illa saltus: sum tangunt
 penna aequora patuit usus laudem, non mollia.
 
-![Eripe Sed Ripas Britannos Mille Est Clausam](/img/jarrad-horne-c-UJQKs8fFU-unsplash.jpg)
+{{< image src="/img/jarrad-horne-c-UJQKs8fFU-unsplash.jpg" alt="Eripe Sed Ripas Britannos Mille Est Clausam" caption="Photo by [Jarrad Horne](https://unsplash.com/photos/c-UJQKs8fFU) on [Unsplash](https://unsplash.com)" >}}
 
 ## Puppimque Tritonidos illas ne petit haec ferebat
 

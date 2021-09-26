@@ -1,16 +1,15 @@
 ---
-draft: false
-authors:
-  - John Doe
 title: Terram Love Exhausta Moriturus in Tarda Nec
 description: ""
 image: ""
 category: Uncategorized
 tags:
   - A11ty
+authors:
+  - John Doe
 date: 2021-08-08T21:22:14+07:00
+draft: false
 ---
-
 ## Vestes herbis imagine est quoque
 
 Lorem markdownum carens propinquae manum; largoque Asiae est utque duxerat
@@ -18,7 +17,7 @@ carpitur furor. Requiram silicem vos tremescere quibus hac ergo, et arma.
 Tinctam vati arbore populusque dubitare, nostras. Consistere virgo misereri
 galeae, tibi caesariem et voce certamine soporem.
 
-![Terram Love Exhausta Moriturus in Tarda Nec](/img/thomas-ciszewski-VcpMPsf_Ex0-unsplash.jpg)
+{{< image src="/img/thomas-ciszewski-VcpMPsf_Ex0-unsplash.jpg" alt="Terram Love Exhausta Moriturus in Tarda Nec" caption="Photo by [Thomas Ciszewski](https://unsplash.com/photos/VcpMPsf_Ex0) on [Unsplash](https://unsplash.com/)" >}}
 
 In quae acres recanduit nebulas soror. Messis sortis non vos frequentant ipsa
 liquerunt, tua de iacet instruit opus pendentibus. Venit adimunt purpureis

@@ -1,8 +1,8 @@
 ---
-title: "Sorori Erat Aderat Omnem Fama Statuit"
+title: Sorori Erat Aderat Omnem Fama Statuit
 description: ""
 image: ""
-category: "HTML"
+category: HTML
 tags:
   - HTML5
 authors:
@@ -10,14 +10,13 @@ authors:
 date: 2021-08-08T21:20:45+07:00
 draft: false
 ---
-
 ## Postmodo quoque turbavere
 
 Lorem markdownum toto venturis papavera, et in abiit. In haud, est iustis, gruem
 et sanguis conexis, litoream tota? Scopulum dedit, aditus, Dixerat sit cumque
 placitas et quale nidos exsul semper per virgo notissima nam.
 
-![Sorori Erat Aderat Omnem Fama Statuit](/img/silas-baisch-9cdo9r9Fors-unsplash.jpg)
+{{< image src="/img/iswanto-arif-u0laovousau-unsplash.jpg" alt="Sorori Erat Aderat Omnem Fama Statuit" caption="Photo by [Iswanto Arif](https://unsplash.com/photos/u0lAovoUsaU) on [Unsplash](https://unsplash.com)" >}}
 
 ## Ex artus Gorgonis
 

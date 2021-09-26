@@ -72,7 +72,7 @@ CMS.init({
             label: 'Content',
             name: 'body',
             widget: 'markdown',
-            required: false,
+            editor_components: ['custom-image', 'code-block'],
           },
           {
             label: 'Publish Date',
@@ -121,6 +121,7 @@ CMS.init({
             label: 'Content',
             name: 'body',
             widget: 'markdown',
+            editor_components: ['custom-image', 'code-block'],
             required: false,
           },
           {
@@ -170,6 +171,7 @@ CMS.init({
             label: 'Content',
             name: 'body',
             widget: 'markdown',
+            editor_components: ['custom-image', 'code-block'],
             required: false,
           },
           {
@@ -220,6 +222,7 @@ CMS.init({
             label: 'Bio',
             name: 'body',
             widget: 'markdown',
+            editor_components: ['custom-image', 'code-block'],
             required: false,
           },
           {
@@ -313,6 +316,7 @@ CMS.init({
             label: 'Content',
             name: 'body',
             widget: 'markdown',
+            editor_components: ['custom-image', 'code-block'],
           },
           {
             label: 'Weight',
@@ -657,5 +661,47 @@ CMS.init({
     local_backend: params.hugoEnvironment === 'development',
     media_folder: `${params.hugoCmsPath}/assets/img`,
     public_folder: '/img',
+  },
+});
+
+CMS.registerEditorComponent({
+  id: 'custom-image',
+  label: 'Image',
+  fields: [
+    {
+      name: 'src',
+      label: 'SRC',
+      widget: 'image',
+      allow_multiple: false,
+    },
+    {
+      name: 'alt',
+      label: 'Alt Text',
+      widget: 'string',
+      default: '',
+    },
+    {
+      name: 'caption',
+      label: 'Caption',
+      widget: 'string',
+      hint: '**Basic markdown** supported.',
+      default: '',
+    },
+  ],
+  pattern: /{{< image src="([^"]*)"(\s(alt="([^"]*)"))?(\s(caption="(.*)"))? >}}/,
+  fromBlock: (match) => {
+    return {
+      src: match[1],
+      alt: match[4],
+      caption: match[7],
+    };
+  },
+  toBlock: ({ src, alt, caption }) => {
+    return `{{< image src="${src}" alt="${alt}" caption="${caption}" >}}`;
+  },
+  toPreview: ({ src, alt, caption }, getAsset, fields) => {
+    const imageField = fields?.find(f => f.get('widget') === 'image');
+    const image = getAsset(src, imageField);
+    return `<figure><img src=${image || ''} alt=${alt || ''}><figcaption>${caption || ''}</figcaption></figure>`;
   },
 });

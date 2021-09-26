@@ -1,8 +1,8 @@
 ---
-title: "Populos Aetate Iuvencae Et Tenues Sidera Quicquam"
+title: Populos Aetate Iuvencae Et Tenues Sidera Quicquam
 description: ""
 image: ""
-category: "Design"
+category: Design
 tags:
   - Figma
 authors:
@@ -10,7 +10,6 @@ authors:
 date: 2021-08-08T20:59:53+07:00
 draft: false
 ---
-
 ## Luces in e Somni cessasse mei pectore
 
 Lorem markdownum ingratum Lydas fera undas oculorum, Iphi mea insidiisque plura
@@ -19,7 +18,7 @@ Vicem quamquam figuras tantummodo pro ut abstulit vertice herbae roganti labor,
 pro, sentit multa tam inde spe. Tibi solitoque modo protinus cognita venit
 movimus quo.
 
-![Populos Aetate Iuvencae Et Tenues Sidera Quicquam](/img/denissa-devy-fU2Mus9qmN8-unsplash.jpg)
+{{< image src="/img/denissa-devy-fU2Mus9qmN8-unsplash.jpg" alt="Populos Aetate Iuvencae Et Tenues Sidera Quicquam" caption="Photo by [Denissa Devy](https://unsplash.com/photos/fU2Mus9qmN8) on [Unsplash](https://unsplash.com)" >}}
 
 ## Toto fretum mater munere
 
