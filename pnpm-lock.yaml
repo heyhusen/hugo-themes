@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@netlify/plugin-lighthouse': 2.1.2
   '@tailwindcss/aspect-ratio': 0.2.1
-  '@tailwindcss/forms': 0.3.3
+  '@tailwindcss/forms': 0.3.4
   '@tailwindcss/line-clamp': 0.2.1
   '@tailwindcss/typography': 0.4.1
   autoprefixer: 10.3.6
@@ -34,7 +34,7 @@ specifiers:
 devDependencies:
   '@netlify/plugin-lighthouse': 2.1.2
   '@tailwindcss/aspect-ratio': 0.2.1_tailwindcss@2.2.16
-  '@tailwindcss/forms': 0.3.3_tailwindcss@2.2.16
+  '@tailwindcss/forms': 0.3.4_tailwindcss@2.2.16
   '@tailwindcss/line-clamp': 0.2.1_tailwindcss@2.2.16
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.16
   autoprefixer: 10.3.6_postcss@8.3.7
@@ -433,8 +433,8 @@ packages:
       tailwindcss: 2.2.16_c0a02f83cbf6c5ef85da781c94baa978
     dev: true
 
-  /@tailwindcss/forms/0.3.3_tailwindcss@2.2.16:
-    resolution: {integrity: sha512-U8Fi/gq4mSuaLyLtFISwuDYzPB73YzgozjxOIHsK6NXgg/IWD1FLaHbFlWmurAMyy98O+ao74ksdQefsquBV1Q==}
+  /@tailwindcss/forms/0.3.4_tailwindcss@2.2.16:
+    resolution: {integrity: sha512-vlAoBifNJUkagB+PAdW4aHMe4pKmSLroH398UPgIogBFc91D2VlHUxe4pjxQhiJl0Nfw53sHSJSQBSTQBZP3vA==}
     peerDependencies:
       tailwindcss: '>=2.0.0'
     dependencies:
