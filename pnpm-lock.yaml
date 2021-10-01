@@ -4,7 +4,7 @@ specifiers:
   '@netlify/plugin-lighthouse': 2.1.2
   '@tailwindcss/aspect-ratio': 0.2.1
   '@tailwindcss/forms': 0.3.4
-  '@tailwindcss/line-clamp': 0.2.1
+  '@tailwindcss/line-clamp': 0.2.2
   '@tailwindcss/typography': 0.4.1
   autoprefixer: 10.3.6
   browserslist: 4.17.2
@@ -35,7 +35,7 @@ devDependencies:
   '@netlify/plugin-lighthouse': 2.1.2
   '@tailwindcss/aspect-ratio': 0.2.1_tailwindcss@2.2.16
   '@tailwindcss/forms': 0.3.4_tailwindcss@2.2.16
-  '@tailwindcss/line-clamp': 0.2.1_tailwindcss@2.2.16
+  '@tailwindcss/line-clamp': 0.2.2_tailwindcss@2.2.16
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.16
   autoprefixer: 10.3.6_postcss@8.3.7
   browserslist: 4.17.2
@@ -442,10 +442,10 @@ packages:
       tailwindcss: 2.2.16_c0a02f83cbf6c5ef85da781c94baa978
     dev: true
 
-  /@tailwindcss/line-clamp/0.2.1_tailwindcss@2.2.16:
-    resolution: {integrity: sha512-Hq2KJY1+T2v7jw/mnT3mnC7CKbp5kj1XTqzSb2xbEt1j+JkxIR6N3ijsN/WevZtsKJfVE1KOejA/3IRKuhZEsQ==}
+  /@tailwindcss/line-clamp/0.2.2_tailwindcss@2.2.16:
+    resolution: {integrity: sha512-NgA4Ds+/eCiO+6O3SooRsfJ8m7M2+QvNvHwOjBQq7FIYoWwAV4I4Wu4fjHeuO9Yi6p47ceHUKEGGEBh0ozQodg==}
     peerDependencies:
-      tailwindcss: '>=2.0.0'
+      tailwindcss: '>=2.0.0 || >=3.0.0-alpha.1'
     dependencies:
       tailwindcss: 2.2.16_c0a02f83cbf6c5ef85da781c94baa978
     dev: true
