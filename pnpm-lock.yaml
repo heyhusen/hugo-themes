@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@netlify/plugin-lighthouse': 2.1.2
-  '@tailwindcss/aspect-ratio': 0.2.1
+  '@tailwindcss/aspect-ratio': 0.2.2
   '@tailwindcss/forms': 0.3.4
   '@tailwindcss/line-clamp': 0.2.2
   '@tailwindcss/typography': 0.4.1
@@ -33,7 +33,7 @@ specifiers:
 
 devDependencies:
   '@netlify/plugin-lighthouse': 2.1.2
-  '@tailwindcss/aspect-ratio': 0.2.1_tailwindcss@2.2.16
+  '@tailwindcss/aspect-ratio': 0.2.2_tailwindcss@2.2.16
   '@tailwindcss/forms': 0.3.4_tailwindcss@2.2.16
   '@tailwindcss/line-clamp': 0.2.2_tailwindcss@2.2.16
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.16
@@ -425,10 +425,10 @@ packages:
       defer-to-connect: 1.1.3
     dev: true
 
-  /@tailwindcss/aspect-ratio/0.2.1_tailwindcss@2.2.16:
-    resolution: {integrity: sha512-aDFi80aHQ3JM3symJ5iKU70lm151ugIGFCI0yRZGpyjgQSDS+Fbe93QwypC1tCEllQE8p0S7TUu20ih1b9IKLA==}
+  /@tailwindcss/aspect-ratio/0.2.2_tailwindcss@2.2.16:
+    resolution: {integrity: sha512-yjvYH1qKQapYUVz0rCRAQ29KlKuiDsWJF/0d24lpTPWtTKBimcKWHiAMjZOILbnRd25PogILsbOyFFVOjFd6Ow==}
     peerDependencies:
-      tailwindcss: '>=2.0.0'
+      tailwindcss: '>=2.0.0 || >=3.0.0-alpha.1'
     dependencies:
       tailwindcss: 2.2.16_c0a02f83cbf6c5ef85da781c94baa978
     dev: true
