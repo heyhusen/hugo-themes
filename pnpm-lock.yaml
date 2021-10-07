@@ -14,7 +14,7 @@ specifiers:
   eslint-config-prettier: 8.3.0
   eslint-plugin-import: 2.24.2
   eslint-plugin-prettier: 4.0.0
-  netlify-cms-app: 2.15.46
+  netlify-cms-app: 2.15.47
   netlify-cms-proxy-server: 1.3.20
   netlify-identity-widget: 1.9.2
   netlify-plugin-hugo-cache-resources: 0.2.1
@@ -45,7 +45,7 @@ devDependencies:
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-import: 2.24.2_eslint@7.32.0
   eslint-plugin-prettier: 4.0.0_6e975bd57c7acf028c1a9ddbbf60c898
-  netlify-cms-app: 2.15.46_react-dom@17.0.2+react@17.0.2
+  netlify-cms-app: 2.15.47_react-dom@17.0.2+react@17.0.2
   netlify-cms-proxy-server: 1.3.20
   netlify-identity-widget: 1.9.2
   netlify-plugin-hugo-cache-resources: 0.2.1
@@ -4053,8 +4053,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /netlify-cms-app/2.15.46_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-8hm2YXnYXLrVpyJcwQY7oxUDtiAVn0uqJLQ5iqpqHkQB+nFPXyulwrXELLUACDrAaBGqsanmbDkWXYptQ6qkFQ==}
+  /netlify-cms-app/2.15.47_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-U4PP5phcRGekuXmlGqv2VBHcLTCc4E/qfy3+tzlkNyRkML1z3M33BoDu/zuwklEJXsdN0QUWm46nkeOs7/aMMg==}
     peerDependencies:
       react: ^16.8.4 || ^17.0.0
       react-dom: ^16.8.4 || ^17.0.0
@@ -4077,7 +4077,7 @@ packages:
       netlify-cms-lib-auth: 2.4.2_ea5d8dc135e87eba1ed6f16b6755d853
       netlify-cms-lib-util: 2.13.3_immutable@3.8.2+lodash@4.17.21
       netlify-cms-lib-widgets: 1.6.3_3fd50221eff6943b492bc4592dea595d
-      netlify-cms-locales: 1.35.1
+      netlify-cms-locales: 1.36.0
       netlify-cms-ui-default: 2.15.2_dbf736fd99146a66dc70e5c7cdf7a33e
       netlify-cms-widget-boolean: 2.4.1_7ae3957a15421cfaa6615d5db9034529
       netlify-cms-widget-code: 1.3.3_76f91d5c90348ba226d396d0b2d4599d
@@ -4417,8 +4417,8 @@ packages:
       moment: 2.29.1
     dev: true
 
-  /netlify-cms-locales/1.35.1:
-    resolution: {integrity: sha512-qhjeS2eNYBgh/F2p2fCwyYsuAw0u1IogOpVIP9WV8+Xx73ydxeuiX5YWY0qUG2Ba6LffzNkIiRl7IPvdLqffmg==}
+  /netlify-cms-locales/1.36.0:
+    resolution: {integrity: sha512-XJ0KNGpg9BT/Qgm8UhghQdEK5/S07IkeJ9/h8w6x3bQpQj3O3k+aA2Tb8rCMzNQeBo81MWjufdtZNLeUsL8cSw==}
     dev: true
 
   /netlify-cms-proxy-server/1.3.20:
