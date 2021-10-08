@@ -14,7 +14,7 @@ specifiers:
   eslint-config-prettier: 8.3.0
   eslint-plugin-import: 2.24.2
   eslint-plugin-prettier: 4.0.0
-  netlify-cms-app: 2.15.48
+  netlify-cms-app: 2.15.49
   netlify-cms-proxy-server: 1.3.20
   netlify-identity-widget: 1.9.2
   netlify-plugin-hugo-cache-resources: 0.2.1
@@ -45,7 +45,7 @@ devDependencies:
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-import: 2.24.2_eslint@7.32.0
   eslint-plugin-prettier: 4.0.0_6e975bd57c7acf028c1a9ddbbf60c898
-  netlify-cms-app: 2.15.48_react-dom@17.0.2+react@17.0.2
+  netlify-cms-app: 2.15.49_react-dom@17.0.2+react@17.0.2
   netlify-cms-proxy-server: 1.3.20
   netlify-identity-widget: 1.9.2
   netlify-plugin-hugo-cache-resources: 0.2.1
@@ -4053,8 +4053,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /netlify-cms-app/2.15.48_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-pU7186RBuQ0mO66YXmW+MQonqVkxcY3dCrfA726kCTtj+6TtV9fLQsH8Gwu5La+YNAjCpNDjTP4lSvyGpXlwXA==}
+  /netlify-cms-app/2.15.49_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-uRNGqW7RYRmX05EcFr0yh33i9OSozaosKFffdK4OtO+1Aku3H9SVAGr+Vhp+/MVkToTyAw3RcuRrhPT6ThYw/Q==}
     peerDependencies:
       react: ^16.8.4 || ^17.0.0
       react-dom: ^16.8.4 || ^17.0.0
@@ -4072,7 +4072,7 @@ packages:
       netlify-cms-backend-gitlab: 2.11.4_475c98302eb357d4c147d4a80c0da72a
       netlify-cms-backend-proxy: 1.2.3_62938ade86c5f637f515061711c1868c
       netlify-cms-backend-test: 2.11.3_1a5f65c666092daa501eaed7bfbb81bd
-      netlify-cms-core: 2.51.0_a659ee8d22f56c8b729ad3664f7bd2b7
+      netlify-cms-core: 2.51.1_a659ee8d22f56c8b729ad3664f7bd2b7
       netlify-cms-editor-component-image: 2.7.0_react@17.0.2
       netlify-cms-lib-auth: 2.4.2_ea5d8dc135e87eba1ed6f16b6755d853
       netlify-cms-lib-util: 2.13.3_immutable@3.8.2+lodash@4.17.21
@@ -4292,8 +4292,8 @@ packages:
       uuid: 3.3.2
     dev: true
 
-  /netlify-cms-core/2.51.0_a659ee8d22f56c8b729ad3664f7bd2b7:
-    resolution: {integrity: sha512-1qDU+pvp8Cf1ByM03CPzwfo1BvrxoI8UnYF5LRV6Y3k7UsGj+6jnSBY5xCiElNi1xAAyey1B23TWOPK6brnGGA==}
+  /netlify-cms-core/2.51.1_a659ee8d22f56c8b729ad3664f7bd2b7:
+    resolution: {integrity: sha512-UteLoZCMugWE9qc2soKUffnJMf8CwRxo65Kn/cYTjwfCsWtoLiB5XcfNzMjPm/LfTX1WCLN4MmAotI072nKX/g==}
     peerDependencies:
       '@emotion/core': ^10.0.35
       '@emotion/styled': ^10.0.27
