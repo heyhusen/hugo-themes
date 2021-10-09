@@ -1,7 +1,5 @@
 # Nyerat theme for Hugo
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/datakrama/hugo-themes/Nyerat?color=1fab89&label=CI&style=flat-square)](https://github.com/datakrama/hugo-themes/actions/workflows/nyerat.yml) [![Netlify](https://img.shields.io/netlify/e8eb2404-8332-425e-8f68-977232ec552e?color=1fab89&style=flat-square)](https://nyerat.datakrama.com) [![GitHub issues by-label](https://img.shields.io/github/issues/datakrama/hugo-themes/nyerat?color=1fab89&style=flat-square)](https://github.com/datakrama/hugo-themes/labels/nyerat) [![GitHub](https://img.shields.io/github/license/datakrama/hugo-themes?color=1fab89&style=flat-square)](https://github.com/datakrama/hugo-themes/blob/main/LICENSE)
-
 ![Screenshot](https://github.com/datakrama/hugo-themes/raw/main/themes/nyerat/cover.png)
 
 Nyerat is fast, clean, & simple blog theme for Hugo. Nyerat has a purpose to
