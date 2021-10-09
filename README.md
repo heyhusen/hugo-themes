@@ -44,8 +44,3 @@ the benefit of others too?
 
 You can read the full documentation at
 <https://datakrama.com/work/hugo-themes/nyerat/docs>.
-
-## Development
-
-<https://github.com/datakrama/nyerat-hugo-theme> repository is just subtree split of
-<https://github.com/datakrama/hugo-themes>. All developments will be there.
