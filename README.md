@@ -1,6 +1,6 @@
 # Nyerat theme for Hugo
 
-![Screenshot](https://github.com/datakrama/hugo-themes/raw/main/themes/nyerat/cover.png)
+![Screenshot](https://github.com/datakrama/nyerat-hugo-theme/raw/main/images/screenshot.png)
 
 Nyerat is fast, clean, & simple blog theme for Hugo. Nyerat has a purpose to
 make your blog readers comfortable.  
