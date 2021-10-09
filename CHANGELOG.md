@@ -5,7 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [Unreleased]## [Unreleased]
+
+## [0.4.1] - 2021-10-09
+
+### Fixed
+
+- Remove badges from README.md
+- Change images media
+
+### Changed
+
+- Remove from monorepo
 
 ## [0.4.0] - 2021-09-27
 
@@ -71,7 +82,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initialize project
 
-[Unreleased]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.4.0...HEAD
+[Unreleased]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.4.1...HEAD
+[0.4.1]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.4.0...nyerat@v0.4.1
 [0.4.0]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.3.0...nyerat@v0.4.0
 [0.3.0]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.2.4...nyerat@v0.3.0
 [0.2.4]: https://github.com/datakrama/hugo-themes/compare/nyerat@v0.2.3...nyerat@v0.2.4
