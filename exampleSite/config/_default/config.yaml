@@ -18,7 +18,7 @@ markup:
 permalinks:
   post: /:year/:month/:day/:slug/
 rssLimit: 100
-theme: nyerat
+theme: nyerat-hugo-theme
 minify:
   tdewolff:
     html:
