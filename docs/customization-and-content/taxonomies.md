@@ -34,7 +34,7 @@ sense if the category is singular, and the tags are plural.
 In addition, categories are also used in
 [breadcrumb navigation](https://en.wikipedia.org/wiki/Breadcrumb_navigation).
 For a more detailed explanation of breadcrumbs, you can read the
-[documentation]({{< relref "work/hugo-themes/nyerat/docs/basics.md#breadcrumb" >}}).
+[documentation]({{< relref "work/hugo-themes/nyerat/docs/basic-concepts/structured-data.md#breadcrumb" >}}).
 
 > Every article must have a category. By default, each new article will be
 > assigned an "Uncategorized" category.

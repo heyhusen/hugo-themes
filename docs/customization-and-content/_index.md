@@ -14,5 +14,5 @@ CMS can be accessed at <http://example.com/cms>.
 
 If you still want the Hugo CLI, and only want to use it to add content, you may
 want to
-[disable the Netlify CMS]({{< relref "/work/hugo-themes/nyerat/docs/basic-concepts/netlify-cms.md#disable-netlify-cms" >}})
+[disable the Netlify CMS]({{< relref "/work/hugo-themes/nyerat/docs/basic-concepts/netlify-integration.md#disable-netlify-cms" >}})
 from your site.

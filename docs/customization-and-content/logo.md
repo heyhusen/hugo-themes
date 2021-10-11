@@ -43,5 +43,5 @@ params:
 
 > Remember, images location is always relative to the `assets` folder.  
 > Read more about how
-> [image processing]({{< relref "/work/hugo-themes/nyerat/docs/basics.md#image" >}})
+> [image processing]({{< relref "/work/hugo-themes/nyerat/docs/basic-concepts/optimization.md#image" >}})
 > works in this theme.

@@ -27,7 +27,7 @@ for simplicity, this theme uses only a few of them.
 ### Description
 
 The description property behaves the same as
-[description in the content]({{< relref "/work/hugo-themes/nyerat/customization-and-content/adding-content.md#description" >}}).
+[description in the content]({{< relref "/work/hugo-themes/nyerat/docs/customization-and-content/adding-content.md#description" >}}).
 
 ### Type
 
@@ -47,7 +47,7 @@ related content. This theme only assigns this property to regular pages.
 ### Image
 
 The image property behaves the same as
-[thumbnail in the content]({{< relref "/work/hugo-themes/nyerat/customization-and-content/adding-content.md#thumbnail" >}}).
+[thumbnail in the content]({{< relref "/work/hugo-themes/nyerat/docs/customization-and-content/adding-content.md#thumbnail" >}}).
 
 The main reason why a thumbnail must be at least 1200x630 pixels is due to the
 need for Open Graph.

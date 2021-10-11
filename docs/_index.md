@@ -1,5 +1,5 @@
 ---
-title: "Nyerat Documentation"
+title: "Documentation"
 description: "Nyerat is fast, clean, & simple blog theme for Hugo."
 date: 2021-08-23T11:19:00+07:00
 ---
