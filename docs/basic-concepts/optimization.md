@@ -44,10 +44,6 @@ you want to embed a license for the image you are using.
 Just like using native syntax to display images, with the below shortcode you
 can also do the same.
 
-```go
-{{< image src="/img/image.jpg" alt="Your image alt attribute" caption="Photo by Jeremy Bishop on Unsplash" >}}
-```
-
 > Netlify CMS in this theme uses only the above shortcode to manage images in
 > content. So never use native syntax for images manually when you are using
 > this theme with CMS enabled.

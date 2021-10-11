@@ -10,7 +10,7 @@ folder to configure your site. Your site will still be configured with only one
 `config.yaml` file. However, if that happens, the Netlify CMS in this theme
 cannot be used.  
 For a complete guide, you can refer to the
-[Advance documentation]({{< relref "/work/hugo-themes/nyerat/docs/basic-concepts/netlify-cms.md#disable-netlify-cms" >}}).
+[Advance documentation]({{< relref "/work/hugo-themes/nyerat/docs/basic-concepts/netlify-integration.md#disable-netlify-cms" >}}).
 
 Below are some settings you can make for this theme. Not all settings are
 described here. For more complex configurations, you can see

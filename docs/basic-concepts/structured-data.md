@@ -11,17 +11,15 @@ help them by including structured data into our web pages.
 is a standardized format for providing information about a web pages.
 
 Most structured data uses the [schema.org](http://schema.org) vocabulary, in
-[Microdata](<http://en.wikipedia.org/wiki/Microdata_(HTML)>),
+[Microdata](http://en.wikipedia.org/wiki/Microdata_(HTML)),
 [JSON-LD](http://en.wikipedia.org/wiki/JSON-LD), or
-[RDFa](http://en.wikipedia.org/wiki/RDFa) formats.  
+[RDFa](http://en.wikipedia.org/wiki/RDFa) formats.
 Although Google recommends us to use the JSON-LD format, Nyerat will still use
 the Microdata format. As well as making more sense to use with Hugo,
 [schema.org](http://schema.org) also focuses its documentation on
 [using the Microdata](https://schema.org/docs/gs.html#microdata_why) format.
 
 ## Breadcrumb
-
-![How a breadcrumb look on Nyerat](images/thumbnail.png)
 
 [A breadcrumb](https://en.wikipedia.org/wiki/Breadcrumb_navigation) trail is a
 graphical control element that is often used as a navigation aid in user
@@ -31,7 +29,7 @@ engines also use these breadcrumbs in their search results.
 
 Nyerat displays breadcrumbs on all pages, except the front page.  
 Especially on article pages,
-[a categoriy]({{< relref "/work/hugo-themes/nyerat/docs/customization-and-content/taxonomies.md#category" >}})
+[a category]({{< relref "/work/hugo-themes/nyerat/docs/customization-and-content/taxonomies.md#category" >}})
 will also be displayed in the breadcrumb.  
 Since this theme does not support nested categories, each article
 can only use one category. If there is more than one,
