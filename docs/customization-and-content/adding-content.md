@@ -104,9 +104,9 @@ The following is the order of priority for an image to be used as thumbnail.
      image: "/img/my-awesome-image.png"
    ```
 
-4. [Default image](https://github.com/datakrama/hugo-themes/raw/main/themes/nyerat/assets/img/cover.png)
+4. [Default image](https://github.com/datakrama/nyerat-hugo-theme/raw/v1/assets/img/cover.png)
    provided by this theme.
-   ![Default image for thumbnail](https://github.com/datakrama/hugo-themes/raw/main/themes/nyerat/assets/img/cover.png)
+   ![Default image for thumbnail](https://github.com/datakrama/nyerat-hugo-theme/raw/v1/assets/img/cover.png)
 
 Thumbnails will only be displayed explicitly by Nyerat on the article listing
 page. However, each page can be assigned a thumbnail which can later be used for
