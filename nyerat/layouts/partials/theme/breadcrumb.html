@@ -1,0 +1,49 @@
+{{ if ne .IsHome true }}
+  {{ $breadcrumbs := slice (dict "name" "Home" "url" "/") }}
+  {{ if or .IsPage (eq .Kind "term") }}
+    {{ with $.Site.GetPage .Type -}}
+      {{ $breadcrumbs = $breadcrumbs | append (dict "name" .Title "url" .RelPermalink) }}
+    {{- end -}}
+  {{ end }}
+  {{ with .Params.category }}
+    {{ with $.Site.GetPage (print "/category/" .) -}}
+      {{ $breadcrumbs = $breadcrumbs | append (dict "name" $.Params.category "url" .RelPermalink) }}
+    {{- end -}}
+  {{ end }}
+  {{ $breadcrumbs = $breadcrumbs | append (dict "name" .Title "url" .RelPermalink) }}
+  {{ $breadcrumbCount := len $breadcrumbs }}
+
+
+  <nav
+    aria-label="Breadcrumb"
+    class="-mb-2 mt-6 mx-auto px-4 max-w-6xl text-lg sm:mt-8 sm:px-6 md:mt-10 md:px-8 lg:mt-12 lg:px-10 xl:-mb-4 xl:px-0"
+  >
+    <ol
+      itemscope
+      itemtype="https://schema.org/BreadcrumbList"
+      class="inline-block space-x-1"
+    >
+      {{ range $i, $breadcrumb := $breadcrumbs }}
+        <li
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          class="inline"
+        >
+          <a
+            itemprop="item"
+            href="{{ $breadcrumb.url }}"
+            {{ if eq (add $i 1) $breadcrumbCount }}aria-current="page"{{ end }}
+            class="{{ if lt (add $i 1) $breadcrumbCount }}text-red-600{{ end }}"
+          >
+            <span itemprop="name">{{ $breadcrumb.name }}</span>
+          </a>
+          <meta itemprop="position" content="{{ add $i 1 }}" />
+        </li>
+        {{ if lt (add $i 1) $breadcrumbCount }}
+          {{ partial "svgs/chevron-right-outline.svg" (dict "class" "h-4 w-4 text-gray-500 inline my-auto") }}
+        {{ end }}
+      {{ end }}
+    </ol>
+  </nav>
+{{ end }}

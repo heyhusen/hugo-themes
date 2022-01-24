@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Manager - {{ .Site.Title }}</title>
+  {{ $identityJs := resources.Get "js/netlify-identity.min.js" }}
+  {{ if ne (getenv "HUGO_THEME_ENVIRONMENT") "" }}
+    {{ $identityJs = resources.Get "js/netlify-identity.js" }}
+  {{ end }}
+  {{ $identityJs = $identityJs | js.Build }}
+  {{ if hugo.IsProduction }}
+    {{ $identityJs = $identityJs | minify }}
+    {{ if eq (getenv "HUGO_THEME_ENVIRONMENT") "" }}
+      {{ $identityJs = $identityJs | fingerprint }}
+    {{ end }}
+  {{ end }}
+  <script
+    src="{{ $identityJs.RelPermalink }}"
+    integrity="{{ $identityJs.Data.Integrity }}"
+    defer
+  ></script>
+</head>
+<body>
+    {{ $hugoCmsPath := "" }}
+    {{ if eq (getenv "HUGO_THEME_ENVIRONMENT") "development" }}
+      {{ $hugoCmsPath = "/exampleSite" }}
+    {{ else if eq (getenv "HUGO_THEME_ENVIRONMENT") "production" }}
+      {{ $hugoCmsPath = "/themes/nyerat/exampleSite" }}
+    {{ end }}
+
+    {{ $hugoMainAuthor := "" }}
+    {{ if ne (getenv "HUGO_THEME_ENVIRONMENT") "" }}
+      {{ with .Site.Author.name }}
+        {{ $hugoMainAuthor = . }}
+      {{ end }}
+    {{ end }}
+
+    {{ $cmsJsOptions := dict "hugoEnvironment" hugo.Environment }}
+    {{ $cmsJsOptions = merge $cmsJsOptions (dict "hugoChromaStyles" (partial "internal/chroma-styles.html" .)) }}
+    {{ $cmsJsOptions = merge $cmsJsOptions (dict "hugoCmsPath" $hugoCmsPath) }}
+    {{ $cmsJsOptions = merge $cmsJsOptions (dict "hugoMainAuthor" $hugoMainAuthor) }}
+
+    {{ $cmsJs := resources.Get "js/netlify-cms.min.js" }}
+    {{ if ne (getenv "HUGO_THEME_ENVIRONMENT") "" }}
+      {{ $cmsJs = resources.Get "js/netlify-cms.js" }}
+    {{ end }}
+    {{ $cmsJs = $cmsJs | js.Build (dict "params" $cmsJsOptions) }}
+    {{ if hugo.IsProduction }}
+      {{ $cmsJs = $cmsJs | minify }}
+      {{ if eq (getenv "HUGO_THEME_ENVIRONMENT") "" }}
+        {{ $cmsJs = $cmsJs | fingerprint }}
+      {{ end }}
+    {{ end }}
+    <script
+      src="{{ $cmsJs.RelPermalink }}"
+      integrity="{{ $cmsJs.Data.Integrity }}"
+      defer
+    ></script>
+</body>
+</html>

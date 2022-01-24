@@ -1,0 +1,17 @@
+{{ with .context }}
+  {{ with .Params.image }}
+    {{ partial "internal/image.html" (dict "src" . "alt" $.Title "class" $.class) }}
+  {{ else }}
+    {{- $thumbnail := index (findRE "<picture.*?>(.|\n)*?</picture>" .Content 1) 0 -}}
+    {{ with $thumbnail }}
+      {{- $thumbnail = replaceRE `<img` (print `<img class="` $.class `"`) $thumbnail -}}
+      {{ $thumbnail | safeHTML }}
+    {{ else }}
+      {{ with .Site.Params.image }}
+        {{ partial "internal/image.html" (dict "src" . "alt" $.Title "class" $.class) }}
+      {{ else }}
+        {{ partial "internal/image.html" (dict "src" "/img/cover.png" "alt" $.Title "class" $.class) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}

@@ -1,0 +1,61 @@
+<header
+  class="sticky z-20 -top-px px-4 py-2 text-gray-600 bg-white sm:-top-6 sm:pt-8 sm:px-6 md:-top-8 md:pt-10 md:px-8 lg:-top-10 lg:pt-12 lg:px-10 xl:px-0"
+>
+  <div class="flex items-center justify-between mx-auto py-1 max-w-6xl">
+    <button
+      type="button"
+      aria-haspopup="true"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+      class="inline-flex items-center justify-center -ml-1 p-0.5 hover:text-gray-900 hover:bg-gray-200 rounded sm:hidden"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        role="img"
+        aria-label="Open menu button"
+        aria-hidden="true"
+        class="block w-7 h-7"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h7"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        role="img"
+        aria-label="Close menu button"
+        aria-hidden="true"
+        class="hidden w-7 h-7"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+    <a
+      href="/"
+      class="inline-flex items-center text-red-600 font-cursive text-3xl space-x-1 lg:text-4xl"
+      aria-label="{{ .Site.Title }}"
+    >
+      {{ with .Site.Params.logo.header }}
+        {{ partial "internal/image.html" (dict "src" . "alt" $.Site.Title "limit" 320 "class" "h-9 sm:h-12 w-full hover:opacity-80 duration-200") }}
+      {{ else }}
+        {{- .Site.Title -}}
+      {{ end }}
+    </a>
+    {{- partial "header/site-navigation.html" . -}}
+  </div>
+</header>

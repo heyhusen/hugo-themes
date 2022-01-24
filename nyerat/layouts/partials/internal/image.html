@@ -1,0 +1,55 @@
+<figure>
+  {{ if hasPrefix .src "http" }}
+    <picture>
+      <img
+        src="{{ .src }}"
+        alt="{{ .alt }}"
+        loading="lazy"
+        {{ with .class }}class="{{ . }}"{{ end }}
+      />
+    </picture>
+  {{ else }}
+    {{- $original := resources.Get .src -}}
+    {{ $converts := slice (dict "type" "image/webp" "format" "webp") (dict "type" "image/jpeg" "format" "jpg") }}
+    {{ $sizes := slice 128 240 320 375 425 640 768 1024 1280 1536 }}
+    {{ $originalExtension := index (split (path.Ext $original) ".") 1 }}
+    {{ $allowedExtension := slice "bmp" "jpeg" "jpg" "png" "tif" "webp" }}
+
+    {{ if and (ne .limit nil) (in $allowedExtension $originalExtension) }}
+      {{ $original = $original.Resize (print .limit "x") }}
+    {{ end }}
+
+
+    <picture>
+      {{ if in $allowedExtension $originalExtension }}
+        {{ range $convert := $converts }}
+          {{ $resized := slice }}
+          {{ range $size := $sizes }}
+            {{ if le $size $original.Width }}
+              {{ $converted := $original.Resize (print $size "x" " " $convert.format) }}
+              {{ $resized = $resized | append (print $converted.RelPermalink " " $size "w") }}
+            {{ end }}
+          {{ end }}
+          <source
+            sizes="(min-width: 640px) 50vw, 100vw"
+            srcset="{{ delimit $resized ", " }}"
+            type="{{ $convert.type }}"
+          />
+        {{ end }}
+      {{ end }}
+      <img
+        src="{{ $original.RelPermalink | safeURL }}"
+        alt="{{ .alt }}"
+        width="{{ $original.Width }}"
+        height="{{ $original.Height }}"
+        loading="lazy"
+        {{ with .class }}class="{{ . }}"{{ end }}
+      />
+    </picture>
+  {{ end }}
+  {{ with .caption }}
+    <figcaption class="text-center">
+      <small>{{- . | site.Home.RenderString -}}</small>
+    </figcaption>
+  {{ end }}
+</figure>
