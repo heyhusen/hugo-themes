@@ -1,10 +1,11 @@
 [build]
   publish = "exampleSite/public/"
-  command = "npm run build"
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npm run build"
 
 [build.environment]
   HUGO_VERSION = "0.92.0"
   HUGO_THEME = "nyerat"
+  NPM_FLAGS = "--version" # prevent Netlify npm install
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
