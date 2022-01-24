@@ -55,7 +55,7 @@ jobs:
       - name: Cache Hugo
         uses: actions/cache@v2
         with:
-          path: resources
+          path: ${{ env.FOLDER }}/resources
           key: ${{ runner.os }}-nyerat-${{ steps.get-date.outputs.date }}
           restore-keys: |
             ${{ runner.os }}-nyerat-
