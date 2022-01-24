@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@tailwindcss/aspect-ratio': 0.3.0
+  '@tailwindcss/aspect-ratio': 0.4.0
   '@tailwindcss/forms': 0.3.4
   '@tailwindcss/line-clamp': 0.2.2
   '@tailwindcss/typography': 0.4.1
@@ -22,7 +22,7 @@ specifiers:
   tailwindcss-pseudo-elements: 2.0.0
 
 devDependencies:
-  '@tailwindcss/aspect-ratio': 0.3.0_tailwindcss@2.2.19
+  '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@2.2.19
   '@tailwindcss/forms': 0.3.4_tailwindcss@2.2.19
   '@tailwindcss/line-clamp': 0.2.2_tailwindcss@2.2.19
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
@@ -375,10 +375,10 @@ packages:
     resolution: {integrity: sha512-Pc/AFTdwZwEKJxFJvlxrSmGe/di+aAOBn60sremrpLo6VI/6cmiUYNNwlI5KNYttg7uypzA3ILPMPgxB2GYZEg==}
     dev: true
 
-  /@tailwindcss/aspect-ratio/0.3.0_tailwindcss@2.2.19:
-    resolution: {integrity: sha512-DMgWskNJR6FNPLbQ8Xoq/PKV/9DfNKh5dvKB+SM8x7lVl4+pnxlZ3Ns4+yGmurA/ze708HrnCG1tXk85HolJmw==}
+  /@tailwindcss/aspect-ratio/0.4.0_tailwindcss@2.2.19:
+    resolution: {integrity: sha512-WJu0I4PpqNPuutpaA9zDUq2JXR+lorZ7PbLcKNLmb6GL9/HLfC7w3CRsMhJF4BbYd/lkY6CfXOvkYpuGnZfkpQ==}
     peerDependencies:
-      tailwindcss: '>=2.0.0 || >=3.0.0-alpha.1'
+      tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
       tailwindcss: 2.2.19_96f83969316717847b3edf58a3f353f3
     dev: true
