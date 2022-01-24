@@ -16,7 +16,7 @@ specifiers:
   postcss-cli: 9.0.1
   react: 17.0.2
   react-dom: 17.0.2
-  sort-package-json: 1.52.0
+  sort-package-json: 1.53.1
   tailwindcss: 2.2.19
   tailwindcss-interaction-variants: 5.0.0
   tailwindcss-pseudo-elements: 2.0.0
@@ -37,7 +37,7 @@ devDependencies:
   postcss-cli: 9.0.1_postcss@8.3.9
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  sort-package-json: 1.52.0
+  sort-package-json: 1.53.1
   tailwindcss: 2.2.19_3118c3c69f16f0f71a725d98864397ae
   tailwindcss-interaction-variants: 5.0.0
   tailwindcss-pseudo-elements: 2.0.0_tailwindcss@2.2.19
@@ -5784,8 +5784,8 @@ packages:
       sort-desc: 0.1.1
     dev: true
 
-  /sort-package-json/1.52.0:
-    resolution: {integrity: sha512-TsKDXgH3kPsaSrjAszQgg+n2/FDYdPrBrXD4YxMxExpogsi8LCek0YzK/jZ70i5Gi53WcpV+mVzvb5CHB5LpZw==}
+  /sort-package-json/1.53.1:
+    resolution: {integrity: sha512-ltLORrQuuPMpy23YkWCA8fO7zBOxM4P1j9LcGxci4K2Fk8jmSyCA/ATU6CFyy8qR2HQRx4RBYWzoi78FU/Anuw==}
     hasBin: true
     dependencies:
       detect-indent: 6.1.0
