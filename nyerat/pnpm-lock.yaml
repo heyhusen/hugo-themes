@@ -13,7 +13,7 @@ specifiers:
   netlify-identity-widget: 1.9.2
   npm-run-all: 4.1.5
   postcss: 8.3.9
-  postcss-cli: 9.0.1
+  postcss-cli: 9.1.0
   react: 17.0.2
   react-dom: 17.0.2
   sort-package-json: 1.52.0
@@ -34,7 +34,7 @@ devDependencies:
   netlify-identity-widget: 1.9.2
   npm-run-all: 4.1.5
   postcss: 8.3.9
-  postcss-cli: 9.0.1_postcss@8.3.9
+  postcss-cli: 9.1.0_postcss@8.3.9
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   sort-package-json: 1.52.0
@@ -3138,10 +3138,6 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /nanocolors/0.2.11:
-    resolution: {integrity: sha512-83ttyvfJj66dKMadWfBkEUOEDFfRc8FpzTJvh1MySR/pzWFmFikTQZGOV6kHZRz7yR/heiQ1y/MHBBN5P/e7WQ==}
-    dev: true
-
   /nanoid/3.1.20:
     resolution: {integrity: sha512-a1cQNyczgKbLX9jwbS/+d7W8fX/RfgYR7lVWwWOGIPNgK2m0MWvrGF6/m4kk6U3QcFMnZf3RIhL0v2Jgh/0Uxw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -4258,8 +4254,8 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-cli/9.0.1_postcss@8.3.9:
-    resolution: {integrity: sha512-zO160OBaAZBFUWO+QZIzEKMjnPIc5c61dMg1d7xafblh9cxbNb6s16ahJuP91PcVsu//gqr7BKllJxRiRDsSYw==}
+  /postcss-cli/9.1.0_postcss@8.3.9:
+    resolution: {integrity: sha512-zvDN2ADbWfza42sAnj+O2uUWyL0eRL1V+6giM2vi4SqTR3gTYy8XzcpfwccayF2szcUif0HMmXiEaDv9iEhcpw==}
     engines: {node: '>=12'}
     hasBin: true
     peerDependencies:
@@ -4270,7 +4266,7 @@ packages:
       fs-extra: 10.0.0
       get-stdin: 9.0.0
       globby: 12.0.2
-      nanocolors: 0.2.11
+      picocolors: 1.0.0
       postcss: 8.3.9
       postcss-load-config: 3.1.0
       postcss-reporter: 7.0.2_postcss@8.3.9
