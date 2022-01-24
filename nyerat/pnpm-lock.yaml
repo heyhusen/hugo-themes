@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@tailwindcss/aspect-ratio': 0.4.0
-  '@tailwindcss/forms': 0.3.4
+  '@tailwindcss/forms': 0.4.0
   '@tailwindcss/line-clamp': 0.2.2
   '@tailwindcss/typography': 0.4.1
   autoprefixer: 10.4.2
@@ -23,7 +23,7 @@ specifiers:
 
 devDependencies:
   '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@2.2.19
-  '@tailwindcss/forms': 0.3.4_tailwindcss@2.2.19
+  '@tailwindcss/forms': 0.4.0_tailwindcss@2.2.19
   '@tailwindcss/line-clamp': 0.2.2_tailwindcss@2.2.19
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
   autoprefixer: 10.4.2_postcss@8.3.9
@@ -383,10 +383,10 @@ packages:
       tailwindcss: 2.2.19_3118c3c69f16f0f71a725d98864397ae
     dev: true
 
-  /@tailwindcss/forms/0.3.4_tailwindcss@2.2.19:
-    resolution: {integrity: sha512-vlAoBifNJUkagB+PAdW4aHMe4pKmSLroH398UPgIogBFc91D2VlHUxe4pjxQhiJl0Nfw53sHSJSQBSTQBZP3vA==}
+  /@tailwindcss/forms/0.4.0_tailwindcss@2.2.19:
+    resolution: {integrity: sha512-DeaQBx6EgEeuZPQACvC+mKneJsD8am1uiJugjgQK1+/Vt+Ai0GpFBC2T2fqnUad71WgOxyrZPE6BG1VaI6YqfQ==}
     peerDependencies:
-      tailwindcss: '>=2.0.0'
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.3.3
       tailwindcss: 2.2.19_3118c3c69f16f0f71a725d98864397ae
