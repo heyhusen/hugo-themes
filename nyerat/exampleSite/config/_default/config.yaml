@@ -1,0 +1,36 @@
+timeout: 100000
+enableRobotsTXT: true
+languageCode: en-US
+params:
+  description: Fast, simple & clean blog theme for Hugo.
+  favicon:
+    ico: favicon.ico
+    png: favicon-32x32.png
+    svg: favicon.svg
+  image: /img/cover.png
+  logo:
+    header: /img/logo-optimized.png
+    footer: /img/logo-optimized-dark.png
+  staticFormsAccessKey: 287e82ca-7803-4e3d-b5eb-d1a004d99c27
+markup:
+  highlight:
+    style: nord
+permalinks:
+  post: /:year/:month/:day/:slug/
+rssLimit: 100
+theme: nyerat
+minify:
+  tdewolff:
+    html:
+      keepQuotes: true
+      keepWhitespace: false
+summaryLength: 25
+taxonomies:
+  category: category
+  tag: tags
+  author: authors
+title: Nyerat
+baseURL: "/"
+sectionPagesMenu: main
+paginate: 8
+disqusShortname: ""

@@ -1,9 +1,0 @@
-{{ $description := .Site.Params.description }}
-{{ with .Params.description }}
-  {{ $description = . }}
-{{ else }}
-  {{ with .Summary }}
-    {{ $description = . }}
-  {{ end }}
-{{ end }}
-{{ return $description }}

@@ -1,0 +1,84 @@
+{{ define "main" }}
+  <article class="flex-1 space-y-4 sm:space-y-6 md:space-y-10">
+    <header
+      class="grid bg-gradient-to-tr rounded-lg from-red-200 to-red-50 overflow-hidden"
+    >
+      {{ with .Params.image }}
+        <div
+          class="aspect-w-16 aspect-h-8 col-span-full row-span-full mix-blend-overlay"
+        >
+          {{ partial "internal/image.html" (dict "src" . "class" "h-full w-full object-cover") }}
+        </div>
+      {{ end }}
+      <div
+        class="z-10 flex flex-col gap-4 col-span-full row-span-full justify-between p-4 md:p-6 xl:p-8"
+      >
+        <time
+          class="self-end px-1 py-0.5 text-sm bg-red-200 rounded sm:px-2 sm:py-1 md:text-base"
+        >
+          {{ .Date | time.Format ":date_long" }}
+        </time>
+        <div class="space-y-2 md:space-y-4">
+          <ul class="flex flex-wrap gap-2 text-sm">
+            {{ range (.GetTerms "tags") }}
+              <li
+                class="text-gray-100 bg-gray-700 hover:bg-red-600 rounded transition-colors duration-200"
+              >
+                <a
+                  href="{{ .Permalink }}"
+                  class="block px-1 py-0.5 sm:px-2 sm:py-1"
+                >
+                  {{ .LinkTitle }}
+                </a>
+              </li>
+            {{ end }}
+          </ul>
+          <h1 class="text-black text-3xl font-bold md:text-4xl lg:text-5xl">
+            {{ .Title }}
+          </h1>
+        </div>
+      </div>
+    </header>
+    <div class="flex flex-wrap gap-8">
+      {{ range (.GetTerms "authors") }}
+        <div class="flex gap-2 items-center">
+          {{ partial "author/avatar.html" (dict "context" . "class" "h-12 w-12 object-cover rounded-full") }}
+          <a href="{{ .RelPermalink }}" class="hover:underline">
+            {{- .Title -}}
+          </a>
+        </div>
+      {{ end }}
+    </div>
+    {{- partial "theme/content.html" . -}}
+
+    {{ if eq .Type "post" }}
+      {{ $related := .Site.RegularPages.RelatedIndices . "tags" | first 3 }}
+      {{ with $related }}
+        <section class="pt-4 border-t space-y-4 sm:pt-6 md:pt-10">
+          <h3 class="text-xl font-bold">See Also</h3>
+          <div class="grid gap-4 sm:grid-cols-3">
+            {{ range . }}
+              <article
+                class="border hover:shadow shadow-sm hover:transform hover:-translate-y-1 transition-transform duration-200"
+              >
+                <figure class="aspect-w-16 aspect-h-10">
+                  {{- partial "internal/thumbnail.html" (dict "context" . "class" "w-full h-full object-cover") -}}
+                </figure>
+                <div class="p-2 sm:p-3 xl:p-4">
+                  <a
+                    href="{{ .RelPermalink }}"
+                    class="hover:text-black hover:underline text-lg"
+                  >
+                    {{ .Title }}
+                  </a>
+                </div>
+              </article>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+      {{ partial "theme/disqus.html" . }}
+    {{ end }}
+  </article>
+  {{ partial "sidebar.html" . }}
+{{ end }}

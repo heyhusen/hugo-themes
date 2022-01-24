@@ -1,0 +1,12 @@
+name: John Doe
+email: john@doe.com
+image: /img/john-doe.jpeg
+bio: Web developer, speed freak.
+widget: true
+social:
+  facebook: ""
+  github: ""
+  gitlab: ""
+  instagram: ""
+  linkedin: johndoe
+  twitter: johndoe

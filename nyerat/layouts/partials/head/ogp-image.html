@@ -1,0 +1,8 @@
+{{ $imageLink := .src }}
+{{ if ne (hasPrefix .src "http") true }}
+  {{- $original := resources.Get .src -}}
+  {{ $ogp := $original.Fill "1200x630" }}
+  {{ $ogp = $ogp.Resize "1200x630 webp" }}
+  {{ $imageLink = $ogp.RelPermalink }}
+{{ end }}
+{{ return $imageLink }}

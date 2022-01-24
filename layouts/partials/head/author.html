@@ -1,5 +1,0 @@
-{{ $author := slice .Site.Author.name }}
-{{ with .Params.authors }}
-  {{ $author = . }}
-{{ end }}
-{{ return $author }}
