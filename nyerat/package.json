@@ -31,7 +31,7 @@
     "dev:cms": "netlify-cms-proxy-server",
     "build": "HUGO_THEME_ENVIRONMENT=production hugo -s exampleSite --themesDir=../.. --gc --minify",
     "format": "run-s format:*",
-    "format:eslint": "eslint --ext .js ./ --fix",
+    "format:eslint": "eslint --ext .js --fix .",
     "format:prettier": "prettier --write .",
     "prebuilt": "run-s prebuilt:*",
     "prebuilt:hugo": "HUGO_THEME_ENVIRONMENT=prebuilt hugo -s exampleSite --themesDir=../.. --gc",
