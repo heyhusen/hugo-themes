@@ -13,3 +13,6 @@ trim_trailing_whitespace = false
 
 [*.{html,js,json,toml,svg,ts,yaml,yml}]
 indent_size = 2
+
+[*.{yaml,yml}]
+indent_style = space

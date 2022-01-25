@@ -49,10 +49,12 @@
     {{ $style = resources.Get "css/main.css" }}
     {{ $style = $style | resources.PostCSS (dict "inlineImports" true) }}
   {{ end }}
-  {{ if hugo.IsProduction }}
+  {{ if eq (getenv "HUGO_THEME_ENVIRONMENT") "production" }}
     {{ $style = $style | minify }}
-    {{ if eq (getenv "HUGO_THEME_ENVIRONMENT") "" }}
-      {{ $style = $style | fingerprint }}
+  {{ end }}
+  {{ if hugo.IsProduction }}
+  	{{ if eq (getenv "HUGO_THEME_ENVIRONMENT") "" }}
+     	{{ $style = $style | fingerprint }}
     {{ end }}
   {{ end }}
   <link
@@ -60,4 +62,8 @@
     href="{{ $style.RelPermalink }}"
     integrity="{{ $style.Data.Integrity }}"
   />
+
+  {{ if .IsHome }}
+  	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {{ end }}
 </head>
