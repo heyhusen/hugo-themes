@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Redirect to '/cms' after close netlify identity widget from homepage
+
 ## [0.5.1] - 2022-01-25
 
 ### Changed
