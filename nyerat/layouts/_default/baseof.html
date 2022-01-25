@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" class="text-16px">
-  {{- partial "head/metadata.html" . -}}
-  <body
-    class="text-gray-800 font-sans text-base antialiased tracking-normal leading-normal bg-white"
-  >
-    {{- partial "header/site-header.html" . -}}
-    {{- partial "theme/breadcrumb.html" . -}}
-    <main
-      class="flex flex-col gap-4 mx-auto px-4 py-6 max-w-6xl divide-y sm:px-6 sm:py-8 md:px-8 md:py-10 lg:flex-row lg:gap-10 lg:px-10 lg:py-12 lg:divide-y-0 xl:px-0"
-    >
-      {{- block "main" . }}{{- end }}
-    </main>
-    {{- partial "footer.html" . -}}
-    {{ $js := resources.Get "js/main.js" }}
-    {{ if or (not hugo.IsProduction) (eq .Type "contact") }}
-      {{ $contact := resources.Get "js/contact-form.js" }}
-      {{ $js = slice $js $contact | resources.Concat "js/bundle.js" }}
-    {{ end }}
-    {{ $js = $js | js.Build "js/bundle.js" }}
-    {{ if hugo.IsProduction }}
-      {{ $js = $js | minify | fingerprint }}
-    {{ end }}    <script
-      src="{{ $js.RelPermalink }}"
-      integrity="{{ $js.Data.Integrity }}"
-      defer
-    ></script>
-  </body>
+{{- partial "head/metadata.html" . -}}
+
+<body class="text-gray-800 font-sans text-base antialiased tracking-normal leading-normal bg-white">
+	{{- partial "header/site-header.html" . -}}
+
+	{{- partial "theme/breadcrumb.html" . -}}
+
+	<main
+		class="flex flex-col gap-4 mx-auto px-4 py-6 max-w-6xl divide-y sm:px-6 sm:py-8 md:px-8 md:py-10 lg:flex-row lg:gap-10 lg:px-10 lg:py-12 lg:divide-y-0 xl:px-0">
+		{{- block "main" . }}{{- end }}
+	</main>
+
+	{{- partial "footer.html" . -}}
+
+	{{ $js := resources.Get "js/main.js" }}
+
+	{{ if or (not hugo.IsProduction) (eq .Type "contact") }}
+		{{ $contact := resources.Get "js/contact-form.js" }}
+		{{ $js = slice $js $contact | resources.Concat "js/bundle.js" }}
+	{{ end }}
+
+	{{ if .IsHome }}
+		{{ $netlifyIdentity := resources.Get "js/netlify-identity.js" }}
+		{{ $js = slice $js $netlifyIdentity | resources.Concat "js/bundle.js" }}
+	{{ end }}
+
+	{{ $js = $js | js.Build "js/bundle.js" }}
+
+	{{ if hugo.IsProduction }}
+		{{ $js = $js | minify | fingerprint }}
+	{{ end }}
+	<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+</body>
+
 </html>
