@@ -48,7 +48,7 @@
     "postcss-cli": "9.1.0",
     "serve": "13.0.2",
     "sort-package-json": "1.53.1",
-    "tailwindcss": "2.2.19",
+    "tailwindcss": "3.0.17",
     "tailwindcss-interaction-variants": "5.0.0",
     "tailwindcss-pseudo-elements": "2.0.0"
   }
