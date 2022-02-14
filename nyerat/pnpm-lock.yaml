@@ -4,7 +4,7 @@ specifiers:
   '@tailwindcss/aspect-ratio': 0.4.0
   '@tailwindcss/forms': 0.4.0
   '@tailwindcss/line-clamp': 0.3.1
-  '@tailwindcss/typography': 0.4.1
+  '@tailwindcss/typography': 0.5.2
   autoprefixer: 10.4.2
   browserslist: 4.19.1
   cssnano: 5.0.17
@@ -22,7 +22,7 @@ devDependencies:
   '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@2.2.19
   '@tailwindcss/forms': 0.4.0_tailwindcss@2.2.19
   '@tailwindcss/line-clamp': 0.3.1_tailwindcss@2.2.19
-  '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
+  '@tailwindcss/typography': 0.5.2_tailwindcss@2.2.19
   autoprefixer: 10.4.2_postcss@8.4.6
   browserslist: 4.19.1
   cssnano: 5.0.17_postcss@8.4.6
@@ -162,15 +162,14 @@ packages:
       tailwindcss: 2.2.19_833e1018ad0d7954aa80c53675939269
     dev: true
 
-  /@tailwindcss/typography/0.4.1_tailwindcss@2.2.19:
-    resolution: {integrity: sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==}
+  /@tailwindcss/typography/0.5.2_tailwindcss@2.2.19:
+    resolution: {integrity: sha512-coq8DBABRPFcVhVIk6IbKyyHUt7YTEC/C992tatFB+yEx5WGBQrCgsSFjxHUr8AWXphWckadVJbominEduYBqw==}
     peerDependencies:
-      tailwindcss: '>=2.0.0'
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || insiders'
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
-      lodash.uniq: 4.5.0
       tailwindcss: 2.2.19_833e1018ad0d7954aa80c53675939269
     dev: true
 
