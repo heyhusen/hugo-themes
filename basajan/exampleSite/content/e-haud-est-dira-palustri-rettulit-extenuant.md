@@ -2,8 +2,10 @@
 title: "E Haud Est Dira Palustri Rettulit Extenuant"
 description: ""
 image: "https://picsum.photos/id/132/640/360"
-category: "Uncategorized"
-tags: []
+category: "Nature"
+tags:
+  - Hiking
+  - Mount
 date: 2022-02-15T12:59:54+07:00
 draft: false
 ---

@@ -2,8 +2,10 @@
 title: "Imitantia Et Matre Volans Dixerunt Formosissimus Gravis"
 description: ""
 image: "https://picsum.photos/id/1065/640/360"
-category: "Uncategorized"
-tags: []
+category: "Linux"
+tags:
+  - Wayland
+  - KDE Plasma
 date: 2022-02-15T12:55:02+07:00
 draft: false
 ---

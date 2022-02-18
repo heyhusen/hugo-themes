@@ -2,8 +2,10 @@
 title: "Est Sensitque Spectat Verba Natalibus Vultus Coniugis"
 description: ""
 image: "https://picsum.photos/id/143/640/360"
-category: "Uncategorized"
-tags: []
+category: "Sport"
+tags:
+  - Running
+  - Swimming
 date: 2022-02-15T12:57:23+07:00
 draft: false
 ---

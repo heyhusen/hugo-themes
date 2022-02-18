@@ -2,8 +2,11 @@
 title: "Fibula Non Lassa Aenae Igne Candida"
 description: ""
 image: "https://picsum.photos/id/1052/640/360"
-category: "Uncategorized"
-tags: []
+category: "Containerization"
+tags:
+  - Docker
+  - Podman
+  - Nerdctl
 date: 2022-02-15T12:44:50+07:00
 draft: false
 ---

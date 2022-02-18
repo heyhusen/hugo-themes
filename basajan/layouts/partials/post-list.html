@@ -1,0 +1,45 @@
+{{ $paginator := .Paginate .RegularPages.ByDate.Reverse }}
+
+{{ if gt (len $paginator.Pages) 0 }}
+	<div class="post-list">
+		{{ range $paginator.Pages }}
+			<article>
+				{{ if .Params.image }}
+					<a href="{{ .RelPermalink }}">
+						{{ partial "internal/image.html" (dict "src" .Params.image "alt" .Title "limit" "360") }}
+					</a>
+				{{ end }}
+
+				<header>
+					{{ if .Params.tags }}
+						<div class="post-list__tags">
+							{{ range (.GetTerms "tags") }}
+								<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+							{{ end }}
+						</div>
+					{{ end }}
+
+					<a href="{{ .RelPermalink }}">
+						<h2>{{ .Title }}</h2>
+					</a>
+
+					<div class="post-list__meta">
+						<time datetime="{{ .Date }}">
+							{{ .Date | time.Format ":date_long" }}
+						</time>
+
+						{{ if .Params.category }}
+							{{ $category := index (.GetTerms "category") 0 }}
+							&middot;
+							<a href="{{ $category.RelPermalink }}">
+								{{ $category.Title }}
+							</a>
+						{{ end }}
+					</div>
+				</header>
+			</article>
+		{{ end }}
+	</div>
+
+	{{ partial "pagination.html" . }}
+{{ end }}

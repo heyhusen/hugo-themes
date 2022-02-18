@@ -2,8 +2,10 @@
 title: "Mediocris Aquarum Ignes Datis Membra Nato Aliter"
 description: ""
 image: "https://picsum.photos/id/155/640/360"
-category: "Uncategorized"
-tags: []
+category: "Linux"
+tags:
+  - Arch Linux
+  - AUR
 date: 2022-02-15T13:00:51+07:00
 draft: false
 ---

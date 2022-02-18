@@ -2,10 +2,11 @@
 title: "Molitur Parum Uritur Veros Genetrix Atrides Roganti"
 description: ""
 image: "https://picsum.photos/id/164/640/360"
-category: "Uncategorized"
+category: "Programming Languange"
 tags:
-  - Development
-  - Simple
+  - Go
+  - JavaScript
+  - TypeScript
 date: 2022-02-15T13:04:27+07:00
 draft: false
 ---

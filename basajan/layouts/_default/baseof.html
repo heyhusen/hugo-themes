@@ -4,7 +4,7 @@
 	<body>
 		{{ partial "header.html" . }}
 
-		<main class="site-main{{ if .IsHome }} site-main-home{{ end }}">
+		<main class="site-main{{ if and (eq .Kind "page") (eq .Type "page") }} site-main-post{{ end }}">
 			{{ block "main" . }}{{ end }}
 		</main>
 
