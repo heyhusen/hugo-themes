@@ -22,10 +22,12 @@
 			<h1>{{ .Title }}</h1>
 
 			<div class="post__info">
-				<div class="post__author">
-					{{ partial "internal/avatar.html" . }}
-					<span>{{ .Site.Author.name }}</span>
-				</div>
+				{{ with .Site.Author.name }}
+					<div class="post__author">
+						{{ partial "internal/avatar.html" $ }}
+						<span>{{ . }}</span>
+					</div>
+				{{ end }}
 
 				<div class="post__share">
 					<a

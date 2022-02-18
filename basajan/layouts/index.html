@@ -1,11 +1,11 @@
 {{ define "main" }}
 	<section class="post-list">
-		<div class="post-list__author">
-			{{ partial "internal/avatar.html" . }}
-			{{ with .Site.Author.bio }}
+		{{ with .Site.Author.bio }}
+			<div class="post-list__author">
+				{{ partial "internal/avatar.html" $ }}
 				<p>{{ . | safeHTML }}</p>
-			{{ end }}
-		</div>
+			</div>
+		{{ end }}
 
 		{{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Type" "page") }}
 
