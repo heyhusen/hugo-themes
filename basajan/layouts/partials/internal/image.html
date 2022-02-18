@@ -1,0 +1,47 @@
+{{ $original := resources.Get .src }}
+
+{{ if not $original }}
+	{{ with .context }}
+		{{ $original = .Resources.GetMatch $.src }}
+	{{ end }}
+{{ end }}
+
+{{ if not $original }}
+	{{ $original = resources.GetRemote .src }}
+{{ end }}
+
+{{ $converts := slice (dict "type" "image/webp" "format" "webp") (dict "type" "image/jpeg" "format" "jpg") }}
+{{ $sizes := slice 240 320 360 480 640 }}
+
+{{ with .limit }}
+	{{ $original = $original.Resize (print . "x") }}
+{{ end }}
+
+<picture>
+	{{ range $convert := $converts }}
+		{{ $resized := slice }}
+
+		{{ range $size := $sizes }}
+			{{ if le $size $original.Width }}
+				{{ $converted := $original.Resize (print $size "x" " " $convert.format) }}
+				{{ $resized = $resized | append (print $converted.RelPermalink " " $size "w") }}
+			{{ end }}
+		{{ end }}
+
+		<source
+			sizes="(min-width: 640px) 50vw, 100vw"
+			srcset="{{ delimit $resized ", " }}"
+			type="{{ $convert.type }}"
+		/>
+	{{ end }}
+
+	<img
+		src="{{ $original.RelPermalink | safeURL }}"
+		alt="{{ .alt }}"
+		width="{{ $original.Width }}"
+		height="{{ $original.Height }}"
+		loading="lazy"
+		decoding="async"
+		{{ with .class }}class="{{ . }}"{{ end }}
+	/>
+</picture>

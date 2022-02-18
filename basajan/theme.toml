@@ -1,0 +1,12 @@
+name = "Basajan"
+license = "MIT"
+licenselink = "https://github.com/hapakaien/hugo-themes/blob/main/nyerat/LICENSE"
+description = "Fast, simple & clean blog theme for Hugo."
+homepage = "https://github.com/hapakaien/hugo-themes/nyerat"
+tags = [blog, responsive]
+features = [simple, clean, fast, tailwindcss]
+min_version = "0.92.2"
+
+[author]
+  name = "Ahmad Husen"
+  homepage = "https://husen.id"

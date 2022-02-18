@@ -1,0 +1,10 @@
+{{ $avatar := print "https://ui-avatars.com/api/?background=random&size=256&name=" .Site.Author.name }}
+{{ with .Site.Author.image }}
+	{{ $avatar = . }}
+{{ else }}
+	{{ with .Site.Author.email }}
+		{{ $avatar = print "https://gravatar.com/avatar/" (md5 .) "?s=256" }}
+	{{ end }}
+{{ end }}
+
+{{ partial "internal/image.html" (dict "context" .Page "src" $avatar "alt" .Site.Author.name) }}

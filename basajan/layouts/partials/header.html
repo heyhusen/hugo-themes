@@ -1,0 +1,39 @@
+<header class="site-header">
+	<div class="site-header__container">
+		<div class="site-header__flex">
+			<div class="site-identity">
+				<a href="/">
+					<span>{{ .Site.Title }}</span>
+				</a>
+				<p>{{ .Site.Params.description }}</p>
+			</div>
+
+			<div class="social-navigation">
+				{{ with .Site.Author.social }}
+					{{ range $index, $value := . }}
+						{{ with $value }}
+							<a
+								href="{{- (index (where $.Site.Data.social "identifier" $index) 0).url -}}{{ $value }}"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="{{ (index (where $.Site.Data.social "identifier" $index) 0).name }}"
+							>
+								<span aria-hidden="true">
+									{{ (resources.GetRemote (print "https://github.com/feathericons/feather/raw/master/icons/" $index ".svg")).Content | safeHTML }}
+								</span>
+							</a>
+						{{ end }}
+					{{ end }}
+				{{ end }}
+
+				<a href="/index.xml" aria-label="RSS">
+					<span aria-hidden="true">
+						{{ (resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/rss.svg").Content | safeHTML }}
+					</span>
+				</a>
+			</div>
+		</div>
+
+		{{ partial "navbar.html" . }}
+	</div>
+</header>
