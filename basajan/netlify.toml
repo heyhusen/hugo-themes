@@ -6,8 +6,8 @@
   HUGO_VERSION = "0.92.2"
   NPM_FLAGS = "--version" # prevent Netlify npm install
 
-[context.production]
-	environment = { HUGO_BASE_URL = "https://basajan.netlify.app/" }
+[context.production.environment]
+	HUGO_BASEURL = "https://basajan.netlify.app/"
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
