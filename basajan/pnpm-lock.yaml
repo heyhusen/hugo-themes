@@ -1,14 +1,14 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@tailwindcss/typography': ~0.4.0
-  autoprefixer: ^10.4.2
-  cssnano: ^5.0.17
-  postcss: ^8.4.6
-  postcss-cli: ^9.1.0
-  serve: ^13.0.2
-  sort-package-json: ^1.54.0
-  tailwindcss: ^2.0.0
+  '@tailwindcss/typography': 0.4.1
+  autoprefixer: 10.4.2
+  cssnano: 5.0.17
+  postcss: 8.4.6
+  postcss-cli: 9.1.0
+  serve: 13.0.2
+  sort-package-json: 1.54.0
+  tailwindcss: 2.2.19
 
 dependencies:
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
