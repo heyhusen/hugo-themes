@@ -1,0 +1,25 @@
+<nav
+	aria-label="Main navigation"
+	id="main-navigation"
+	class="site-navigation"
+>
+	<ul
+		aria-label="Main navigation"
+		role="menubar"
+	>
+		{{ $current := . }}
+		{{ range .Site.Menus.main }}
+			{{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+			<li role="none">
+				<a
+					href="{{ .URL }}"
+					role="menuitem"
+					{{ if $active }}aria-current="page"{{ end }}
+					{{ if $active }}class="active"{{ end }}
+				>
+					{{ .Name }}
+				</a>
+			</li>
+		{{ end }}
+	</ul>
+</nav>

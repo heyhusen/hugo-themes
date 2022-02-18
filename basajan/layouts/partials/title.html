@@ -1,0 +1,5 @@
+{{ $title := (print .Title " - " .Site.Title) }}
+{{ if .IsHome }}
+  {{ $title = (print .Site.Title " - " .Site.Params.description) }}
+{{ end }}
+{{ return $title }}

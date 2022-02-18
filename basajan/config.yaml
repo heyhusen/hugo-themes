@@ -1,0 +1,19 @@
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      pageRef: /
+      weight: -1
+taxonomies:
+  category: category
+  tag: tags
+markup:
+  highlight:
+    lineNos: true
+    style: xcode-dark
+minify:
+  tdewolff:
+    html:
+      keepQuotes: true
+      keepWhitespace: false

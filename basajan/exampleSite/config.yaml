@@ -1,0 +1,27 @@
+baseURL: "/"
+defaultContentLanguage: "en"
+title: "John Doe"
+theme: "basajan"
+author:
+  name: "John Doe"
+  image: ""
+  email: "hapakaien@gmail.com"
+  bio: "Written by <strong>John</strong> Doe. This is where your author bio lives. Share everything that you think best describes you."
+  social:
+    facebook: "johndoe"
+    instagram: "johndoe"
+    linkedin: "johndoe"
+    twitter: "johndoe"
+params:
+  description: "Just another simple blog"
+copyright: "Copyright © 2022 - present · John Doe"
+sectionPagesMenu: "main"
+paginate: 8
+summaryLength: 25
+enableRobotsTXT: true
+minify:
+  _merge: deep
+taxonomies:
+  _merge: deep
+markup:
+  _merge: deep

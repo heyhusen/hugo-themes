@@ -1,0 +1,33 @@
+<head>
+	{{ hugo.Generator }}
+
+	<base href="{{ .Site.BaseURL }}" />
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link
+    rel="sitemap"
+    type="application/xml"
+    title="Sitemap"
+    href="{{ .Site.BaseURL }}sitemap.xml"
+  />
+	
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+	{{ $style := resources.Get "css/main.css" }}
+	{{ $style = $style | resources.PostCSS }}
+	{{ if hugo.IsProduction }}
+		{{ $style = $style | minify | fingerprint | resources.PostProcess }}
+	{{ end }}
+	<link
+		rel="stylesheet"
+		href="{{ $style.RelPermalink }}"
+		integrity="{{ $style.Data.Integrity }}"
+	/>
+
+	<title>{{ partial "metadata/title.html" . }}</title>
+</head>
