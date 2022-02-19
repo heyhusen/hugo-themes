@@ -14,7 +14,7 @@
 }
 
 @layer components {
-	.site-header__container, .site-main, .site-footer__container {
+	.site-header__container, .site-main, .breadcrumbs, .site-footer__container {
 		@apply max-w-4xl mx-auto p-4 sm:p-6 md:p-8 lg:px-0 lg:py-10 space-y-4;
 		@apply sm:space-y-6 md:space-y-8 lg:space-y-10;
 	}
@@ -87,6 +87,32 @@
 
 		&-post {
 			@apply sm:pt-10 md:pt-12 lg:pt-14;
+		}
+	}
+
+	.breadcrumbs {
+		@apply pb-0 pt-8 sm:pt-12 md:pt-16 lg:pt-20 md:text-lg;
+
+		&-post {
+			@apply sm:pt-10 md:pt-12 lg:pt-14;
+		}
+
+		& > ol {
+			@apply inline-block align-baseline space-x-0.5;
+
+			& > li {
+				@apply inline;
+
+				& > a {
+					&.active {
+						@apply font-bold text-gray-900;
+					}
+				}
+			}
+
+			& > svg {
+				@apply inline-block h-5 w-5;
+			}
 		}
 	}
 
