@@ -3,10 +3,21 @@
 
 	<base href="{{ .Site.BaseURL }}" />
 
+	<!-- Meta tag -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="url" content="{{ .Permalink }}" />
+	<meta
+		name="description"
+		content="{{ partial "metadata/description.html" . }}"
+	/>
+  <meta
+    name="author"
+    content="{{ partial "metadata/author.html" . }}"
+  />
 
+	<!-- Sitemap -->
 	<link
     rel="sitemap"
     type="application/xml"
@@ -14,9 +25,24 @@
     href="{{ .Site.BaseURL }}sitemap.xml"
   />
 
+	<!-- RSS -->
   {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
+
+	<!-- Favicon -->
+	{{ with resources.Get "favicon.ico" }}
+		<link rel="icon" href="{{ .RelPermalink }}" sizes="any">
+	{{ end }}
+	{{ with resources.Get "favicon.svg" }}
+		<link rel="icon" href="{{ .RelPermalink }}" type="image/svg+xml">
+	{{ end }}
+	{{ with resources.Get "apple-touch-icon.png" }}
+		<link rel="apple-touch-icon" href="{{ .RelPermalink }}"/>
+	{{ end }}
+	{{ with resources.Get "manifest.webmanifest" }}
+		<link rel="manifest" href="{{ .RelPermalink }}">
+	{{ end }}
 
 	{{ $style := resources.Get "css/main.css" }}
 	{{ $style = $style | resources.PostCSS }}

@@ -5,8 +5,8 @@
 	</article>
 
 	{{ if eq .Kind "taxonomy" }}
-		{{ partial "term-list.html" . }}
+		{{ partial "components/term-list.html" . }}
 	{{ else if eq .Kind "term" }}
-		{{ partial "post-list.html" . }}
+		{{ partial "components/post-list.html" . }}
 	{{ end }}
 {{ end }}

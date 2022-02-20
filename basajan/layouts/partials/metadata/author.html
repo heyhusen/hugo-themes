@@ -1,4 +1,4 @@
-{{ $author := slice .Site.Author.name }}
+{{ $author := .Site.Author.name }}
 {{ with .Params.authors }}
   {{ $author = . }}
 {{ end }}

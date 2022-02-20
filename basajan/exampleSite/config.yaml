@@ -14,7 +14,7 @@ author:
     linkedin: "johndoe"
     twitter: "johndoe"
 params:
-  description: "Just another simple blog"
+  description: "A very simple & lightweight blog theme for Hugo, 0kb JavaScript shipped by default."
   credit: true
 copyright: "Copyright © 2022 - present · John Doe"
 sectionPagesMenu: "main"

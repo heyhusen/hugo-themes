@@ -28,12 +28,12 @@
 
 		&__flex {
 			@apply sm:flex sm:justify-between sm:items-center space-y-6 sm:space-y-0;
-			@apply sm:space-x-8 md:space-x-10;
+			@apply sm:space-x-12 md:space-x-16 lg:space-x-24;
 		}
 	}
 
 	.site-identity {
-		@apply sm:space-y-1 md:space-y-2 lg:space-y-3;
+		@apply sm:flex-1 sm:space-y-1 md:space-y-2 lg:space-y-3;
 
 		& > a {
 			@apply font-bold text-gray-900 text-2xl sm:text-3xl md:text-4xl;
