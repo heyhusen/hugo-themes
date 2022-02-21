@@ -20,8 +20,9 @@
 	"author": "Ahmad Husen",
 	"main": "index.js",
 	"scripts": {
-		"dev": "hugo -s exampleSite --themesDir=../.. server -p 3000 --disableFastRender",
-		"build": "hugo -s exampleSite --themesDir=../.. --gc --minify",
+		"dev": "HUGO_THEME_ENV=development hugo -s exampleSite --themesDir=../.. server -p 3000 --disableFastRender",
+		"build": "HUGO_THEME_ENV=production hugo -s exampleSite --themesDir=../.. --gc --minify",
+		"copy": "cp -f exampleSite/public/css/*.min.css assets/css",
 		"start": "serve exampleSite/public"
 	},
 	"dependencies": {

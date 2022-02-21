@@ -51,11 +51,18 @@
 	{{ end }}
 
 	<!-- Stylesheet -->
-	{{ $style := resources.Get "css/main.css" }}
-	{{ $style = $style | resources.PostCSS }}
-	{{ if hugo.IsProduction }}
-		{{ $style = $style | minify | fingerprint | resources.PostProcess }}
-	{{ end }}
+	{{ $style := resources.Get "css/main.min.css" }}
+  {{ if ne (getenv "HUGO_THEME_ENV") "" }}
+    {{ $style = resources.Get "css/main.css" | resources.PostCSS }}
+  {{ end }}
+  {{ if eq (getenv "HUGO_THEME_ENV") "production" }}
+    {{ $style = $style | minify }}
+  {{ end }}
+  {{ if hugo.IsProduction }}
+  	{{ if eq (getenv "HUGO_THEME_ENV") "" }}
+     	{{ $style = $style | fingerprint | resources.PostProcess }}
+    {{ end }}
+  {{ end }}
 	<link
 		rel="stylesheet"
 		href="{{ $style.RelPermalink }}"
