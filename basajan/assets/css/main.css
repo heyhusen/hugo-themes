@@ -98,12 +98,16 @@
 		}
 
 		& > ol {
-			@apply inline-block align-baseline space-x-0.5;
+			@apply inline-block align-middle space-x-0.5;
 
 			& > li {
 				@apply inline;
 
 				& > a {
+					&:hover {
+						@apply underline;
+					}
+
 					&.active {
 						@apply font-bold text-gray-900;
 					}
