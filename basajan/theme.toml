@@ -1,5 +1,5 @@
 name = "Basajan"
-license = "Apache License 2.0"
+license = "Apache-2.0"
 licenselink = "https://github.com/hapakaien/hugo-themes/blob/main/LICENSE"
 description = "A very simple & clean blog theme for Hugo, 0kb JavaScript shipped by default."
 homepage = "https://github.com/hapakaien/hugo-themes/tree/main/basajan"
