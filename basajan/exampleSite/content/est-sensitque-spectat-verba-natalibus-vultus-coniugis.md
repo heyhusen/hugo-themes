@@ -1,7 +1,7 @@
 ---
 title: "Est Sensitque Spectat Verba Natalibus Vultus Coniugis"
 description: ""
-image: "https://picsum.photos/id/143/640/360"
+image: "https://picsum.photos/id/143/1200/630"
 category: "Sport"
 tags:
   - Running

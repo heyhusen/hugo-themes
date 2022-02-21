@@ -1,7 +1,7 @@
 ---
 title: "Nexu Tandemque Habitata Induruit Iacentia Gremioque Parte"
 description: ""
-image: "https://picsum.photos/id/177/640/360"
+image: "https://picsum.photos/id/177/1200/630"
 category: "Front-end Development"
 tags:
   - Svelte

@@ -1,7 +1,7 @@
 ---
 title: "Neque Mox Destituit Et Iolao Exhalarunt Dum"
 description: ""
-image: "https://picsum.photos/id/1054/640/360"
+image: "https://picsum.photos/id/1054/1200/630"
 category: "Motorsport"
 tags:
   - Formula 1

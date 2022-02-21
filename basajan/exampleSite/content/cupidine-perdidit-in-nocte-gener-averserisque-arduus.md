@@ -1,7 +1,7 @@
 ---
 title: "Cupidine Perdidit in Nocte Gener Averserisque Arduus"
 description: ""
-image: "https://picsum.photos/id/13/640/360"
+image: "https://picsum.photos/id/13/1200/630"
 category: "Front-end Development"
 tags:
   - PostCSS

@@ -1,7 +1,7 @@
 ---
 title: "Molitur Parum Uritur Veros Genetrix Atrides Roganti"
 description: ""
-image: "https://picsum.photos/id/164/640/360"
+image: "https://picsum.photos/id/164/1200/630"
 category: "Programming Languange"
 tags:
   - Golang

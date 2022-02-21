@@ -1,7 +1,7 @@
 ---
 title: "Cephisias Et Tyrrhena Candida Haustus Temeraria Usquam"
 description: ""
-image: "https://picsum.photos/id/112/640/360"
+image: "https://picsum.photos/id/112/1200/630"
 category: "Web Development"
 tags: 
   - Jamstack

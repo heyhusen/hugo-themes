@@ -17,6 +17,12 @@
     content="{{ partial "metadata/author.html" . }}"
   />
 
+	<!-- Open Graph -->
+	{{ partial "head/open-graph.html" . }}
+
+	<!-- Twitter Card -->
+	{{ partial "head/twitter-card.html" . }}
+
 	<!-- Sitemap -->
 	<link
     rel="sitemap"
@@ -44,6 +50,7 @@
 		<link rel="manifest" href="{{ .RelPermalink }}">
 	{{ end }}
 
+	<!-- Stylesheet -->
 	{{ $style := resources.Get "css/main.css" }}
 	{{ $style = $style | resources.PostCSS }}
 	{{ if hugo.IsProduction }}

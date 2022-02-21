@@ -1,7 +1,7 @@
 ---
 title: "E Haud Est Dira Palustri Rettulit Extenuant"
 description: ""
-image: "https://picsum.photos/id/132/640/360"
+image: "https://picsum.photos/id/132/1200/630"
 category: "Nature"
 tags:
   - Hiking
