@@ -1,9 +1,11 @@
 ---
 title: "Cephisias Et Tyrrhena Candida Haustus Temeraria Usquam"
 description: ""
-image: "https://picsum.photos/id/112/640/360"
-category: "Uncategorized"
-tags: []
+image: "https://picsum.photos/id/112/1200/630"
+category: "Web Development"
+tags: 
+  - Jamstack
+  - Hugo
 date: 2022-02-15T12:58:40+07:00
 draft: false
 ---

@@ -1,11 +1,12 @@
 baseURL: "/"
 defaultContentLanguage: "en"
-title: "John Doe"
+languageCode: en-US
+title: "Basajan"
 theme: "basajan"
 author:
   name: "John Doe"
   image: ""
-  email: "hapakaien@gmail.com"
+  email: "hi@husen.id"
   bio: "Written by <strong>John</strong> Doe. This is where your author bio lives. Share everything that you think best describes you."
   social:
     facebook: "johndoe"
@@ -13,7 +14,9 @@ author:
     linkedin: "johndoe"
     twitter: "johndoe"
 params:
-  description: "Just another simple blog"
+  description: "A very simple & lightweight blog theme for Hugo, 0kb JavaScript shipped by default."
+  image: "img/cover.jpg"
+  credit: true
 copyright: "Copyright © 2022 - present · John Doe"
 sectionPagesMenu: "main"
 paginate: 8

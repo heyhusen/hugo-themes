@@ -1,9 +1,12 @@
 ---
 title: "Neque Mox Destituit Et Iolao Exhalarunt Dum"
 description: ""
-image: "https://picsum.photos/id/1054/640/360"
-category: "Uncategorized"
-tags: []
+image: "https://picsum.photos/id/1054/1200/630"
+category: "Motorsport"
+tags:
+  - Formula 1
+  - MotoGP
+  - WSBK
 date: 2022-02-15T12:52:16+07:00
 draft: false
 ---

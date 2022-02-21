@@ -1,7 +1,7 @@
 ---
 title: "Sive Vertit Mora Si De Essent Animos"
 description: ""
-image: "https://picsum.photos/id/191/640/360"
+image: "https://picsum.photos/id/191/1200/630"
 category: "Uncategorized"
 tags: []
 date: 2022-02-15T13:01:36+07:00

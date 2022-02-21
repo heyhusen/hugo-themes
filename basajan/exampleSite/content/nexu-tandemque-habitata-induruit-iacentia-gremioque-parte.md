@@ -1,9 +1,13 @@
 ---
 title: "Nexu Tandemque Habitata Induruit Iacentia Gremioque Parte"
 description: ""
-image: "https://picsum.photos/id/177/640/360"
-category: "Uncategorized"
-tags: []
+image: "https://picsum.photos/id/177/1200/630"
+category: "Front-end Development"
+tags:
+  - Svelte
+  - Vue
+  - WindiCSS
+  - Vite
 date: 2022-02-15T13:03:32+07:00
 draft: false
 ---

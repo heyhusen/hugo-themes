@@ -1,88 +1,92 @@
 {{ define "main" }}
-	{{ if .Params.image }}
-		{{ partial "internal/image.html" (dict "context" . "src" .Params.image "alt" .Title "class" "post__thumbnail") }}
-	{{ end }}
-
 	<article class="post">
-		<header>
-			<div class="post-list__meta">
-				<time datetime="{{ .Date }}">
-					{{ .Date | time.Format ":date_long" }}
-				</time>
-
-				{{ if .Params.category }}
-					{{ $category := index (.GetTerms "category") 0 }}
-					&middot;
-					<a href="{{ $category.RelPermalink }}">
-						{{ $category.Title }}
-					</a>
-				{{ end }}
-			</div>
-
-			<h1>{{ .Title }}</h1>
-
-			<div class="post__info">
-				<div class="post__author">
-					{{ partial "internal/avatar.html" . }}
-					<span>{{ .Site.Author.name }}</span>
-				</div>
-
-				<div class="post__share">
-					<a
-						href="https://facebook.com/sharer/sharer.php?u={{ .Permalink }}"
-						rel="noopener noreferrer"
-						target="_blank"
-						aria-label="Facebook"
-					>
-						<span aria-hidden="true">
-							{{ (resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/facebook.svg").Content | safeHTML }}
-						</span>
-					</a>
-					<a
-						href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink  }}&title={{ .Title }}&summary={{ .Title }}&source={{ .Site.BaseURL }}"
-						rel="noopener noreferrer"
-						target="_blank"
-						aria-label="LinkedIn"
-					>
-						<span aria-hidden="true">
-							{{ (resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/linkedin.svg").Content | safeHTML }}
-						</span>
-					</a>
-					<a
-						href="https://telegram.me/share/url?{{ .Title }}&url={{ .Permalink }}"
-						rel="noopener noreferrer"
-						target="_blank"
-						aria-label="Telegram"
-					>
-						<span aria-hidden="true">
-							{{ (resources.GetRemote "https://github.com/twbs/icons/raw/main/icons/telegram.svg").Content | safeHTML }}
-						</span>
-					</a>
-					<a
-						href="https://twitter.com/intent/tweet/?text={{ .Title }}&url={{ .Permalink }}"
-						rel="noopener noreferrer"
-						target="_blank"
-						aria-label="Twitter"
-					>
-						<span aria-hidden="true">
-							{{ (resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/twitter.svg").Content | safeHTML }}
-						</span>
-					</a>
-				</div>
-			</div>
-		</header>
-
-		<div class="article">
-			{{ .Content }}
-		</div>
-
-		{{ if .Params.tags }}
-			<div class="post-list__tags">
-				{{ range (.GetTerms "tags") }}
-					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-				{{ end }}
-			</div>
+		{{ if .Params.image }}
+			{{ partial "internal/image.html" (dict "context" . "src" .Params.image "alt" .Title "class" "post__thumbnail") }}
 		{{ end }}
+
+		<div class="post__article">
+			<header>
+				<div class="post-list__meta">
+					<time datetime="{{ .Date }}">
+						{{ .Date | time.Format ":date_long" }}
+					</time>
+
+					{{ if .Params.category }}
+						{{ $category := index (.GetTerms "category") 0 }}
+						&middot;
+						<a href="{{ $category.RelPermalink }}">
+							{{ $category.Title }}
+						</a>
+					{{ end }}
+				</div>
+
+				<h1>{{ .Title }}</h1>
+
+				<div class="post__info">
+					{{ with .Site.Author.name }}
+						<div class="post__author">
+							{{ partial "internal/avatar.html" $ }}
+							<span>{{ . }}</span>
+						</div>
+					{{ end }}
+
+					<div class="post__share">
+						<a
+							href="https://facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+							rel="noopener noreferrer"
+							target="_blank"
+							aria-label="Facebook"
+						>
+							<span aria-hidden="true">
+								{{ (resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/facebook.svg").Content | safeHTML }}
+							</span>
+						</a>
+						<a
+							href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink  }}&title={{ .Title }}&summary={{ .Title }}&source={{ .Site.BaseURL }}"
+							rel="noopener noreferrer"
+							target="_blank"
+							aria-label="LinkedIn"
+						>
+							<span aria-hidden="true">
+								{{ (resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/linkedin.svg").Content | safeHTML }}
+							</span>
+						</a>
+						<a
+							href="https://telegram.me/share/url?{{ .Title }}&url={{ .Permalink }}"
+							rel="noopener noreferrer"
+							target="_blank"
+							aria-label="Telegram"
+						>
+							<span aria-hidden="true">
+								{{ (resources.GetRemote "https://github.com/twbs/icons/raw/main/icons/telegram.svg").Content | safeHTML }}
+							</span>
+						</a>
+						<a
+							href="https://twitter.com/intent/tweet/?text={{ .Title }}&url={{ .Permalink }}"
+							rel="noopener noreferrer"
+							target="_blank"
+							aria-label="Twitter"
+						>
+							<span aria-hidden="true">
+								{{ (resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/twitter.svg").Content | safeHTML }}
+							</span>
+						</a>
+					</div>
+				</div>
+			</header>
+
+			<div class="article">
+				{{ .Content }}
+			</div>
+
+			{{ if .Params.tags }}
+				<div class="post-list__tags">
+					{{ range (.GetTerms "tags") }}
+						<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+					{{ end }}
+				</div>
+			{{ end }}
+		</div>
 	</article>
 
 	{{ if or .Prev .Next }}

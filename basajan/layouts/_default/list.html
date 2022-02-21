@@ -1,6 +1,12 @@
 {{ define "main" }}
-	<article class="article">
+	<article class="article{{ if gt (len .Pages) 0 }} article-fluid{{ end }}">
 		<header class="article__header"><h1>{{ .Title }}</h1></header>
 		{{ .Content }}
 	</article>
+
+	{{ if eq .Kind "taxonomy" }}
+		{{ partial "components/term-list.html" . }}
+	{{ else if eq .Kind "term" }}
+		{{ partial "components/post-list.html" . }}
+	{{ end }}
 {{ end }}

@@ -1,0 +1,52 @@
+{{ with .context }}
+	{{ if ne .IsHome true }}
+		{{ $breadcrumbs := slice (dict "name" "Home" "url" "/") }}
+
+		{{ if eq .Kind "term" }}
+			{{ with .CurrentSection }}
+				{{ $breadcrumbs = $breadcrumbs | append (dict "name" .Title "url" .RelPermalink) }}
+			{{ end }}
+		{{ end }}
+
+		{{ if .Params.category }}
+			{{ $category := index (.GetTerms "category") 0 }}
+			{{ $breadcrumbs = $breadcrumbs | append (dict "name" $category.Title "url" $category.RelPermalink) }}
+		{{ end }}
+
+		{{ $breadcrumbs = $breadcrumbs | append (dict "name" .Title "url" .RelPermalink) }}
+		{{ $breadcrumbCount := len $breadcrumbs }}
+
+		<nav
+			aria-label="Breadcrumb"
+			class="{{ with $.class }}{{ . }}{{ else }}breadcrumbs{{ end }}"
+		>
+			<ol
+				itemscope
+				itemtype="https://schema.org/BreadcrumbList"
+			>
+				{{ range $i, $breadcrumb := $breadcrumbs }}
+					<li
+						itemprop="itemListElement"
+						itemscope
+						itemtype="https://schema.org/ListItem"
+					>
+						<a
+							itemprop="item"
+							href="{{ $breadcrumb.url }}"
+							{{ if eq (add $i 1) $breadcrumbCount }}aria-current="page"{{ end }}
+							{{ if lt (add $i 1) $breadcrumbCount }}class="active"{{ end }}
+						>
+							<span itemprop="name">{{ $breadcrumb.name }}</span>
+						</a>
+
+						<meta itemprop="position" content="{{ add $i 1 }}" />
+					</li>
+
+					{{ if lt (add $i 1) $breadcrumbCount }}
+						{{ (resources.GetRemote "https://github.com/tailwindlabs/heroicons/raw/master/optimized/outline/chevron-right.svg").Content | safeHTML }}
+					{{ end }}
+				{{ end }}
+			</ol>
+		</nav>
+	{{ end }}
+{{ end }}

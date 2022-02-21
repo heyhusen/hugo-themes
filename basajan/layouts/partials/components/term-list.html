@@ -1,0 +1,7 @@
+{{ if gt (len .Pages) 0 }}
+	<div class="term-list">
+		{{ range .Pages.ByTitle }}
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		{{ end }}
+	</div>
+{{ end }}

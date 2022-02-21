@@ -1,9 +1,11 @@
 ---
 title: "Quid Vacet Retro Timore Sanguine"
 description: ""
-image: "https://picsum.photos/id/103/640/360"
-category: "Uncategorized"
-tags: []
+image: "https://picsum.photos/id/103/1200/630"
+category: "Random"
+tags:
+  - Simple
+  - Lightweight
 date: 2022-02-14T23:49:17+07:00
 draft: false
 ---
