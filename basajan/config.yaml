@@ -16,3 +16,5 @@ minify:
     html:
       keepQuotes: true
       keepWhitespace: false
+params:
+  credit: true

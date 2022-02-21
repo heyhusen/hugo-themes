@@ -348,12 +348,20 @@
 	.site-footer {
 		@apply bg-gray-100 text-center;
 
+		&__container {
+			@apply space-y-1 md:space-y-2;
+		}
+
 		a {
 			@apply underline;
 
 			&:hover {
 				@apply no-underline;
 			}
+		}
+
+		small {
+			@apply text-gray-600;
 		}
 	}
 }

@@ -1,9 +1,22 @@
 <footer class="site-footer">
 	<div class="site-footer__container">
 		{{ with .Site.Copyright }}
-			{{ . | safeHTML }}
-		{{ else }}
-			Copyright &copy; 2022 - present &middot; <a href="/">{{ .Site.Title }}</a>
+			<span>{{ . | safeHTML }}</span>
+			{{ else }}
+			<span>
+				Copyright &copy; 2022 - present &middot; <a href="/">{{ .Site.Title }}</a>
+			</span>
+		{{ end }}
+
+		{{ if .Site.Params.credit }}
+			<div>
+				<small>
+					Designed by
+					<a href="https://husen.id" target="_blank" rel="noopener noreferrer">
+						Ahmad Husen
+					</a>
+				</small>
+			</div>
 		{{ end }}
 	</div>
 </footer>
