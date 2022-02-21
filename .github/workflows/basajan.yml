@@ -69,6 +69,17 @@ jobs:
           cd ${{ env.FOLDER }}
           pnpm build
           pnpm copy
+  
+      - name: Update prebuilt CSS
+        if: github.event_name == 'pull_request'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          base: main
+          add-paths: |
+            basajan/assets/css/*.min.css
+          commit-message: "chore(basajan): update prebuilt CSS"
+          title: "chore(basajan): update prebuilt CSS"
+          delete-branch: true
       
   release:
     name: Release
