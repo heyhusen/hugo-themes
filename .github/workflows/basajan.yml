@@ -68,7 +68,8 @@ jobs:
         run: |
           cd ${{ env.FOLDER }}
           pnpm build
-
+          pnpm copy
+      
   release:
     name: Release
     runs-on: ubuntu-latest
