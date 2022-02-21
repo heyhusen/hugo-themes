@@ -16,7 +16,7 @@
 		"type": "git",
 		"url": "git+ssh://git@github.com/hapakaien/hugo-themes.git"
 	},
-	"license": "MIT",
+	"license": "Apache-2.0",
 	"author": "Ahmad Husen",
 	"main": "index.js",
 	"scripts": {
