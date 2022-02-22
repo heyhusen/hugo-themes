@@ -10,6 +10,10 @@
 	body {
 		@apply bg-white text-gray-700 text-base font-sans antialiased;
 		@apply tracking-normal leading-normal;
+
+		@media (prefers-color-scheme: dark) {
+			@apply bg-gray-900 text-gray-200;
+		}
 	}
 }
 
@@ -26,6 +30,10 @@
 	.site-header {
 		@apply bg-gray-100;
 
+		@media (prefers-color-scheme: dark) {
+			@apply bg-gray-800;
+		}
+
 		&__flex {
 			@apply sm:flex sm:justify-between sm:items-center space-y-6 sm:space-y-0;
 			@apply sm:space-x-12 md:space-x-16 lg:space-x-24;
@@ -37,6 +45,10 @@
 
 		& > a {
 			@apply font-bold text-gray-900 text-2xl sm:text-3xl md:text-4xl;
+
+			@media (prefers-color-scheme: dark) {
+				@apply text-gray-50;
+			}
 		}
 
 		& > p {
@@ -53,6 +65,10 @@
 
 			&:hover {
 				@apply sm:bg-gray-300;
+
+				@media (prefers-color-scheme: dark) {
+					@apply sm:bg-gray-600;
+				}
 			}
 
 			svg {
@@ -69,6 +85,10 @@
 			a {
 				@apply inline-block py-0.5 md:py-1 px-2 md:px-3 rounded-full border;
 				@apply border-gray-300 md:text-lg;
+
+				@media (prefers-color-scheme: dark) {
+					@apply border-gray-600;
+				}
 
 				&:hover {
 					@apply border-current;
@@ -110,6 +130,10 @@
 
 					&.active {
 						@apply font-bold text-gray-900;
+
+						@media (prefers-color-scheme: dark) {
+							@apply text-gray-50;
+						}
 					}
 				}
 			}
@@ -126,6 +150,10 @@
 		img {
 			@apply w-14 object-cover rounded-full p-1 border border-gray-300;
 			aspect-ratio: 1/1;
+
+			@media (prefers-color-scheme: dark) {
+				@apply border-gray-600;
+			}
 		}
 
 		p {
@@ -164,6 +192,10 @@
 			& > header {
 				@apply flex-1 p-4 sm:p-0 border-l border-r border-b sm:border-none;
 				@apply border-gray-200 space-y-2 md:space-y-3;
+
+				@media (prefers-color-scheme: dark) {
+					@apply border-gray-700;
+				}
 
 				& > a {
 					@apply inline-block text-xl md:text-2xl;
@@ -216,6 +248,10 @@
 
 					&:hover {
 						@apply bg-gray-200;
+
+						@media (prefers-color-scheme: dark) {
+							@apply bg-gray-800;
+						}
 					}
 
 					&.active {
@@ -244,6 +280,10 @@
 
 				& > h1 {
 					@apply font-extrabold text-gray-900 text-3xl md:text-4xl lg:text-5xl;
+
+					@media (prefers-color-scheme: dark) {
+						@apply text-gray-50;
+					}
 				}
 			}
 		}
@@ -263,6 +303,10 @@
 			img {
 				@apply w-10 md:w-14 h-10 md:h-14 p-0.5 md:p-1 object-cover border;
 				@apply border-gray-300 rounded-full;
+
+				@media (prefers-color-scheme: dark) {
+					@apply border-gray-600;
+				}
 			}
 
 			& > span {
@@ -275,6 +319,10 @@
 
 			& > a {
 				@apply p-1.5 md:p-2 border border-gray-300 rounded-full;
+
+				@media (prefers-color-scheme: dark) {
+					@apply border-gray-600;
+				}
 
 				&:hover {
 					@apply bg-gray-700 text-white border-gray-700;
@@ -316,6 +364,30 @@
 		@apply prose md:prose-lg lg:prose-xl mx-auto;
 		max-width: 745px;
 
+		@media (prefers-color-scheme: dark) {
+			@apply text-gray-200;
+
+			h1, h2, h3, h4, strong, a, blockquote {
+				@apply text-gray-50;
+			}
+
+			hr, blockquote, tbody tr {
+				@apply border-gray-700;
+			}
+
+			thead {
+				@apply border-gray-600;
+			}
+
+			ol {
+				& > li {
+					&:before {
+						@apply text-gray-400;
+					}
+				}
+			}
+		}
+
 		&-fluid {
 			@apply max-w-none;
 		}
@@ -352,6 +424,10 @@
 	.site-footer {
 		@apply bg-gray-100 text-center;
 
+		@media (prefers-color-scheme: dark) {
+			@apply bg-gray-800;
+		}
+
 		&__container {
 			@apply space-y-1 md:space-y-2;
 		}
@@ -366,6 +442,10 @@
 
 		small {
 			@apply text-gray-600;
+
+			@media (prefers-color-scheme: dark) {
+				@apply text-gray-400;
+			}
 		}
 	}
 }
