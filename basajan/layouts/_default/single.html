@@ -1,7 +1,7 @@
 {{ define "main" }}
 	<article class="post">
 		{{ if .Params.image }}
-			{{ partial "internal/image.html" (dict "context" . "src" .Params.image "alt" .Title "class" "post__thumbnail") }}
+			{{ partial "components/image.html" (dict "context" . "src" .Params.image "alt" .Title "class" "post__thumbnail") }}
 		{{ end }}
 
 		<div class="post__article">
@@ -25,7 +25,7 @@
 				<div class="post__info">
 					{{ with .Site.Author.name }}
 						<div class="post__author">
-							{{ partial "internal/avatar.html" $ }}
+							{{ partial "components/avatar.html" $ }}
 							<span>{{ . }}</span>
 						</div>
 					{{ end }}

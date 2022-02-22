@@ -1,7 +1,7 @@
 {{ define "main" }}
 	{{ with .Site.Author.bio }}
 		<div class="bio">
-			{{ partial "internal/avatar.html" $ }}
+			{{ partial "components/avatar.html" $ }}
 			<p>{{ . | safeHTML }}</p>
 		</div>
 	{{ end }}

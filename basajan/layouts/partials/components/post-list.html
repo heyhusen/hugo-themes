@@ -6,7 +6,7 @@
 			<article>
 				{{ if .Params.image }}
 					<a href="{{ .RelPermalink }}">
-						{{ partial "internal/image.html" (dict "src" .Params.image "alt" .Title "limit" "360") }}
+						{{ partial "components/image.html" (dict "src" .Params.image "alt" .Title "limit" "360") }}
 					</a>
 				{{ end }}
 
