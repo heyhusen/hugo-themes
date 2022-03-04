@@ -11,13 +11,7 @@
 				{{ end }}
 
 				<header>
-					{{ if .Params.tags }}
-						<div class="post-list__tags">
-							{{ range (.GetTerms "tags") }}
-								<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-							{{ end }}
-						</div>
-					{{ end }}
+					{{ partial "components/tag-list.html" . }}
 
 					<a href="{{ .RelPermalink }}">
 						<h2>{{ .Title }}</h2>

@@ -14,10 +14,9 @@
 							aria-label="Previous Page"
 							role="button"
 						>
-							<span aria-hidden="true">
-								{{ $chevronLeftIcon := resources.GetRemote "https://github.com/tailwindlabs/heroicons/raw/master/optimized/outline/chevron-left.svg" }}
-								{{ $chevronLeftIcon.Content | safeHTML }}
-							</span>
+							{{ with resources.GetRemote "https://github.com/tailwindlabs/heroicons/raw/master/optimized/outline/chevron-left.svg" }}
+								{{ .Content | replaceRE "<svg" "<svg aria-hidden=\"true\"" | safeHTML }}
+							{{ end }}
 						</a>
 					</li>
 				{{ end }}
@@ -37,7 +36,6 @@
 							aria-current="true"
 							aria-label="Current Page, Page {{ $k }}"
 							role="button"
-							class="active"
 							disabled
 						>
 							{{ $k }}
@@ -64,10 +62,9 @@
 							aria-label="Next Page"
 							role="button"
 						>
-							<span aria-hidden="true">
-								{{ $chevronRightIcon := resources.GetRemote "https://github.com/tailwindlabs/heroicons/raw/master/optimized/outline/chevron-right.svg" }}
-								{{ $chevronRightIcon.Content | safeHTML }}
-							</span>
+							{{ with resources.GetRemote "https://github.com/tailwindlabs/heroicons/raw/master/optimized/outline/chevron-right.svg" }}
+								{{ .Content | replaceRE "<svg" "<svg aria-hidden=\"true\"" | safeHTML }}
+							{{ end }}
 						</a>
 					</li>
 				{{ end }}

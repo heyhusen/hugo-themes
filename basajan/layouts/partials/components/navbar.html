@@ -10,12 +10,12 @@
 		{{ $current := . }}
 		{{ range .Site.Menus.main }}
 			{{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+
 			<li role="none">
 				<a
 					href="{{ .URL }}"
 					role="menuitem"
 					{{ if $active }}aria-current="page"{{ end }}
-					{{ if $active }}class="active"{{ end }}
 				>
 					{{ .Name }}
 				</a>

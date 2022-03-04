@@ -75,6 +75,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           base: main
+          branch: "feature/basajan/prebuilt-css"
           add-paths: |
             basajan/assets/css/*.min.css
           commit-message: "chore(basajan): update prebuilt CSS"

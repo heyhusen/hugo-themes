@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
 	purge: {
 		enabled: process.env.HUGO_ENVIRONMENT === 'production',
@@ -10,6 +12,13 @@ module.exports = {
 	},
 	darkMode: false, // or 'media' or 'class'
 	theme: {
+		colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: colors.white,
+      gray: colors.coolGray,
+    },
+		screens: {},
 		extend: {},
 	},
 	variants: {
