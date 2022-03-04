@@ -5,12 +5,12 @@
 		{{ partial "header.html" . }}
 
 		{{ if and (eq .Kind "page") (eq .Type "page") }}
-			{{ partial "components/breadcrumbs.html" (dict "context" . "class" "breadcrumbs breadcrumbs-post") }}
+			{{ partial "components/breadcrumbs.html" (dict "context" . "class" "breadcrumbs breadcrumbs--post") }}
 		{{ else }}
 			{{ partial "components/breadcrumbs.html" (dict "context" . "class" "breadcrumbs") }}
 		{{ end }}
 
-		<main class="site-main{{ if and (eq .Kind "page") (eq .Type "page") }} site-main-post{{ end }}">
+		<main class="site-main{{ if and (eq .Kind "page") (eq .Type "page") }} site-main--post{{ end }}">
 			{{ block "main" . }}{{ end }}
 		</main>
 

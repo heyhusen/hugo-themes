@@ -1,0 +1,7 @@
+{{ if .Params.tags }}
+	<div class="post-list__tags">
+		{{ range (.GetTerms "tags") }}
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		{{ end }}
+	</div>
+{{ end }}

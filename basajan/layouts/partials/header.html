@@ -1,9 +1,9 @@
 <header class="site-header">
 	<div class="site-header__container">
-		<div class="site-header__flex">
+		<div class="site-header__top">
 			<div class="site-identity">
 				<a href="/">
-					<span>{{ .Site.Title }}</span>
+					{{ .Site.Title }}
 				</a>
 				<p>{{ .Site.Params.description }}</p>
 			</div>
@@ -18,18 +18,18 @@
 								rel="noopener noreferrer"
 								aria-label="{{ (index (where $.Site.Data.social "identifier" $index) 0).name }}"
 							>
-								<span aria-hidden="true">
-									{{ (resources.GetRemote (print "https://github.com/feathericons/feather/raw/master/icons/" $index ".svg")).Content | safeHTML }}
-								</span>
+								{{ with resources.GetRemote (print "https://github.com/feathericons/feather/raw/master/icons/" $index ".svg") }}
+									{{ .Content | replaceRE "<svg" "<svg aria-hidden=\"true\"" | safeHTML }}
+								{{ end }}
 							</a>
 						{{ end }}
 					{{ end }}
 				{{ end }}
 
 				<a href="/index.xml" aria-label="RSS">
-					<span aria-hidden="true">
-						{{ (resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/rss.svg").Content | safeHTML }}
-					</span>
+					{{ with resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/rss.svg" }}
+						{{ .Content | replaceRE "<svg" "<svg aria-hidden=\"true\"" | safeHTML }}
+					{{ end }}
 				</a>
 			</div>
 		</div>

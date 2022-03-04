@@ -34,7 +34,6 @@
 							itemprop="item"
 							href="{{ $breadcrumb.url }}"
 							{{ if eq (add $i 1) $breadcrumbCount }}aria-current="page"{{ end }}
-							{{ if lt (add $i 1) $breadcrumbCount }}class="active"{{ end }}
 						>
 							<span itemprop="name">{{ $breadcrumb.name }}</span>
 						</a>
@@ -43,7 +42,9 @@
 					</li>
 
 					{{ if lt (add $i 1) $breadcrumbCount }}
-						{{ (resources.GetRemote "https://github.com/tailwindlabs/heroicons/raw/master/optimized/outline/chevron-right.svg").Content | safeHTML }}
+						{{ with resources.GetRemote "https://github.com/tailwindlabs/heroicons/raw/master/optimized/outline/chevron-right.svg" }}
+							{{ .Content | safeHTML }}
+						{{ end }}
 					{{ end }}
 				{{ end }}
 			</ol>
