@@ -38,7 +38,9 @@
 				{{ end }}
 			{{ end }}
 
-			{{ $optimized = $optimized | append (print ($original.Resize (print $original.Width "x" " " $format)).RelPermalink " " $original.Width "w") }}
+			{{ if not (in $sizes $original.Width) }}
+				{{ $optimized = $optimized | append (print ($original.Resize (print $original.Width "x" " " $format)).RelPermalink " " $original.Width "w") }}
+			{{ end }}
 
 			<source
 				sizes="(min-width: 640px) 50vw, 100vw"
