@@ -9,7 +9,7 @@
 
 	body {
 		@apply bg-white text-gray-700 text-base font-sans antialiased;
-		@apply tracking-normal leading-normal;
+		@apply tracking-normal;
 
 		@media (prefers-color-scheme: dark) {
 			@apply bg-gray-900 text-gray-200;
