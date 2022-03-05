@@ -23,13 +23,20 @@
 	<!-- Twitter Card -->
 	{{ partial "head/twitter-card.html" . }}
 
+	{{ range .AlternativeOutputFormats -}}
+		<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+	{{ end -}}
+
+
 	<!-- Sitemap -->
-	<link
-    rel="sitemap"
-    type="application/xml"
-    title="Sitemap"
-    href="{{ .Site.BaseURL }}sitemap.xml"
-  />
+	{{ if .IsHome }}
+		<link
+			rel="sitemap"
+			type="application/xml"
+			title="Sitemap"
+			href="{{ .Sitemap.Filename | absURL }}"
+		/>
+	{{ end }}
 
 	<!-- RSS -->
   {{ with .OutputFormats.Get "rss" -}}
