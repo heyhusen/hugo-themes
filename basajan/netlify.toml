@@ -8,6 +8,7 @@
 
 [context.production.environment]
 	HUGO_BASEURL = "https://basajan.netlify.app/"
+	HUGO_DISQUSSHORTNAME = "hugo-themes"
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"

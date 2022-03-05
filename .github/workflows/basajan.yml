@@ -69,6 +69,8 @@ jobs:
           cd ${{ env.FOLDER }}
           pnpm build
           pnpm copy
+        env:
+          HUGO_DISQUSSHORTNAME: hugo-themes
   
       - name: Update prebuilt CSS
         if: github.event_name == 'pull_request'
@@ -78,6 +80,8 @@ jobs:
           branch: "feature/basajan/prebuilt-css"
           add-paths: |
             basajan/assets/css/*.min.css
+          author: "github-actions <github-actions@github.com>"
+          committer: "github-actions <github-actions@github.com>"
           commit-message: "chore(basajan): update prebuilt CSS"
           title: "chore(basajan): update prebuilt CSS"
           delete-branch: true

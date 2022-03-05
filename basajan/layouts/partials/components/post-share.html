@@ -5,9 +5,9 @@
 		target="_blank"
 		aria-label="Facebook"
 	>
-		<span aria-hidden="true">
-			{{ (resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/facebook.svg").Content | safeHTML }}
-		</span>
+		{{ with resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/facebook.svg" }}
+			{{ .Content | replaceRE "<svg" "<svg aria-hidden=\"true\"" | safeHTML }}
+		{{ end }}
 	</a>
 	<a
 		href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink  }}&title={{ .Title }}&summary={{ .Title }}&source={{ .Site.BaseURL }}"
@@ -15,9 +15,9 @@
 		target="_blank"
 		aria-label="LinkedIn"
 	>
-		<span aria-hidden="true">
-			{{ (resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/linkedin.svg").Content | safeHTML }}
-		</span>
+		{{ with resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/linkedin.svg" }}
+			{{ .Content | replaceRE "<svg" "<svg aria-hidden=\"true\"" | safeHTML }}
+		{{ end }}
 	</a>
 	<a
 		href="https://telegram.me/share/url?{{ .Title }}&url={{ .Permalink }}"
@@ -25,9 +25,9 @@
 		target="_blank"
 		aria-label="Telegram"
 	>
-		<span aria-hidden="true">
-			{{ (resources.GetRemote "https://github.com/twbs/icons/raw/main/icons/telegram.svg").Content | safeHTML }}
-		</span>
+		{{ with resources.GetRemote "https://github.com/twbs/icons/raw/main/icons/telegram.svg" }}
+			{{ .Content | replaceRE "<svg" "<svg aria-hidden=\"true\"" | safeHTML }}
+		{{ end }}
 	</a>
 	<a
 		href="https://twitter.com/intent/tweet/?text={{ .Title }}&url={{ .Permalink }}"
@@ -35,8 +35,8 @@
 		target="_blank"
 		aria-label="Twitter"
 	>
-		<span aria-hidden="true">
-			{{ (resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/twitter.svg").Content | safeHTML }}
-		</span>
+		{{ with resources.GetRemote "https://github.com/feathericons/feather/raw/master/icons/twitter.svg" }}
+			{{ .Content | replaceRE "<svg" "<svg aria-hidden=\"true\"" | safeHTML }}
+		{{ end }}
 	</a>
 </div>

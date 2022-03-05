@@ -3,6 +3,12 @@ defaultContentLanguage: "en"
 languageCode: en-US
 title: "Basajan"
 theme: "basajan"
+copyright: "Copyright © 2022 - present · John Doe"
+sectionPagesMenu: "main"
+paginate: 8
+summaryLength: 25
+enableRobotsTXT: true
+disqusShortname: ""
 author:
   name: "John Doe"
   image: ""
@@ -16,11 +22,6 @@ author:
 params:
   description: "A very simple & clean blog theme for Hugo, with 0kb JavaScript shipped by default."
   image: "img/cover.jpg"
-copyright: "Copyright © 2022 - present · John Doe"
-sectionPagesMenu: "main"
-paginate: 8
-summaryLength: 25
-enableRobotsTXT: true
 minify:
   _merge: deep
 taxonomies:

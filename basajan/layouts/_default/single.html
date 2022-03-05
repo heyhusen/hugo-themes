@@ -4,7 +4,7 @@
 			{{ partial "components/image.html" (dict "context" . "src" .Params.image "alt" .Title "class" "post__thumbnail") }}
 		{{ end }}
 
-		<div class="post__article">
+		<div class="post__content">
 			<header>
 				<div class="post-list__meta">
 					<time datetime="{{ .Date }}">
@@ -51,11 +51,13 @@
 				</div>
 			{{ end }}
 			{{ with .Next }}
-				<div class="post-navigation__item post-navigation__item-right">
+				<div class="post-navigation__item post-navigation__item--right">
 					<span>Next</span>
 					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 				</div>
 			{{ end }}
 		</section>
 	{{ end }}
+
+	{{ partial "components/disqus.html" . }}
 {{ end }}

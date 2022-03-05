@@ -1,6 +1,7 @@
 {{ define "main" }}
-	<article class="article{{ if gt (len .Pages) 0 }} article-fluid{{ end }}">
-		<header class="article__header"><h1>{{ .Title }}</h1></header>
+	<article class="article{{ if gt (len .Pages) 0 }} article--fluid{{ end }}">
+		<h1>{{ .Title }}</h1>
+
 		{{ .Content }}
 	</article>
 
