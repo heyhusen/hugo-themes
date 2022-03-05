@@ -15,7 +15,7 @@
 							role="button"
 						>
 							{{ with resources.GetRemote "https://github.com/tailwindlabs/heroicons/raw/master/optimized/outline/chevron-left.svg" }}
-								{{ .Content | replaceRE "<svg" "<svg aria-hidden=\"true\"" | safeHTML }}
+								{{ .Content | safeHTML }}
 							{{ end }}
 						</a>
 					</li>
@@ -36,7 +36,6 @@
 							aria-current="true"
 							aria-label="Current Page, Page {{ $k }}"
 							role="button"
-							disabled
 						>
 							{{ $k }}
 						</span>
@@ -63,7 +62,7 @@
 							role="button"
 						>
 							{{ with resources.GetRemote "https://github.com/tailwindlabs/heroicons/raw/master/optimized/outline/chevron-right.svg" }}
-								{{ .Content | replaceRE "<svg" "<svg aria-hidden=\"true\"" | safeHTML }}
+								{{ .Content | safeHTML }}
 							{{ end }}
 						</a>
 					</li>

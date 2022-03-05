@@ -18,9 +18,9 @@
 					</a>
 
 					<div class="post-list__meta">
-						<time datetime="{{ .Date }}">
+						<span>
 							{{ .Date | time.Format ":date_long" }}
-						</time>
+						</span>
 
 						{{ if .Params.category }}
 							{{ $category := index (.GetTerms "category") 0 }}

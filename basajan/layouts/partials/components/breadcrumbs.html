@@ -42,9 +42,7 @@
 					</li>
 
 					{{ if lt (add $i 1) $breadcrumbCount }}
-						{{ with resources.GetRemote "https://github.com/tailwindlabs/heroicons/raw/master/optimized/outline/chevron-right.svg" }}
-							{{ .Content | safeHTML }}
-						{{ end }}
+						<li>/</li>
 					{{ end }}
 				{{ end }}
 			</ol>

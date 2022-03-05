@@ -7,9 +7,9 @@
 		<div class="post__content">
 			<header>
 				<div class="post-list__meta">
-					<time datetime="{{ .Date }}">
+					<span>
 						{{ .Date | time.Format ":date_long" }}
-					</time>
+					</span>
 
 					{{ if .Params.category }}
 						{{ $category := index (.GetTerms "category") 0 }}
@@ -44,7 +44,7 @@
 	</article>
 
 	{{ if or .Prev .Next }}
-		<section class="post-navigation">
+		<div class="post-navigation">
 			{{ with .Prev }}
 				<div class="post-navigation__item">
 					<span>Previous</span>
@@ -57,7 +57,7 @@
 					<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 				</div>
 			{{ end }}
-		</section>
+		</div>
 	{{ end }}
 
 	{{ partial "components/disqus.html" . }}
