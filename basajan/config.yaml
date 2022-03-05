@@ -17,4 +17,6 @@ minify:
       keepQuotes: true
       keepWhitespace: false
 params:
+  description: "A very simple & clean blog theme for Hugo, with 0kb JavaScript shipped by default."
+  image: "img/cover.jpg"
   credit: true
