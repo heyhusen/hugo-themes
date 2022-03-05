@@ -26,7 +26,8 @@
 			<div class="post__info">
 				{{ with .Site.Author.name }}
 					<div class="post__author">
-						{{ partial "components/avatar.html" $ }}
+						{{ partial "components/avatar.html" (dict "context" $ "limit" 56) }}
+
 						<span>{{ . }}</span>
 					</div>
 				{{ end }}

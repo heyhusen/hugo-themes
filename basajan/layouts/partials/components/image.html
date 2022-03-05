@@ -10,29 +10,42 @@
 	{{ $original = resources.GetRemote .src }}
 {{ end }}
 
-{{ $converts := slice (dict "type" "image/webp" "format" "webp") (dict "type" "image/jpeg" "format" "jpg") }}
+{{ $mediaTypes := newScratch }}
+{{ $mediaTypes.Add "webp" "image/webp" }}
+{{ $mediaTypes.Add "jpeg" "image/jpeg" }}
+{{ $mediaTypes.Add "jpg" "image/jpeg" }}
+{{ $mediaTypes.Add "png" "image/png" }}
+
+{{ $formats := slice "webp" "png" "jpg" "jpeg" }}
 {{ $sizes := slice 240 320 360 480 640 }}
 
 {{ with .limit }}
 	{{ $original = $original.Resize (print . "x") }}
 {{ end }}
 
+{{ $sourceFormat := strings.TrimPrefix "." (path.Ext $original) }}
+
 <picture>
-	{{ range $convert := $converts }}
-		{{ $resized := slice }}
+	{{ if in $formats $sourceFormat }}
+		{{ $formats = slice "webp" | append $sourceFormat }}
 
-		{{ range $size := $sizes }}
-			{{ if le $size $original.Width }}
-				{{ $converted := $original.Resize (print $size "x" " " $convert.format) }}
-				{{ $resized = $resized | append (print $converted.RelPermalink " " $size "w") }}
+		{{ range $format := $formats }}
+			{{ $optimized := slice }}
+
+			{{ range $size := $sizes }}
+				{{ if le $size $original.Width }}
+					{{ $optimized = $optimized | append (print ($original.Resize (print $size "x" " " $format)).RelPermalink " " $size "w") }}
+				{{ end }}
 			{{ end }}
-		{{ end }}
 
-		<source
-			sizes="(min-width: 640px) 50vw, 100vw"
-			srcset="{{ delimit $resized ", " }}"
-			type="{{ $convert.type }}"
-		/>
+			{{ $optimized = $optimized | append (print ($original.Resize (print $original.Width "x" " " $format)).RelPermalink " " $original.Width "w") }}
+
+			<source
+				sizes="(min-width: 640px) 50vw, 100vw"
+				srcset="{{ delimit $optimized ", " }}"
+				type="{{ $mediaTypes.Get $format }}"
+			/>
+		{{ end }}
 	{{ end }}
 
 	<img
