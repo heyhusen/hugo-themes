@@ -80,8 +80,8 @@ jobs:
           branch: "feature/basajan/prebuilt-css"
           add-paths: |
             basajan/assets/css/*.min.css
-          author: "github-actions <github-actions@github.com>"
-          committer: "github-actions <github-actions@github.com>"
+          author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          committer: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
           commit-message: "chore(basajan): update prebuilt CSS"
           title: "chore(basajan): update prebuilt CSS"
           delete-branch: true
