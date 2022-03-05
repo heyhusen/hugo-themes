@@ -1,6 +1,6 @@
 baseURL: "/"
 defaultContentLanguage: "en"
-languageCode: en-US
+languageCode: "en"
 title: "Basajan"
 theme: "basajan"
 copyright: "Copyright © 2022 - present · John Doe"

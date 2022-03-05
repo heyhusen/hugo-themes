@@ -20,16 +20,6 @@
 		{{ end }}
 	</a>
 	<a
-		href="https://telegram.me/share/url?{{ .Title }}&url={{ .Permalink }}"
-		rel="noopener noreferrer"
-		target="_blank"
-		aria-label="Telegram"
-	>
-		{{ with resources.GetRemote "https://github.com/twbs/icons/raw/main/icons/telegram.svg" }}
-			{{ .Content | replaceRE "<svg" "<svg aria-hidden=\"true\"" | safeHTML }}
-		{{ end }}
-	</a>
-	<a
 		href="https://twitter.com/intent/tweet/?text={{ .Title }}&url={{ .Permalink }}"
 		rel="noopener noreferrer"
 		target="_blank"

@@ -606,11 +606,15 @@
 			@apply flex items-center gap-2;
 
 			@media (min-width: 640px) {
+				@apply gap-3;
+			}
+
+			@media (min-width: 768px) {
 				@apply gap-4;
 			}
 
 			a {
-				@apply p-1.5 bg-gray-700 text-gray-50 rounded-full;
+				@apply p-1.5 bg-gray-700 text-gray-50 rounded;
 
 				@media (min-width: 768px) {
 					@apply p-2;
@@ -626,10 +630,10 @@
 			}
 
 			svg {
-				@apply h-5 w-5;
+				@apply h-4 w-4;
 
 				@media (min-width: 768px) {
-					@apply h-6 w-6;
+					@apply h-5 w-5;
 				}
 			}
 		}
