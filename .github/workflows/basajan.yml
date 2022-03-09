@@ -21,8 +21,11 @@ env:
 
 jobs:
   build:
-    name: Build
+    name: Build (Hugo v${{ matrix.hugo }})
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        hugo: [0.92.0, 0.93.0]
 
     steps:
       - name: Checkout
@@ -48,7 +51,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.92.2"
+          hugo-version: ${{ matrix.hugo }}
           extended: true
 
       - name: Cache Hugo
