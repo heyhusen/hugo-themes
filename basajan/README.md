@@ -4,22 +4,26 @@
 
 ![Basajan screenshot](https://github.com/hapakaien/hugo-themes/raw/main/basajan/images/screenshot.png)
 
-Basajan is a very simple and clean blog theme for Hugo, with 0kb JavaScript shipped by default. This makes Basajan fast, and also SEO friendly.  
+Basajan is a very simple and clean blog theme for Hugo, with 0kb JavaScript
+shipped by default. This makes Basajan fast, and also SEO friendly.  
 Basajan is made only for personal blogs, with a single author.
 
-### Features
+## Features
 
 - Simple & clean design
+- Dark theme supported
 - Use only system fonts
 - Use only inline SVG icons
 - 0kb JavaScript shipped by default
 - Open Graph & Twitter Card meta tag
 - Optimized images (including remote sources)
 
-### Documentation
+## Documentation
 
-Coming soon.
+You can read the full documentation at <https://husen.id/project/basajan>.
 
-### License
+## License
 
-Apache License 2.0 (Apache-2.0). Please see [LICENSE file](https://github.com/hapakaien/hugo-themes/blob/main/LICENSE) for more information.
+Apache License 2.0 (Apache-2.0). Please see
+[LICENSE file](https://github.com/hapakaien/hugo-themes/blob/main/LICENSE) for
+more information.
