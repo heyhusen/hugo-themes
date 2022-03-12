@@ -1,5 +1,4 @@
 baseURL: "/"
-defaultContentLanguage: "en"
 languageCode: "en"
 title: "Basajan"
 theme: "basajan"
@@ -19,9 +18,9 @@ author:
     instagram: "johndoe"
     linkedin: "johndoe"
     twitter: "johndoe"
-minify:
-  _merge: deep
 taxonomies:
   _merge: deep
 markup:
+  _merge: deep
+minify:
   _merge: deep
