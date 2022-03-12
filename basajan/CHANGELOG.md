@@ -7,11 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2022-03-12
+
+### Fixed
+
+- Invalid syntax on CI
+
 ## [0.1.0] - 2022-03-12
 
 ### Added
 
 - Initialize project
 
-[Unreleased]: https://github.com/hapakaien/hugo-themes/compare/basajan/v0.1.0...HEAD
+[Unreleased]: https://github.com/hapakaien/hugo-themes/compare/basajan/v0.1.1...HEAD
+[0.1.1]: https://github.com/hapakaien/hugo-themes/compare/basajan/v0.1.0...basajan/v1.5.1
 [0.1.0]: https://github.com/hapakaien/hugo-themes/releases/tag/basajan/v0.1.0
