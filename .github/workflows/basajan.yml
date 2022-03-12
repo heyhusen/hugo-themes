@@ -101,11 +101,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get branch names
+      - name: Get tag name
         id: tag-name
-        uses: olegtarasov/get-tag@v2.1
+        uses: tj-actions/branch-names@v5.1
         with:
-          tagRegex: "basajan\/v(.*)"
+          strip_tag_prefix: "basajan/v"
 
       - name: Read changelog
         id: changelog-reader
