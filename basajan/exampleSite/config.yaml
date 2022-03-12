@@ -2,22 +2,22 @@ baseURL: "/"
 languageCode: "en"
 title: "Basajan"
 theme: "basajan"
-copyright: "Copyright © 2022 - present · John Doe"
+copyright: "Copyright © 2022 - present · You"
 sectionPagesMenu: "main"
 paginate: 8
 summaryLength: 25
 enableRobotsTXT: true
 disqusShortname: ""
 author:
-  name: "John Doe"
-  image: ""
-  email: "hi@husen.id"
-  bio: "Written by <strong>John</strong> Doe. This is where your author bio lives. Share everything that you think best describes you."
+  name: "You"
+  image: "https://i.pravatar.cc/256"
+  email: ""
+  bio: "Written by <strong>You</strong>. This is where your author bio lives. Share everything that you think best describes you."
   social:
-    facebook: "johndoe"
-    instagram: "johndoe"
-    linkedin: "johndoe"
-    twitter: "johndoe"
+    facebook: "you"
+    instagram: "you"
+    linkedin: "you"
+    twitter: "you"
 taxonomies:
   _merge: deep
 markup:
