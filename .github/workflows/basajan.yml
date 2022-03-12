@@ -102,16 +102,16 @@ jobs:
           fetch-depth: 0
 
       - name: Get branch names
-        id: branch-name
-        uses: tj-actions/branch-names@v5
+        id: tag-name
+        uses: olegtarasov/get-tag@v2.1
         with:
-          strip_tag_prefix: "basajan/v"
+          tagRegex: "basajan\/v(.*)"
 
       - name: Read changelog
         id: changelog-reader
         uses: mindsers/changelog-reader-action@v2
         with:
-          version: ${{ steps.branch-name.outputs.tag }}
+          version: ${{ steps.tag-name.outputs.tag }}
           path: ${{ env.FOLDER }}/CHANGELOG.md
 
       - name: Create/update release
