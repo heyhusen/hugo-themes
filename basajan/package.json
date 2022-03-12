@@ -1,24 +1,5 @@
 {
-	"name": "basajan-hugo-theme",
-	"version": "0.1.0",
 	"private": true,
-	"description": "Just a simple white blog theme for Hugo",
-	"keywords": [
-		"hugo",
-		"simple",
-		"basajan"
-	],
-	"homepage": "https://github.com/hapakaien/hugo-themes/tree/main/basajan#readme",
-	"bugs": {
-		"url": "https://github.com/hapakaien/hugo-themes/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com/hapakaien/hugo-themes.git"
-	},
-	"license": "Apache-2.0",
-	"author": "Ahmad Husen",
-	"main": "index.js",
 	"scripts": {
 		"dev": "HUGO_THEME_ENV=development hugo -s exampleSite --themesDir=../.. server -p 3000",
 		"build": "HUGO_THEME_ENV=production hugo -s exampleSite --themesDir=../.. --gc --minify",
