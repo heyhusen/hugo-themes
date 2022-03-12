@@ -16,30 +16,36 @@
 {{ $mediaTypes.Add "jpg" "image/jpeg" }}
 {{ $mediaTypes.Add "png" "image/png" }}
 
+{{ $supportedFormat := slice "bmp" "gif" "jpeg" "jpg" "png" "tif" "tiff" "webp" }}
 {{ $formats := slice "webp" "png" "jpg" "jpeg" }}
-{{ $sizes := slice 240 320 360 480 640 }}
+{{ $widths := slice 240 320 360 480 640 }}
 
 {{ with .limit }}
 	{{ $original = $original.Resize (print . "x") }}
 {{ end }}
 
+{{ $q := 80 }}
+{{ with .q }}
+	{{ $q = . }}
+{{ end }}
+
 {{ $sourceFormat := strings.TrimPrefix "." (path.Ext $original) }}
 
 <picture>
-	{{ if in $formats $sourceFormat }}
-		{{ $formats = slice "webp" | append $sourceFormat }}
+	{{ if and (in $formats $sourceFormat) (ne .raw true) }}
+		{{ $formats = slice "webp" | append $sourceFormat | uniq }}
 
 		{{ range $format := $formats }}
 			{{ $optimized := slice }}
 
-			{{ range $size := $sizes }}
-				{{ if le $size $original.Width }}
-					{{ $optimized = $optimized | append (print ($original.Resize (print $size "x" " " $format)).RelPermalink " " $size "w") }}
+			{{ range $width := $widths }}
+				{{ if le $width $original.Width }}
+					{{ $optimized = $optimized | append (print ($original.Resize (print $width "x q" $q " " $format)).RelPermalink " " $width "w") }}
 				{{ end }}
 			{{ end }}
 
-			{{ if not (in $sizes $original.Width) }}
-				{{ $optimized = $optimized | append (print ($original.Resize (print $original.Width "x" " " $format)).RelPermalink " " $original.Width "w") }}
+			{{ if not (in $widths $original.Width) }}
+				{{ $optimized = $optimized | append (print ($original.Resize (print $original.Width "x q" $q " " $format)).RelPermalink " " $original.Width "w") }}
 			{{ end }}
 
 			<source
@@ -53,8 +59,7 @@
 	<img
 		src="{{ $original.RelPermalink | safeURL }}"
 		alt="{{ .alt }}"
-		width="{{ $original.Width }}"
-		height="{{ $original.Height }}"
+		{{ if in $supportedFormat $sourceFormat }} width="{{ $original.Width }}" height="{{ $original.Height }}"{{ end }}
 		loading="lazy"
 		decoding="async"
 		{{ with .class }}class="{{ . }}"{{ end }}
