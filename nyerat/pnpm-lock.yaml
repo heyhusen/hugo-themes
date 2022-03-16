@@ -5,7 +5,7 @@ specifiers:
   '@tailwindcss/forms': 0.5.0
   '@tailwindcss/line-clamp': 0.3.1
   '@tailwindcss/typography': 0.4.1
-  autoprefixer: 10.4.3
+  autoprefixer: 10.4.4
   browserslist: 4.19.3
   cssnano: 5.1.4
   netlify-cms-proxy-server: 1.3.23
@@ -23,7 +23,7 @@ devDependencies:
   '@tailwindcss/forms': 0.5.0_tailwindcss@2.2.19
   '@tailwindcss/line-clamp': 0.3.1_tailwindcss@2.2.19
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
-  autoprefixer: 10.4.3_postcss@8.4.12
+  autoprefixer: 10.4.4_postcss@8.4.12
   browserslist: 4.19.3
   cssnano: 5.1.4_postcss@8.4.12
   netlify-cms-proxy-server: 1.3.23
@@ -32,7 +32,7 @@ devDependencies:
   postcss-cli: 9.1.0_postcss@8.4.12
   serve: 13.0.2
   sort-package-json: 1.54.0
-  tailwindcss: 2.2.19_f6600348627c454bbb253b02c0afe844
+  tailwindcss: 2.2.19_081650f2f4dba35b17265937ab2a2ec0
   tailwindcss-interaction-variants: 5.0.0
   tailwindcss-pseudo-elements: 2.0.0_tailwindcss@2.2.19
 
@@ -142,7 +142,7 @@ packages:
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 2.2.19_f6600348627c454bbb253b02c0afe844
+      tailwindcss: 2.2.19_081650f2f4dba35b17265937ab2a2ec0
     dev: true
 
   /@tailwindcss/forms/0.5.0_tailwindcss@2.2.19:
@@ -151,7 +151,7 @@ packages:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.3.3
-      tailwindcss: 2.2.19_f6600348627c454bbb253b02c0afe844
+      tailwindcss: 2.2.19_081650f2f4dba35b17265937ab2a2ec0
     dev: true
 
   /@tailwindcss/line-clamp/0.3.1_tailwindcss@2.2.19:
@@ -159,7 +159,7 @@ packages:
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 2.2.19_f6600348627c454bbb253b02c0afe844
+      tailwindcss: 2.2.19_081650f2f4dba35b17265937ab2a2ec0
     dev: true
 
   /@tailwindcss/typography/0.4.1_tailwindcss@2.2.19:
@@ -171,7 +171,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
-      tailwindcss: 2.2.19_f6600348627c454bbb253b02c0afe844
+      tailwindcss: 2.2.19_081650f2f4dba35b17265937ab2a2ec0
     dev: true
 
   /@trysound/sax/0.2.0:
@@ -307,8 +307,8 @@ packages:
     resolution: {integrity: sha512-XdD5lRO/87udXCMC9meWdYiR+Nq6ZjUfXidViUZGu2F1MO4T3XwZ1et0hb2++BgLfhyJwy44BGB/yx80ABx8hg==}
     dev: true
 
-  /autoprefixer/10.4.3_postcss@8.4.12:
-    resolution: {integrity: sha512-3EIK6tHl2SyJWCoPsQzL3NEqKOdjCWbPzoOInjVAQYo/y/OCEFG9KwB5162dehG5GadiGfgxu7nrWCpExCfRFQ==}
+  /autoprefixer/10.4.4_postcss@8.4.12:
+    resolution: {integrity: sha512-Tm8JxsB286VweiZ5F0anmbyGiNI3v3wGv3mz9W+cxEDYB/6jbnj6GM9H9mK3wIL8ftgl+C07Lcwb8PG5PCCPzA==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -2884,10 +2884,10 @@ packages:
     peerDependencies:
       tailwindcss: '>=1.0.0'
     dependencies:
-      tailwindcss: 2.2.19_f6600348627c454bbb253b02c0afe844
+      tailwindcss: 2.2.19_081650f2f4dba35b17265937ab2a2ec0
     dev: true
 
-  /tailwindcss/2.2.19_f6600348627c454bbb253b02c0afe844:
+  /tailwindcss/2.2.19_081650f2f4dba35b17265937ab2a2ec0:
     resolution: {integrity: sha512-6Ui7JSVtXadtTUo2NtkBBacobzWiQYVjYW0ZnKaP9S1ZCKQ0w7KVNz+YSDI/j7O7KCMHbOkz94ZMQhbT9pOqjw==}
     engines: {node: '>=12.13.0'}
     hasBin: true
@@ -2896,7 +2896,7 @@ packages:
       postcss: ^8.0.9
     dependencies:
       arg: 5.0.1
-      autoprefixer: 10.4.3_postcss@8.4.12
+      autoprefixer: 10.4.4_postcss@8.4.12
       bytes: 3.1.0
       chalk: 4.1.2
       chokidar: 3.5.2
