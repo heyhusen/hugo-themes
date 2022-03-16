@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@tailwindcss/typography': 0.4.1
-  autoprefixer: 10.4.3
+  autoprefixer: 10.4.4
   cssnano: 5.1.4
   postcss: 8.4.12
   postcss-cli: 9.1.0
@@ -12,9 +12,9 @@ specifiers:
 
 dependencies:
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
-  autoprefixer: 10.4.3_postcss@8.4.12
+  autoprefixer: 10.4.4_postcss@8.4.12
   cssnano: 5.1.4_postcss@8.4.12
-  tailwindcss: 2.2.19_f6600348627c454bbb253b02c0afe844
+  tailwindcss: 2.2.19_081650f2f4dba35b17265937ab2a2ec0
 
 devDependencies:
   postcss: 8.4.12
@@ -72,7 +72,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
-      tailwindcss: 2.2.19_f6600348627c454bbb253b02c0afe844
+      tailwindcss: 2.2.19_081650f2f4dba35b17265937ab2a2ec0
     dev: false
 
   /@trysound/sax/0.2.0:
@@ -191,8 +191,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /autoprefixer/10.4.3_postcss@8.4.12:
-    resolution: {integrity: sha512-3EIK6tHl2SyJWCoPsQzL3NEqKOdjCWbPzoOInjVAQYo/y/OCEFG9KwB5162dehG5GadiGfgxu7nrWCpExCfRFQ==}
+  /autoprefixer/10.4.4_postcss@8.4.12:
+    resolution: {integrity: sha512-Tm8JxsB286VweiZ5F0anmbyGiNI3v3wGv3mz9W+cxEDYB/6jbnj6GM9H9mK3wIL8ftgl+C07Lcwb8PG5PCCPzA==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -1871,7 +1871,7 @@ packages:
       stable: 0.1.8
     dev: false
 
-  /tailwindcss/2.2.19_f6600348627c454bbb253b02c0afe844:
+  /tailwindcss/2.2.19_081650f2f4dba35b17265937ab2a2ec0:
     resolution: {integrity: sha512-6Ui7JSVtXadtTUo2NtkBBacobzWiQYVjYW0ZnKaP9S1ZCKQ0w7KVNz+YSDI/j7O7KCMHbOkz94ZMQhbT9pOqjw==}
     engines: {node: '>=12.13.0'}
     hasBin: true
@@ -1880,7 +1880,7 @@ packages:
       postcss: ^8.0.9
     dependencies:
       arg: 5.0.1
-      autoprefixer: 10.4.3_postcss@8.4.12
+      autoprefixer: 10.4.4_postcss@8.4.12
       bytes: 3.1.2
       chalk: 4.1.2
       chokidar: 3.5.3
