@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2022-03-21
+
 ### Fixed
 
 - Change CSS breadcrumbs display from `inline-block` to `block`
@@ -23,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initialize project
 
-[Unreleased]: https://github.com/hapakaien/hugo-themes/compare/basajan/v0.1.1...HEAD
-[0.1.1]: https://github.com/hapakaien/hugo-themes/compare/basajan/v0.1.0...basajan/v1.5.1
+[Unreleased]: https://github.com/hapakaien/hugo-themes/compare/basajan/v0.1.2...HEAD
+[0.1.2]: https://github.com/hapakaien/hugo-themes/compare/basajan/v0.1.1...basajan/v0.1.2
+[0.1.1]: https://github.com/hapakaien/hugo-themes/compare/basajan/v0.1.0...basajan/v0.1.1
 [0.1.0]: https://github.com/hapakaien/hugo-themes/releases/tag/basajan/v0.1.0
