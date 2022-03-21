@@ -266,7 +266,7 @@
 		}
 
 		ol {
-			@apply inline-block align-middle space-x-1;
+			@apply space-x-1;
 
 			@media (min-width: 768px) {
 				@apply space-x-1.5;
