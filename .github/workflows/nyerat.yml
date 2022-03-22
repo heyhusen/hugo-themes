@@ -53,7 +53,7 @@ jobs:
           extended: true
 
       - name: Cache Hugo
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ${{ env.FOLDER }}/exampleSite/resources
           key: ${{ runner.os }}-nyerat-${{ steps.get-date.outputs.date }}
