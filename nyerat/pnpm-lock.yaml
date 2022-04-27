@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@tailwindcss/aspect-ratio': 0.4.0
   '@tailwindcss/forms': 0.5.0
-  '@tailwindcss/line-clamp': 0.3.1
+  '@tailwindcss/line-clamp': 0.4.0
   '@tailwindcss/typography': 0.4.1
   autoprefixer: 10.4.5
   browserslist: 4.20.3
@@ -21,7 +21,7 @@ specifiers:
 devDependencies:
   '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@2.2.19
   '@tailwindcss/forms': 0.5.0_tailwindcss@2.2.19
-  '@tailwindcss/line-clamp': 0.3.1_tailwindcss@2.2.19
+  '@tailwindcss/line-clamp': 0.4.0_tailwindcss@2.2.19
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
   autoprefixer: 10.4.5_postcss@8.4.12
   browserslist: 4.20.3
@@ -154,8 +154,8 @@ packages:
       tailwindcss: 2.2.19_c01214db2e04c60602bae73116393d69
     dev: true
 
-  /@tailwindcss/line-clamp/0.3.1_tailwindcss@2.2.19:
-    resolution: {integrity: sha512-pNr0T8LAc3TUx/gxCfQZRe9NB2dPEo/cedPHzUGIPxqDMhgjwNm6jYxww4W5l0zAsAddxr+XfZcqttGiFDgrGg==}
+  /@tailwindcss/line-clamp/0.4.0_tailwindcss@2.2.19:
+    resolution: {integrity: sha512-HQZo6gfx1D0+DU3nWlNLD5iA6Ef4JAXh0LeD8lOGrJwEDBwwJNKQza6WoXhhY1uQrxOuU8ROxV7CqiQV4CoiLw==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
