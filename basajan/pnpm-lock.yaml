@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@tailwindcss/typography': 0.4.1
@@ -7,20 +7,20 @@ specifiers:
   postcss: 8.4.13
   postcss-cli: 9.1.0
   serve: 13.0.2
-  sort-package-json: 1.55.0
+  sort-package-json: 1.57.0
   tailwindcss: 2.2.19
 
 dependencies:
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
   autoprefixer: 10.4.5_postcss@8.4.13
   cssnano: 5.1.7_postcss@8.4.13
-  tailwindcss: 2.2.19_1824c569936d24bc346301fad9d96c12
+  tailwindcss: 2.2.19_dasmk2mtnuslynddah5ntwlmci
 
 devDependencies:
   postcss: 8.4.13
   postcss-cli: 9.1.0_postcss@8.4.13
   serve: 13.0.2
-  sort-package-json: 1.55.0
+  sort-package-json: 1.57.0
 
 packages:
 
@@ -72,7 +72,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
-      tailwindcss: 2.2.19_1824c569936d24bc346301fad9d96c12
+      tailwindcss: 2.2.19_dasmk2mtnuslynddah5ntwlmci
     dev: false
 
   /@trysound/sax/0.2.0:
@@ -1777,8 +1777,8 @@ packages:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
     dev: true
 
-  /sort-package-json/1.55.0:
-    resolution: {integrity: sha512-xhKvRD8WGbALjXQkVuk4/93Z/2NIO+5IzKamdMjN5kn3L+N+M9YWQssmM6GXlQr9v1F7PGWsOJEo1gvXOhM7Mg==}
+  /sort-package-json/1.57.0:
+    resolution: {integrity: sha512-FYsjYn2dHTRb41wqnv+uEqCUvBpK3jZcTp9rbz2qDTmel7Pmdtf+i2rLaaPMRZeSVM60V3Se31GyWFpmKs4Q5Q==}
     hasBin: true
     dependencies:
       detect-indent: 6.1.0
@@ -1870,7 +1870,7 @@ packages:
       stable: 0.1.8
     dev: false
 
-  /tailwindcss/2.2.19_1824c569936d24bc346301fad9d96c12:
+  /tailwindcss/2.2.19_dasmk2mtnuslynddah5ntwlmci:
     resolution: {integrity: sha512-6Ui7JSVtXadtTUo2NtkBBacobzWiQYVjYW0ZnKaP9S1ZCKQ0w7KVNz+YSDI/j7O7KCMHbOkz94ZMQhbT9pOqjw==}
     engines: {node: '>=12.13.0'}
     hasBin: true
