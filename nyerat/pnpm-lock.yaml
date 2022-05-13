@@ -5,7 +5,7 @@ specifiers:
   '@tailwindcss/forms': 0.5.0
   '@tailwindcss/line-clamp': 0.3.1
   '@tailwindcss/typography': 0.4.1
-  autoprefixer: 10.4.5
+  autoprefixer: 10.4.7
   browserslist: 4.20.3
   cssnano: 5.1.7
   netlify-cms-proxy-server: 1.3.24
@@ -23,7 +23,7 @@ devDependencies:
   '@tailwindcss/forms': 0.5.0_tailwindcss@2.2.19
   '@tailwindcss/line-clamp': 0.3.1_tailwindcss@2.2.19
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
-  autoprefixer: 10.4.5_postcss@8.4.13
+  autoprefixer: 10.4.7_postcss@8.4.13
   browserslist: 4.20.3
   cssnano: 5.1.7_postcss@8.4.13
   netlify-cms-proxy-server: 1.3.24
@@ -32,7 +32,7 @@ devDependencies:
   postcss-cli: 9.1.0_postcss@8.4.13
   serve: 13.0.2
   sort-package-json: 1.55.0
-  tailwindcss: 2.2.19_1824c569936d24bc346301fad9d96c12
+  tailwindcss: 2.2.19_1479244b7b1ab8346eed707106c1912f
   tailwindcss-interaction-variants: 5.0.0
   tailwindcss-pseudo-elements: 2.0.0_tailwindcss@2.2.19
 
@@ -142,7 +142,7 @@ packages:
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 2.2.19_1824c569936d24bc346301fad9d96c12
+      tailwindcss: 2.2.19_1479244b7b1ab8346eed707106c1912f
     dev: true
 
   /@tailwindcss/forms/0.5.0_tailwindcss@2.2.19:
@@ -151,7 +151,7 @@ packages:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.3.3
-      tailwindcss: 2.2.19_1824c569936d24bc346301fad9d96c12
+      tailwindcss: 2.2.19_1479244b7b1ab8346eed707106c1912f
     dev: true
 
   /@tailwindcss/line-clamp/0.3.1_tailwindcss@2.2.19:
@@ -159,7 +159,7 @@ packages:
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 2.2.19_1824c569936d24bc346301fad9d96c12
+      tailwindcss: 2.2.19_1479244b7b1ab8346eed707106c1912f
     dev: true
 
   /@tailwindcss/typography/0.4.1_tailwindcss@2.2.19:
@@ -171,7 +171,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
-      tailwindcss: 2.2.19_1824c569936d24bc346301fad9d96c12
+      tailwindcss: 2.2.19_1479244b7b1ab8346eed707106c1912f
     dev: true
 
   /@trysound/sax/0.2.0:
@@ -307,15 +307,15 @@ packages:
     resolution: {integrity: sha512-XdD5lRO/87udXCMC9meWdYiR+Nq6ZjUfXidViUZGu2F1MO4T3XwZ1et0hb2++BgLfhyJwy44BGB/yx80ABx8hg==}
     dev: true
 
-  /autoprefixer/10.4.5_postcss@8.4.13:
-    resolution: {integrity: sha512-Fvd8yCoA7lNX/OUllvS+aS1I7WRBclGXsepbvT8ZaPgrH24rgXpZzF0/6Hh3ZEkwg+0AES/Osd196VZmYoEFtw==}
+  /autoprefixer/10.4.7_postcss@8.4.13:
+    resolution: {integrity: sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.20.3
-      caniuse-lite: 1.0.30001332
+      caniuse-lite: 1.0.30001340
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -353,6 +353,8 @@ packages:
       qs: 6.7.0
       raw-body: 2.4.0
       type-is: 1.6.18
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /boolbase/1.0.0:
@@ -435,13 +437,17 @@ packages:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
     dependencies:
       browserslist: 4.20.3
-      caniuse-lite: 1.0.30001332
+      caniuse-lite: 1.0.30001340
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
     dev: true
 
   /caniuse-lite/1.0.30001332:
     resolution: {integrity: sha512-10T30NYOEQtN6C11YGg411yebhvpnC6Z102+B95eAsN0oB6KUs01ivE8u+G6FMIRtIrVlYXhL+LUwQ3/hXwDWw==}
+    dev: true
+
+  /caniuse-lite/1.0.30001340:
+    resolution: {integrity: sha512-jUNz+a9blQTQVu4uFcn17uAD8IDizPzQkIKh3LCJfg9BkyIqExYYdyc/ZSlWUSKb8iYiXxKsxbv4zYSvkqjrxw==}
     dev: true
 
   /chalk/2.4.1:
@@ -597,6 +603,8 @@ packages:
       on-headers: 1.0.2
       safe-buffer: 5.1.2
       vary: 1.1.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /concat-map/0.0.1:
@@ -777,6 +785,11 @@ packages:
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 2.0.0
     dev: true
@@ -1030,6 +1043,8 @@ packages:
       type-is: 1.6.18
       utils-merge: 1.0.1
       vary: 1.1.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /fast-deep-equal/3.1.3:
@@ -1089,6 +1104,8 @@ packages:
       parseurl: 1.3.3
       statuses: 1.5.0
       unpipe: 1.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /fn.name/1.1.0:
@@ -1704,6 +1721,8 @@ packages:
       depd: 2.0.0
       on-finished: 2.3.0
       on-headers: 1.0.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /ms/2.0.0:
@@ -2587,6 +2606,8 @@ packages:
       on-finished: 2.3.0
       range-parser: 1.2.1
       statuses: 1.5.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /serve-handler/6.1.3:
@@ -2610,6 +2631,8 @@ packages:
       escape-html: 1.0.3
       parseurl: 1.3.3
       send: 0.17.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /serve/13.0.2:
@@ -2625,6 +2648,8 @@ packages:
       compression: 1.7.3
       serve-handler: 6.1.3
       update-check: 1.5.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /setprototypeof/1.1.1:
@@ -2863,10 +2888,10 @@ packages:
     peerDependencies:
       tailwindcss: '>=1.0.0'
     dependencies:
-      tailwindcss: 2.2.19_1824c569936d24bc346301fad9d96c12
+      tailwindcss: 2.2.19_1479244b7b1ab8346eed707106c1912f
     dev: true
 
-  /tailwindcss/2.2.19_1824c569936d24bc346301fad9d96c12:
+  /tailwindcss/2.2.19_1479244b7b1ab8346eed707106c1912f:
     resolution: {integrity: sha512-6Ui7JSVtXadtTUo2NtkBBacobzWiQYVjYW0ZnKaP9S1ZCKQ0w7KVNz+YSDI/j7O7KCMHbOkz94ZMQhbT9pOqjw==}
     engines: {node: '>=12.13.0'}
     hasBin: true
@@ -2875,7 +2900,7 @@ packages:
       postcss: ^8.0.9
     dependencies:
       arg: 5.0.1
-      autoprefixer: 10.4.5_postcss@8.4.13
+      autoprefixer: 10.4.7_postcss@8.4.13
       bytes: 3.1.0
       chalk: 4.1.2
       chokidar: 3.5.2
@@ -3041,6 +3066,7 @@ packages:
     resolution: {integrity: sha512-Lc7/p3GtqtqPBYYtS6KCN3c77/2QCev51DvcJKbkFPQNoj1sinkGwLGFDxkXY9J6p9+EPnYs+D90uwbnaiURTw==}
     engines: {node: '>= 6.4.0'}
     dependencies:
+      logform: 2.2.0
       readable-stream: 2.3.7
       triple-beam: 1.3.0
     dev: true
