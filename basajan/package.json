@@ -14,7 +14,7 @@
 	},
 	"devDependencies": {
 		"postcss": "8.4.14",
-		"postcss-cli": "9.1.0",
+		"postcss-cli": "10.0.0",
 		"serve": "13.0.2",
 		"sort-package-json": "1.55.0"
 	}
