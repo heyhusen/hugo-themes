@@ -84,7 +84,7 @@ jobs:
 
       - name: Get branch names
         id: branch-name
-        uses: tj-actions/branch-names@v5.2
+        uses: tj-actions/branch-names@v5.3
         with:
           strip_tag_prefix: "nyerat/v"
 
