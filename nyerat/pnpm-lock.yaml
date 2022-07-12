@@ -4,7 +4,7 @@ specifiers:
   '@tailwindcss/aspect-ratio': 0.4.0
   '@tailwindcss/forms': 0.5.0
   '@tailwindcss/line-clamp': 0.3.1
-  '@tailwindcss/typography': 0.4.1
+  '@tailwindcss/typography': 0.5.4
   autoprefixer: 10.4.7
   browserslist: 4.21.1
   cssnano: 5.1.12
@@ -22,7 +22,7 @@ devDependencies:
   '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@2.2.19
   '@tailwindcss/forms': 0.5.0_tailwindcss@2.2.19
   '@tailwindcss/line-clamp': 0.3.1_tailwindcss@2.2.19
-  '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
+  '@tailwindcss/typography': 0.5.4_tailwindcss@2.2.19
   autoprefixer: 10.4.7_postcss@8.4.14
   browserslist: 4.21.1
   cssnano: 5.1.12_postcss@8.4.14
@@ -162,15 +162,14 @@ packages:
       tailwindcss: 2.2.19_a191cbaa25c4a0a9f05cc78eac153be7
     dev: true
 
-  /@tailwindcss/typography/0.4.1_tailwindcss@2.2.19:
-    resolution: {integrity: sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==}
+  /@tailwindcss/typography/0.5.4_tailwindcss@2.2.19:
+    resolution: {integrity: sha512-QEdg40EmGvE7kKoDei8zr5sf4D1pIayHj4R31bH3lX8x2BtTiR+jNejYPOkhbmy3DXgkMF9jC8xqNiGFAuL9Sg==}
     peerDependencies:
-      tailwindcss: '>=2.0.0'
+      tailwindcss: '>=3.0.0 || insiders'
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
-      lodash.uniq: 4.5.0
       tailwindcss: 2.2.19_a191cbaa25c4a0a9f05cc78eac153be7
     dev: true
 
@@ -1578,7 +1577,7 @@ packages:
     dev: true
 
   /lodash.castarray/4.4.0:
-    resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=}
+    resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
     dev: true
 
   /lodash.difference/4.5.0:
@@ -1598,7 +1597,7 @@ packages:
     dev: true
 
   /lodash.isplainobject/4.0.6:
-    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=}
+    resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
     dev: true
 
   /lodash.memoize/4.1.2:
