@@ -6,7 +6,7 @@ specifiers:
   cssnano: 5.1.12
   postcss: 8.4.14
   postcss-cli: 10.0.0
-  serve: 14.0.0
+  serve: 14.0.1
   sort-package-json: 1.55.0
   tailwindcss: 2.2.19
 
@@ -19,7 +19,7 @@ dependencies:
 devDependencies:
   postcss: 8.4.14
   postcss-cli: 10.0.0_postcss@8.4.14
-  serve: 14.0.0
+  serve: 14.0.1
   sort-package-json: 1.55.0
 
 packages:
@@ -300,6 +300,13 @@ packages:
     resolution: {integrity: sha512-jUNz+a9blQTQVu4uFcn17uAD8IDizPzQkIKh3LCJfg9BkyIqExYYdyc/ZSlWUSKb8iYiXxKsxbv4zYSvkqjrxw==}
     dev: false
 
+  /chalk-template/0.4.0:
+    resolution: {integrity: sha512-/ghrgmhfY8RaSdeo43hNXxpoHAtxdbskUHjPpfqUWGttFgycUhYPGx3YZBCnUCvOa7Doivn1IZec3DEGFoMgLg==}
+    engines: {node: '>=12'}
+    dependencies:
+      chalk: 4.1.2
+    dev: true
+
   /chalk/2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
     engines: {node: '>=4'}
@@ -315,7 +322,6 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-    dev: false
 
   /chalk/5.0.1:
     resolution: {integrity: sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==}
@@ -840,7 +846,6 @@ packages:
   /has-flag/4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
-    dev: false
 
   /has/1.0.3:
     resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==}
@@ -1765,8 +1770,8 @@ packages:
       range-parser: 1.2.0
     dev: true
 
-  /serve/14.0.0:
-    resolution: {integrity: sha512-Q29Asg2zBhdSepu18Ci63yWUZbCnqEvSNNy1BIpju+7pBOQ1qQ5qHDpRk+tj6RZ+wqBvEqyJWNZKAQAtXlA5fg==}
+  /serve/14.0.1:
+    resolution: {integrity: sha512-tNGwxl27FwA8TbmMQqN0jTaSx8/trL532qZsJHX1VdiEIjjtMJHCs7AFS6OvtC7cTHOvmjXqt5yczejU6CV2Xg==}
     engines: {node: '>= 14'}
     hasBin: true
     dependencies:
@@ -1775,6 +1780,7 @@ packages:
       arg: 5.0.2
       boxen: 7.0.0
       chalk: 5.0.1
+      chalk-template: 0.4.0
       clipboardy: 3.0.0
       compression: 1.7.4
       is-port-reachable: 4.0.0
@@ -1911,7 +1917,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       has-flag: 4.0.0
-    dev: false
 
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
