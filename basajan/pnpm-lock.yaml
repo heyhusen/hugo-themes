@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@tailwindcss/typography': 0.4.1
   autoprefixer: 10.4.8
-  cssnano: 5.1.12
+  cssnano: 5.1.13
   postcss: 8.4.16
   postcss-cli: 10.0.0
   serve: 14.0.1
@@ -13,7 +13,7 @@ specifiers:
 dependencies:
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
   autoprefixer: 10.4.8_postcss@8.4.16
-  cssnano: 5.1.12_postcss@8.4.16
+  cssnano: 5.1.13_postcss@8.4.16
   tailwindcss: 2.2.19_d74f0a394b811d0b327f2dab5162ece9
 
 devDependencies:
@@ -554,8 +554,8 @@ packages:
       postcss: 8.4.16
     dev: false
 
-  /cssnano/5.1.12_postcss@8.4.16:
-    resolution: {integrity: sha512-TgvArbEZu0lk/dvg2ja+B7kYoD7BBCmn3+k58xD0qjrGHsFzXY/wKTo9M5egcUCabPol05e/PVoIu79s2JN4WQ==}
+  /cssnano/5.1.13_postcss@8.4.16:
+    resolution: {integrity: sha512-S2SL2ekdEz6w6a2epXn4CmMKU4K3KpcyXLKfAYc9UQQqJRkD/2eLUG0vJ3Db/9OvO5GuAdgXw3pFbR6abqghDQ==}
     engines: {node: ^10 || ^12 || >=14.0}
     peerDependencies:
       postcss: ^8.2.15
