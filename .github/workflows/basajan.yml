@@ -103,7 +103,7 @@ jobs:
 
       - name: Get tag name
         id: tag-name
-        uses: tj-actions/branch-names@v5.4
+        uses: tj-actions/branch-names@v6
         with:
           strip_tag_prefix: "basajan/v"
 
