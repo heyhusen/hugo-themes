@@ -7,7 +7,7 @@
 		"start": "serve exampleSite/public"
 	},
 	"dependencies": {
-		"@tailwindcss/typography": "0.4.1",
+		"@tailwindcss/typography": "0.5.7",
 		"autoprefixer": "10.4.8",
 		"cssnano": "5.1.13",
 		"tailwindcss": "2.2.19"
