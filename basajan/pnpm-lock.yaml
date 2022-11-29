@@ -5,7 +5,7 @@ specifiers:
   autoprefixer: 10.4.13
   cssnano: 5.1.14
   postcss: 8.4.19
-  postcss-cli: 10.0.0
+  postcss-cli: 10.1.0
   serve: 14.1.2
   sort-package-json: 2.1.0
   tailwindcss: 2.2.19
@@ -18,7 +18,7 @@ dependencies:
 
 devDependencies:
   postcss: 8.4.19
-  postcss-cli: 10.0.0_postcss@8.4.19
+  postcss-cli: 10.1.0_postcss@8.4.19
   serve: 14.1.2
   sort-package-json: 2.1.0
 
@@ -732,6 +732,16 @@ packages:
       graceful-fs: 4.2.9
       jsonfile: 6.1.0
       universalify: 2.0.0
+    dev: false
+
+  /fs-extra/11.0.0:
+    resolution: {integrity: sha512-4YxRvMi4P5C3WQTvdRfrv5UVqbISpqjORFQAW5QPiKAauaxNCwrEdIi6pG3tDFhKKpMen+enEhHIzB/tvIO+/w==}
+    engines: {node: '>=14.14'}
+    dependencies:
+      graceful-fs: 4.2.9
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
 
   /fs.realpath/1.0.0:
     resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
@@ -1208,8 +1218,8 @@ packages:
       postcss-value-parser: 4.2.0
     dev: false
 
-  /postcss-cli/10.0.0_postcss@8.4.19:
-    resolution: {integrity: sha512-Wjy/00wBBEgQqnSToznxLWDnATznokFGXsHtF/3G8glRZpz5KYlfHcBW/VMJmWAeF2x49zjgy4izjM3/Wx1dKA==}
+  /postcss-cli/10.1.0_postcss@8.4.19:
+    resolution: {integrity: sha512-Zu7PLORkE9YwNdvOeOVKPmWghprOtjFQU3srMUGbdz3pHJiFh7yZ4geiZFMkjMfB0mtTFR3h8RemR62rPkbOPA==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
@@ -1217,7 +1227,7 @@ packages:
     dependencies:
       chokidar: 3.5.3
       dependency-graph: 0.11.0
-      fs-extra: 10.0.0
+      fs-extra: 11.0.0
       get-stdin: 9.0.0
       globby: 13.1.2
       picocolors: 1.0.0
@@ -1226,7 +1236,7 @@ packages:
       postcss-reporter: 7.0.5_postcss@8.4.19
       pretty-hrtime: 1.0.3
       read-cache: 1.0.0
-      slash: 4.0.0
+      slash: 5.0.0
       yargs: 17.3.1
     transitivePeerDependencies:
       - ts-node
@@ -1780,6 +1790,11 @@ packages:
   /slash/4.0.0:
     resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
     engines: {node: '>=12'}
+    dev: true
+
+  /slash/5.0.0:
+    resolution: {integrity: sha512-n6KkmvKS0623igEVj3FF0OZs1gYYJ0o0Hj939yc1fyxl2xt+xYpLnzJB6xBSqOfV9ZFLEWodBBN/heZJahuIJQ==}
+    engines: {node: '>=14.16'}
     dev: true
 
   /sort-object-keys/1.1.3:
