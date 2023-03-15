@@ -77,7 +77,7 @@ jobs:
   
       - name: Update prebuilt CSS
         if: github.event_name == 'pull_request'
-        uses: peter-evans/create-pull-request@v4.1.1
+        uses: peter-evans/create-pull-request@v4.2.4
         with:
           base: main
           branch: "feature/basajan/prebuilt-css"
