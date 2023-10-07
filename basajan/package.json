@@ -13,7 +13,7 @@
 		"tailwindcss": "2.2.19"
 	},
 	"devDependencies": {
-		"postcss": "8.4.19",
+		"postcss": "8.4.31",
 		"postcss-cli": "10.0.0",
 		"serve": "14.1.2",
 		"sort-package-json": "2.1.0"
